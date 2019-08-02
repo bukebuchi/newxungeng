@@ -1,0 +1,106 @@
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        <a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                        <a href="javascript:;" class="btn btn-success btn-add {:$auth->check('society/add')?'':'hide'}" title="{:__('Add')}" ><i class="fa fa-plus"></i> {:__('Add')}</a>
+                        <a href="javascript:;" class="btn btn-success btn-edit btn-disabled disabled {:$auth->check('society/edit')?'':'hide'}" title="{:__('Edit')}" ><i class="fa fa-pencil"></i> {:__('Edit')}</a>
+                        <a href="javascript:;" class="btn btn-danger btn-del btn-disabled disabled {:$auth->check('society/del')?'':'hide'}" title="{:__('Delete')}" ><i class="fa fa-trash"></i> {:__('Delete')}</a>
+                        <a href="javascript:;" class="btn btn-danger btn-import {:$auth->check('society/import')?'':'hide'}" title="{:__('Import')}" id="btn-import-file" data-url="ajax/upload" data-mimetype="csv,xls,xlsx" data-multiple="false"><i class="fa fa-upload"></i> {:__('Import')}</a>
+
+                        <div class="dropdown btn-group {:$auth->check('society/multi')?'':'hide'}">
+                            <a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> {:__('More')}</a>
+                            <ul class="dropdown-menu text-left" role="menu">
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> {:__('Set to normal')}</a></li>
+                                <li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> {:__('Set to hidden')}</a></li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover table-nowrap"
+                    data-operate-edit="{:$auth->check('society/edit')}" 
+                    data-operate-del="{:$auth->check('society/del')}" 
+                    width="100%">
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+<script id="customformtpl" type="text/html">
+    <!--form表单必须添加form-commsearch这个类-->
+    <form action="" class="form-commonsearch">
+        <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="form-group">
+                <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Category_ids')}:</label>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <input type="hidden" class="operate" data-name="category_ids" value="="/>
+                    <input id="c-category_ids" data-rule="required" data-source="auth/admin/selectpage"  data-field="nickname"  data-live-search="true" data-multiple="true" class="form-control selectpage" name="category_ids" type="text" value="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
+            <div class="form-group">
+                <label class="control-label">{:__('Activitytime')}:</label>
+
+                <div class="row row-between">
+
+                   <input type="hidden" class="operate" data-name="activitytime" value="RANGE"/>
+                   <input type="text" class="form-control datetimerange" data-date-format="YYYY-MM-DD HH:mm:ss" name="activitytime" value="" />
+
+               </div>
+
+           </div>
+       </div>  
+
+
+
+   
+   <div class="row">
+
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+        <div class="form-group ">
+            <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Keywords')}:</label>
+
+            <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-name="keywords" value="="/>
+            <input id="c-keywords " data-rule="required" data-live-search="true" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="keywords" type="text" value=""/>
+
+        </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Identity')}:</label>
+
+            <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-live-search="true" data-name="Identity" value="="/>
+            <input id="c-Identity" data-rule="required" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="Identity" type="text" value=""/>
+
+        </div>
+    </div>                          
+
+</div>       
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">   
+    <div class="form-group">
+        <label class="control-label"></label>
+        <div class="row">
+            <div class="col-xs-6">
+                <input type="submit" class="btn btn-success btn-block" value="查询"/>
+            </div>
+            <div class="col-xs-6">
+                <input type="reset" class="btn btn-primary btn-block" value="重置"/>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+</form>
+</script>
