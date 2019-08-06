@@ -9,7 +9,7 @@ return array (
     'content' => 
     array (
     ),
-    'value' => 'XXX公安局',
+    'value' => '智能巡更系统',
     'rule' => 'required',
     'msg' => '',
     'tip' => '',
@@ -241,14 +241,14 @@ return array (
     ),
     'value' => 
     array (
-      'index/index' => '/cms/$',
-      'archives/index' => '/cms/a/[:diyname]',
-      'tags/index' => '/cms/t/[:name]',
-      'page/index' => '/cms/p/[:diyname]',
-      'search/index' => '/cms/s',
-      'channel/index' => '/cms/c/[:diyname]',
-      'diyform/index' => '/cms/d/[:diyname]',
-      'special/index' => '/cms/special/[:diyname]',
+      'index/index' => '/$',
+      'archives/index' => '/a/[:diyname]',
+      'tags/index' => '/t/[:name]',
+      'page/index' => '/p/[:diyname]',
+      'search/index' => '/s',
+      'channel/index' => '/c/[:diyname]',
+      'diyform/index' => '/d/[:diyname]',
+      'special/index' => '/special/[:diyname]',
     ),
     'rule' => 'required',
     'msg' => '',

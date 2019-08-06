@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1563192343;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1564835005;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -202,19 +202,9 @@
         padding: 30px 0;
     }
 </style>
-<?php if(preg_match('/\/admin\/|admin\.php|admin_d75KABNWt\.php/i', url())): ?>
-<div class="alert alert-danger-light">
-    <?php echo __('Security tips'); ?>
-</div>
-<?php endif; ?>
+
 <div class="panel panel-default panel-intro">
-    <div class="panel-heading">
-        <?php echo build_heading(null, false); ?>
-        <ul class="nav nav-tabs">
-            <li class="active"><a href="#one" data-toggle="tab"><?php echo __('Dashboard'); ?></a></li>
-            <li><a href="#two" data-toggle="tab"><?php echo __('Custom'); ?></a></li>
-        </ul>
-    </div>
+    
     <div class="panel-body">
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
@@ -333,93 +323,11 @@
                 </div>
 
                 <div class="row" style="margin-top:15px;">
-                    <!--第一行-->
-                    <div class="col-lg-12">
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-blue">
-                            <div class="panel-body">
-                                <div class="panel-title">
-                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Category count'); ?></h5>
-                                </div>
-                                <div class="panel-content">
-                                    <h1 class="no-margins">1234</h1>
-                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-commenting"></i> 1234</div>
-                                    <small><?php echo __('Category count tips'); ?></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-aqua-gradient">
-                            <div class="panel-body">
-                                <div class="ibox-title">
-                                    <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Attachment count'); ?></h5>
-                                </div>
-                                <div class="ibox-content">
-                                    <h1 class="no-margins"><?php echo $Attachment_count; ?></h1>
-                                    <div class="stat-percent font-bold text-gray"><i class="fa fa-modx"></i> 2592</div>
-                                    <small><?php echo __('Attachment count tips'); ?></small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-purple-gradient">
-                            <div class="panel-body">
-                                <div class="ibox-title">
-                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Article count'); ?></h5>
-                                </div>
-                                <div class="ibox-content">
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins"><?php echo $Cmsnews_count; ?></h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Comment count'); ?></small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">6754</h1>
-                                            <div class="font-bold"><i class="fa fa-heart"></i>
-                                                <small><?php echo __('Like count'); ?></small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-green-gradient">
-                            <div class="panel-body">
-                                <div class="ibox-title">
-                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('News count'); ?></h5>
-                                </div>
-                                <div class="ibox-content">
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">123</h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Comment count'); ?></small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">8205</h1>
-                                            <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small><?php echo __('Like count'); ?></small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
+                
+                   
+                    
                     <!--第二行-->
                     <div class="col-lg-12">
                     </div>
@@ -428,13 +336,16 @@
                             <div class="panel-body">
                                 <div class="panel-title">
                                     <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Traffic safety'); ?></h5>
+                                     <h1 class="no-margins">
+                                    <a href="/admin/question?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Traffic safety'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="panel-content">
-                                    <h1 class="no-margins">
-                                        <a href="traffic"><?php echo $traffic_count; ?></a>
-                                    </h1>
+                                   
+                                    <h1><?php echo $traffic_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
                                     <small><?php echo __('Traffic state'); ?></small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -444,13 +355,16 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Serving masses'); ?></h5>
+                                   
+                                    <h1 class="no-margins">
+                                    <a href="/admin/service?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Serving masses'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="ibox-content">
-                                    <h1 class="no-margins">
-                                        <a href="service"><?php echo $service_count; ?></a>
-                                    </h1>
+                                    <h1><?php echo $service_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
                                     <small><?php echo __('Serving state'); ?></small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -460,28 +374,19 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Social conditions'); ?></h5>
+                                   
+                                     <h1 class="no-margins">
+                                    <a href="/admin/society?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Social conditions'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="ibox-content">
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="society"><?php echo $society_count; ?></a>
-                                            </h1>
+                                    
+                                            <h1><?php echo $society_count; ?></h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
                                                 <small><?php echo __('Message Review'); ?></small>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="society">13</a>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-heart"></i>
-                                                <small><?php echo __('Complaint Suggestions'); ?></small>
-                                            </div>
-                                        </div>
-                                    </div>
+                                     
                                 </div>
                             </div>
                         </div>
@@ -491,28 +396,21 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('On duty'); ?></h5>
+                                   
+                                     <h1 class="no-margins">
+                                    <a href="/admin/calendar?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('On duty'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="ibox-content">
 
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="question"><?php echo $question_count; ?></a>
+                                   
+                                            <h1>
+                                                <?php echo $question_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
                                                 <small><?php echo __('Investigate vehicles'); ?></small>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="question">5</a>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small><?php echo __('Records violations'); ?></small>
-                                            </div>
-                                        </div>
-                                    </div>
+                                       
                                 </div>
                             </div>
                         </div>
@@ -525,19 +423,42 @@
                             <div class="panel-body">
                                 <div class="panel-title">
                                     <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Capture situation'); ?></h5>
+                                   
+                                    <h1 class="no-margins">
+                                    <a href="/admin/safety?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Capture situation'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="panel-content">
-                                    <h1 class="no-margins">
+                                      <div class="row">
+                                        <div class="col-md-6">
+                                            <h1 class="no-margins">
+                                                <a href="map"><?php echo $Traffic_count; ?></a>
+                                            </h1>
+                                            <div class="font-bold"><i class="fa fa-commenting"></i>
+                                                <small>交通安全</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h1 class="no-margins">
+                                                <a href="map"><?php echo $Fire_count; ?></a>
+                                            </h1>
+                                            <div class="font-bold"><i class="fa fa-user"></i>
+                                                <small>消防安全</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- <h1 class="no-margins">
                                         <a href="flow/finishworkitem"><?php echo $safety_count; ?></a>
                                     </h1>
                                     <div class="stat-percent font-bold text-gray">
-                                        <i class="fa fa-commenting"> <?php echo $Traffic_count; ?></i>
-                                        <i class="fa fa-heart"> <?php echo $Fire_count; ?></i>
-                                        <i class="fa fa-commenting"> <?php echo $Production_count; ?></i>
-                                        <i class="fa fa-heart"> <?php echo $Natural_count; ?></i>
-                                        <i class="fa fa-commenting"> <?php echo $Etc_count; ?></i>
-                                    </div>
+                                            <div class="row">
+                                        
+                                      <h1> </h1>
+                                        <h1>  </h1>
+                                     
+                                            </div>    
+
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -547,13 +468,22 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Membership statistics'); ?></h5>
+                                    
+                                    <h1 class="no-margins">
+                                    <a href="/admin/user/user?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Membership statistics'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="ibox-content">
-                                    <h1 class="no-margins">
-                                        <a href="user/user"><?php echo $user_count; ?></a>
+                                     <div class="row">
+                                        <div class="col-md-6">
+                                    <h1>
+                                        <?php echo $user_count; ?>
                                     </h1>
+                                     <div class="font-bold"><i class="fa fa-commenting"></i>
                                     <small><?php echo __('Membership state'); ?></small>
+                                    </div>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -563,21 +493,24 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Contradictions disputes'); ?></h5>
+                                    
+                                    <h1 class="no-margins">
+                                    <a href="/admin/dispute?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Contradictions disputes'); ?></a> 
+                                     </h1>
                                 </div>
                                 <div class="ibox-content">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="maodun"><?php echo $Maoduncrimi_count; ?></a>
+                                            <h1>
+                                                <?php echo $Maoduncrimi_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
                                                 <small><?php echo __('Civil dispute'); ?></small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="maodun"><?php echo $Maoduncivil_count; ?></a>
+                                            <h1>
+                                                <?php echo $Maoduncivil_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-heart"></i>
                                                 <small><?php echo __('Criminal disputes'); ?></small>
@@ -593,7 +526,8 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h5><?php echo __('Number online'); ?></h5>
+                                    <h1><?php echo __('Number online'); ?></h1>
+
                                 </div>
                                 <div class="ibox-content">
 
@@ -622,126 +556,7 @@
 
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="box box-danger">
-                            <div class="box-header with-border">
-                                <h3 class="box-title"><?php echo __('Recent news'); ?></h3>
-
-                                <div class="box-tools pull-right">
-                                </div>
-                            </div>
-                            <div class="box-body">
-                                <ul class="products-list product-list-in-box">
-                                    <!--
-                                    <?php $__FOR_START_836099405__=1;$__FOR_END_836099405__=8;for($i=$__FOR_START_836099405__;$i < $__FOR_END_836099405__;$i+=1){ ?>
-                                    <li class="item">
-                                        <div class="product-img">
-                                            <img src="/assets/img/avatar.png" style="height:40px;width:40px;">
-                                        </div>
-                                        <div class="product-info">
-                                            <a href="https://www.fastadmin.net" target="_blank" class="product-title">
-                                                FastAdmin
-                                                <span class="label label-<?php echo $i%3===0?'warning':($i%2===0?'success':'info'); ?> pull-right">开源免费</span>
-                                            </a>
-                                            <span class="product-description">
-                                              一款基于ThinkPHP5+Bootstrap的极速后台开发框架
-                                            </span>
-                                        </div>
-                                    </li>
-                                    <?php } ?>
-                                    -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="box box-success">
-                            <div class="box-header with-border">
-                                <h3 class="box-title"><?php echo __('Recent discussion'); ?></h3>
-
-                                <div class="box-tools pull-right">
-                                </div>
-                            </div>
-                            <div class="box-body">
-                                <ul class="nav nav-pills nav-stacked">
-                                    <!--
-                                    <li><a href="https://www.fastadmin.net" target="_blank">一款基于ThinkPHP5+Bootstrap的极速后台开发框架<span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">一键生成CRUD控制器模型和视图 <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">一键压缩打包JS和CSS文件 <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 3%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">一键生成控制器菜单和规则 <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 8%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">一键生成API接口文档 <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">强大的插件扩展功能，在线安装卸载升级插件 <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 10%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">通用的会员模块和API模块 <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 2%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">共用同一账号体系的Web端会员中心权限验证和API接口会员权限验证 <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 6%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">二级域名部署支持，同时域名支持绑定到插件 <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">多语言支持，服务端及客户端支持 <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
-                                    <li><a href="https://www.fastadmin.net" target="_blank">基于Bootstrap开发，自适应手机、平板、PC <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a></li>
-                                    -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="box box-info">
-                            <div class="box-header"><h3 class="box-title"><?php echo __('Server info'); ?></h3></div>
-                            <div class="box-body" style="padding-top:0;">
-                                <table class="table table-striped">
-                                    <tbody>
-                                    <tr>
-                                        <td width="140"><?php echo __('FastAdmin version'); ?></td>
-                                        <td><?php echo \think\Config::get('fastadmin.version'); ?> <a href="javascript:;" class="btn btn-xs btn-checkversion">检查最新版</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('FastAdmin addon version'); ?></td>
-                                        <td><?php echo $addonversion; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Thinkphp version'); ?></td>
-                                        <td><?php echo THINK_VERSION; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Sapi name'); ?></td>
-                                        <td><?php echo php_sapi_name(); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Debug mode'); ?></td>
-                                        <td><?php echo \think\Config::get('app_debug')?__('Yes'):__('No'); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Software'); ?></td>
-                                        <td><?php echo \think\Request::instance()->server('SERVER_SOFTWARE'); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Upload mode'); ?></td>
-                                        <td><?php echo $uploadmode; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Upload url'); ?></td>
-                                        <td><?php echo $config['upload']['uploadurl']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Upload Cdn url'); ?></td>
-                                        <td><?php echo $config['upload']['cdnurl']; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Timezone'); ?></td>
-                                        <td><?php echo date_default_timezone_get(); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Cdn url'); ?></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td><?php echo __('Language'); ?></td>
-                                        <td><?php echo $config['language']; ?></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="tab-pane fade" id="two">
                 <div class="row">

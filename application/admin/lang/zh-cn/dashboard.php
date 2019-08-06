@@ -63,6 +63,6 @@ return [
     'Records violations'      => '违纪记录',
     'Civil dispute'           => '治安案件',
     'Criminal disputes'       => '刑事纠纷',
-    'Message Review'          => '消息评论',
+    'Message Review'          => '社情民意信息',
     'Complaint Suggestions'   => '投诉建议'
 ];

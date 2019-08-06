@@ -24,6 +24,10 @@ return array (
     array (
       0 => 'markdown',
     ),
+    'config_init' => 
+    array (
+      0 => 'nkeditor',
+    ),
     'run' => 
     array (
       0 => 'voicenotice',
@@ -31,13 +35,13 @@ return array (
   ),
   'route' => 
   array (
-    '/cms/$' => 'cms/index/index',
-    '/cms/a/[:diyname]' => 'cms/archives/index',
-    '/cms/t/[:name]' => 'cms/tags/index',
-    '/cms/p/[:diyname]' => 'cms/page/index',
-    '/cms/s' => 'cms/search/index',
-    '/cms/c/[:diyname]' => 'cms/channel/index',
-    '/cms/d/[:diyname]' => 'cms/diyform/index',
-    '/cms/special/[:diyname]' => 'cms/special/index',
+    '/$' => 'cms/index/index',
+    '/a/[:diyname]' => 'cms/archives/index',
+    '/t/[:name]' => 'cms/tags/index',
+    '/p/[:diyname]' => 'cms/page/index',
+    '/s' => 'cms/search/index',
+    '/c/[:diyname]' => 'cms/channel/index',
+    '/d/[:diyname]' => 'cms/diyform/index',
+    '/special/[:diyname]' => 'cms/special/index',
   ),
 );
