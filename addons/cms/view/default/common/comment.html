@@ -4,10 +4,10 @@
         {assign name="aid" value="$[aid]" /}
         {cms:commentlist id="comment" type="[type]" aid="$aid" pagesize="10"}
         <dl id="comment-{$comment.id}">
-            <dt><a href="javascript:;" rel="nofollow"><img src='{$comment.user.avatar}'/></a></dt>
+            <dt><a href="{$comment.user.url}" target="_blank"><img src='{$comment.user.avatar}'/></a></dt>
             <dd>
                 <div class="parent">
-                    <cite><a href='javascript:;' rel='external nofollow'>{$comment.user.nickname}</a></cite>
+                    <cite><a href='{$comment.user.url}' target="_blank">{$comment.user.nickname}</a></cite>
                     <small> {$comment.createtime|human_date} <a href="javascript:;" data-id="{$comment.id}" title="@{$comment.user.nickname} " class="reply">回复TA</a></small>
                     <p>{$comment.content}</p>
                 </div>

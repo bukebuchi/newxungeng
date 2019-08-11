@@ -85,6 +85,18 @@ class Api extends Base
     }
 
     /**
+     * 获取栏目列表
+     */
+    public function channel()
+    {
+        $channelList = \addons\cms\model\Channel::where('status', '<>', 'hidden')
+            ->where('type', 'list')
+            ->order('weigh DESC,id DESC')
+            ->column('id,name');
+        $this->success(__('读取成功'), null, $channelList);
+    }
+
+    /**
      * 评论数据写入接口
      */
     public function comment()

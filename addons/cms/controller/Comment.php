@@ -2,6 +2,7 @@
 
 namespace addons\cms\controller;
 
+use addons\cms\library\CommentException;
 use addons\cms\model\Comment as CommentModel;
 use think\addons\Controller;
 use think\Exception;
@@ -23,10 +24,16 @@ class Comment extends Controller
         try {
             $params = $this->request->post();
             CommentModel::postComment($params);
+        } catch (CommentException $e) {
+            if ($e->getCode() == 1) {
+                $this->success($e->getMessage(), null, ['token' => $this->request->token()]);
+            } else {
+                $this->error($e->getMessage(), null, ['token' => $this->request->token()]);
+            }
         } catch (Exception $e) {
             $this->error($e->getMessage(), null, ['token' => $this->request->token()]);
         }
-        $this->success(__('评论成功'), null, ['token' => $this->request->token()]);
+        $this->success(__('评论成功！'), null, ['token' => $this->request->token()]);
     }
 
     /**

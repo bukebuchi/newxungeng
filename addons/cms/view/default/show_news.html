@@ -59,7 +59,7 @@
                             <strong>温馨提示!</strong> 你需要支付 <b>￥{cms:archives name='price' /}</b> 元后才能查看付费内容
                             <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id])}" class="btn btn-success"><i class="fa fa-wechat"></i> 立即支付</a>
                             <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id,'paytype'=>'alipay'])}" class="btn btn-primary"><i class="fa fa-money"></i> 支付宝支付</a>
-                            <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id,'paytype'=>'balance'])}" class="btn btn-warning"><i class="fa fa-dollar"></i> 余额支付</a>
+                            <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id,'paytype'=>'balance'])}" class="btn btn-warning btn-balance" data-price="{cms:archives name='price' /}"><i class="fa fa-dollar"></i> 余额支付</a>
                         </div>
                     </div>
                     {/if}
@@ -154,6 +154,34 @@
         </main>
 
         <aside class="col-xs-12 col-sm-4">
+            {if $config['userpage']}
+            <!-- S 关于作者 -->
+            <div class="panel panel-default about-author" data-id="{$__ARCHIVES__.user.id}" itemProp="author" itemscope="" itemType="http://schema.org/Person">
+                <meta itemProp="name" content="{$__ARCHIVES__.user.nickname}"/>
+                <meta itemProp="image" content="{$__ARCHIVES__.user.avatar|cdnurl}"/>
+                <meta itemProp="url" content="{$__ARCHIVES__.user.url}"/>
+                <div class="panel-heading">
+                    <h3 class="panel-title">关于作者</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="{$__ARCHIVES__.user.url}">
+                                <img class="media-object img-circle img-medium" style="width:64px;height:64px;" src="{$__ARCHIVES__.user.avatar|cdnurl}"
+                                     data-holder-rendered="true">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h3 style="margin-top:10px;" class="media-heading">
+                                <a href="{$__ARCHIVES__.user.url}">{$__ARCHIVES__.user.nickname}</a>
+                            </h3>
+                            {$__ARCHIVES__.user.bio|default="这家伙很懒，什么也没写！"}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- E 关于作者 -->
+            {/if}
             {include file="common/sidebar" /}
         </aside>
     </div>

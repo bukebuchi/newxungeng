@@ -35,7 +35,7 @@ class Dashboard extends Backend
         $config = Config::get("composer");
         $addonVersion = isset($config['version']) ? $config['version'] : __('Unknown');
         $this->view->assign([
-            'totaluser'        => 35200,
+            'totaluser'        => $this->getUser(),
             'totalviews'       => 219390,
             'totalorder'       => 32143,
             'totalorderamount' => 174800,

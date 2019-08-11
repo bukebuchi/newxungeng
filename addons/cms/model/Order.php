@@ -184,7 +184,14 @@ class Order extends Model
             return false;
         }
         if ($order['status'] != 'paid') {
-            $order->payamount = $payamount ? $payamount : $order->amount;
+            $payamount = $payamount ? $payamount : $order->amount;
+            //计算收益
+            $config = get_addon_config('cms');
+            list($systemRatio, $userRatio) = explode(':', $config['archivesratio']);
+            User::money($systemRatio * $payamount, $config['system_user_id'], '付费文章收益');
+            User::money($userRatio * $payamount, $order->archives->user_id, '付费文章收益');
+
+            $order->payamount = $payamount;
             $order->paytime = time();
             $order->status = 'paid';
             $order->memo = $memo;

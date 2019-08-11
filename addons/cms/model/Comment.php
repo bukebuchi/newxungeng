@@ -2,9 +2,12 @@
 
 namespace addons\cms\model;
 
+use addons\cms\library\CommentException;
 use addons\cms\library\Service;
 use app\common\library\Auth;
 use app\common\library\Email;
+use app\common\model\User;
+use think\Db;
 use think\Exception;
 use think\Model;
 use think\Validate;
@@ -25,11 +28,6 @@ class Comment extends Model
         'create_date',
     ];
 
-    //自定义初始化
-    protected static function init()
-    {
-    }
-
     public function getCreateDateAttr($value, $data)
     {
         return human_date($data['createtime']);
@@ -39,23 +37,26 @@ class Comment extends Model
      * 发表评论
      * @param array $params
      * @return bool
+     * @throws CommentException
      * @throws Exception
      */
     public static function postComment($params = [])
     {
+        $config = get_addon_config('cms');
         $request = request();
         $useragent = substr($request->server('HTTP_USER_AGENT', ''), 0, 255);
         $ip = $request->ip(0, false);
         $auth = Auth::instance();
+        $content = $params['content'];
 
         if (!$auth->id) {
             throw new Exception("请登录后发表评论");
         }
+        if ($auth->score < $config['limitscore']['postcomment']) {
+            throw new Exception("积分必须大于{$config['limitscore']['postcomment']}才可以发表评论");
+        }
         if (!isset($params['aid']) || !isset($params['content'])) {
             throw new Exception("内容不能为空");
-        }
-        if (!Service::isContentLegal($params['content'])) {
-            throw new Exception("发表评论失败!");
         }
 
         $params['user_id'] = $auth->id;
@@ -73,7 +74,7 @@ class Comment extends Model
             'pid'       => 'require|number',
             'user_id'   => 'require|number',
             'content'   => 'require|length:3,250',
-            '__token__' => 'token',
+            '__token__' => 'require|token',
         ];
         $validate = new Validate($rule);
         $result = $validate->check($params);
@@ -89,12 +90,39 @@ class Comment extends Model
         if ($lastComment && $lastComment['content'] == $params['content']) {
             throw new Exception("您可能连续了相同的评论，请不要重复提交");
         }
+        //审核状态
+        $status = 'normal';
+        if ($config['iscommentaudit'] == 1) {
+            $status = 'hidden';
+        } elseif ($config['iscommentaudit'] == 0) {
+            $status = 'normal';
+        } elseif ($config['iscommentaudit'] == -1) {
+            if (!Service::isContentLegal($content)) {
+                $status = 'hidden';
+            }
+        }
         $params['ip'] = $ip;
         $params['useragent'] = $useragent;
-        $params['status'] = 'normal';
-        (new static())->allowField(true)->save($params);
+        $params['status'] = $status;
 
-        $archives->setInc('comments');
+        Db::startTrans();
+        try {
+            (new static())->allowField(true)->save($params);
+            $archives->setInc('comments');
+
+            //增加积分
+            $status == 'normal' && User::score($config['score']['postcomment'], $auth->id, '发表评论');
+            Db::commit();
+        } catch (\Exception $e) {
+            Db::rollback();
+            throw new Exception("发表评论失败");
+        }
+
+        //发送通知
+        if ($status === 'hidden') {
+            Service::notice('CMS收到一条待审核评论', $config['auditnotice'], $config['noticetemplateid']);
+            throw new CommentException("发表评论成功，但评论需要显示审核后才会展示", 1);
+        }
 
         if (isset($params['pid'])) {
             //查找父评论，是否并发邮件通知
@@ -107,7 +135,7 @@ class Comment extends Model
                 $unsubscribe_url = addon_url("cms/comment/unsubscribe", ['id' => $parentComment['id'], 'key' => md5($parentComment['id'] . $parentComment->user->email)], true, true);
                 $content = "亲爱的{$parentComment->user->nickname}：<br />您于" . date("Y-m-d H:i:s") .
                     "在《<a href='{$archivesurl}' target='_blank'>{$archives['title']}</a>》上发表的评论<br /><blockquote>{$parentComment['content']}</blockquote>" .
-                    "<br />{$auth->nickname}发表了回复，内容是<br /><blockquote>{$params['content']}</blockquote><br />您可以<a href='{$archivesurl}'>点击查看评论详情</a>。" .
+                    "<br />{$auth->nickname}发表了回复，内容是<br /><br />您可以<a href='{$archivesurl}'>点击查看评论详情</a>。" .
                     "<br /><br />如果你不愿意再接受最新评论的通知，<a href='{$unsubscribe_url}'>请点击这里取消</a>";
                 try {
                     $email = new Email;
@@ -120,6 +148,7 @@ class Comment extends Model
                 }
             }
         }
+
         return true;
     }
 
@@ -145,11 +174,11 @@ class Comment extends Model
         $orderway = in_array($orderway, ['asc', 'desc']) ? $orderway : 'desc';
         $cache = !$cache ? false : $cache;
 
-        $where = [];
+        $where = ['status' => 'normal'];
         if ($type) {
             $where['type'] = $type;
         }
-        if ($aid !== '') {
+        if ($aid) {
             $where['aid'] = $aid;
         }
         if ($pid) {
@@ -188,7 +217,7 @@ class Comment extends Model
      */
     public function archives()
     {
-        return $this->belongsTo("addons\cms\model\Archives", 'aid')->field('id,title,image,diyname,model_id,channel_id,likes,dislikes,tags,createtime')->setEagerlyType(1);
+        return $this->belongsTo("addons\cms\model\Archives", 'aid')->field('id,title,image,style,diyname,model_id,channel_id,likes,dislikes,tags,createtime')->setEagerlyType(1);
     }
 
     /**

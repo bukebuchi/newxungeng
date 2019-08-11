@@ -43,7 +43,7 @@ class Block extends Model
         $condition = empty($params['condition']) ? '' : $params['condition'];
         $field = empty($params['field']) ? '*' : $params['field'];
         $row = empty($params['row']) ? 10 : (int)$params['row'];
-        $orderby = empty($params['orderby']) ? 'nums' : $params['orderby'];
+        $orderby = empty($params['orderby']) ? 'id' : $params['orderby'];
         $orderway = empty($params['orderway']) ? 'desc' : strtolower($params['orderway']);
         $limit = empty($params['limit']) ? $row : $params['limit'];
         $cache = !isset($params['cache']) ? true : (int)$params['cache'];
@@ -56,7 +56,7 @@ class Block extends Model
         if ($name !== '') {
             $where['name'] = $name;
         }
-        $order = $orderby == 'rand' ? 'rand()' : (in_array($orderby, ['name', 'id', 'createtime', 'updatetime']) ? "{$orderby} {$orderway}" : "id {$orderway}");
+        $order = $orderby == 'rand' ? 'rand()' : (in_array($orderby, ['name', 'id', 'createtime', 'updatetime', 'weigh']) ? "{$orderby} {$orderway}" : "id {$orderway}");
 
         $list = self::where($where)
             ->where($condition)

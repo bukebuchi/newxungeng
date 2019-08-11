@@ -113,22 +113,3 @@
         </main>
     </div>
 </div>
-<script data-render="script">
-    $(function () {
-        $(document).on("click", ".btn-loadmore", function () {
-            var that = this;
-            var page = parseInt($(this).data("page"));
-            page++;
-            CMS.api.ajax({
-                url: "{:addon_url('cms/special/get_special_list')}?name={cms:special name='diyname'/}&page=" + page,
-            }, function (data, ret) {
-                $(data).insertBefore($(that).parent());
-                $(that).remove();
-                return false;
-            }, function (data) {
-
-            });
-            return false;
-        });
-    });
-</script>

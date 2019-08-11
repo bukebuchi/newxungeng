@@ -80,8 +80,11 @@
                                         </a>
                                     </div>
                                     <div class="media-body">
-                                        <h4 class="media-heading">{$row.textlink}</h4>
-                                        <p>{$row.description|mb_substr=0,40}</p>
+                                        <h3 class="media-heading">{$row.textlink}</h3>
+                                        <p>{$row.description|mb_substr=0,40}
+                                      
+                                        </p>
+                                          <span class="pull-right">{$row.publishtime|date='m-d',###}</span>
                                     </div>
                                 </div>
                                 {/cms:arclist}

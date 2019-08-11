@@ -2,18 +2,20 @@
 
 <div class="container" id="content-container">
 
-    <h1 class="category-title">
-        {cms:channel name="name" /}
-        <div class="more pull-right">
-            <ol class="breadcrumb">
-                <!-- S 面包屑导航 -->
-                {cms:breadcrumb id="item"}
-                <li><a href="{$item.url}">{$item.name}</a></li>
-                {/cms:breadcrumb}
-                <!-- E 面包屑导航 -->
-            </ol>
-        </div>
-    </h1>
+   
+       
+    <div class="more">
+        <ol class="breadcrumb">
+            <!-- S 面包屑导航 -->
+            {cms:breadcrumb id="item"}
+            <li><a href="{$item.url}">{$item.name}</a></li>
+            {/cms:breadcrumb}
+            <!-- E 面包屑导航 -->
+        </ol>
+    </div>
+
+    
+
     {if $__FILTERLIST__}
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -58,22 +60,33 @@
                     </h3>
                 </div>
                 <div class="panel-body py-0">
-                    <div class="article-list">
-
+                     <div class="article-list">
+                      
                         <!-- S 列表 -->
                         {cms:pagelist id="item"}
                         {include file="common/item_news"}
                         {/cms:pagelist}
                         <!-- E 列表 -->
 
-                        <!-- S 分页栏 -->
-                        <div class="text-center pager">
-                            {cms:pageinfo type="simple" /}
-                        </div>
-                        <!-- E 分页栏 -->
+                        {/* 普通分页 */ }
+                        {if false}
+                            <!-- S 分页栏 -->
+                            <div class="text-center pager">
+                                {cms:pageinfo type="simple" /}
+                            </div>
+                            <!-- E 分页栏 -->
+                            {if $__PAGELIST__->isEmpty()}
+                            <div class="loadmore loadmore-line loadmore-nodata"><span class="loadmore-tips">暂无数据</span></div>
+                            {/if}
+                        {/if}
 
+                        {/* 无刷新加载下一页 */ }
                         {if $__PAGELIST__->isEmpty()}
-                        <div class="loadmore loadmore-line loadmore-nodata"><span class="loadmore-tips">暂无数据</span></div>
+                            <div class="loadmore loadmore-line loadmore-nodata"><span class="loadmore-tips">暂无更多数据</span></div>
+                        {else /}
+                            <div class="text-center">
+                                <a href="?page={:$__PAGELIST__->getNextPage()}" data-page="{:$__PAGELIST__->getNextPage()}" class="btn btn-default my-4 px-4 btn-loadmore">加载更多</a>
+                            </div>
                         {/if}
                     </div>
                 </div>

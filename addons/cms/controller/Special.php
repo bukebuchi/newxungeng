@@ -38,23 +38,10 @@ class Special extends Base
         Config::set('cms.description', $special['description']);
         $special['template'] = $special['template'] ? $special['template'] : 'special.html';
         $template = preg_replace('/\.html$/', '', $special['template']);
-        return $this->view->fetch('/' . $template);
-    }
-
-    /**
-     * 加载更多
-     * @throws Exception
-     */
-    public function get_special_list()
-    {
-        $diyname = $this->request->param('name');
-        $this->view->engine->layout(false);
-        $special = SpecialModel::getByDiyname($diyname);
-        if (!$special || $special['status'] == 'hidden') {
-            $this->error(__('No specified article found'));
+        if ($this->request->isAjax()) {
+            $this->success("", "", $this->view->fetch('common/special_list'));
         }
-        $this->view->assign("__SPECIAL__", $special);
-        $this->success("", "", $this->view->fetch('common/special_list'));
+        return $this->view->fetch('/' . $template);
     }
 
 }

@@ -2,10 +2,13 @@
 
 namespace app\index\controller\cms;
 
+use addons\cms\library\Service;
 use addons\cms\model\Channel;
 use addons\cms\model\Modelx;
 use app\common\controller\Frontend;
+use app\common\model\User;
 use fast\Tree;
+use think\Db;
 use think\Exception;
 use think\Validate;
 
@@ -33,6 +36,7 @@ class Archives extends Frontend
      */
     public function post()
     {
+        $config = get_addon_config('cms');
         $id = $this->request->get('id');
         $archives = $id ? \app\admin\model\cms\Archives::get($id) : null;
 
@@ -59,15 +63,19 @@ class Archives extends Frontend
 
         // 如果来源于提交
         if ($this->request->isPost()) {
+            if ($this->auth->score < $config['limitscore']['postarchives']) {
+                $this->error("积分必须大于{$config['limitscore']['postarchives']}才可以发布文章");
+            }
+
             $row = $this->request->post('row/a');
             $origin = $this->request->post('row/a', [], 'trim');
             $row['content'] = $origin['content'];
-            $token = $this->request->post('token');
+            $token = $this->request->post('__token__');
             $rule = [
                 'title|标题'      => 'require|length:3,100',
                 'channel_id|栏目' => 'require|integer',
                 'content|内容'    => 'require',
-                '__token__'     => 'token',
+                '__token__'     => 'require|token'
             ];
 
             $msg = [
@@ -82,19 +90,39 @@ class Archives extends Frontend
             if (!$result) {
                 $this->error($validate->getError(), null, ['token' => $this->request->token()]);
             }
+            //审核状态
+            $status = 'normal';
+            if ($config['isarchivesaudit'] == 1) {
+                $status = 'hidden';
+            } elseif ($config['isarchivesaudit'] == 0) {
+                $status = 'normal';
+            } elseif (!Service::isContentLegal(implode('-', $row))) {
+                $status = 'hidden';
+            }
 
             $row['user_id'] = $this->auth->id;
-            $row['status'] = 'hidden';
+            $row['status'] = $status;
+            Db::startTrans();
             try {
                 if ($archives) {
                     $archives->allowField(true)->save($row);
                 } else {
                     (new \app\admin\model\cms\Archives)->allowField(true)->save($row);
                 }
+                //增加积分
+                $status == 'normal' && User::score($config['score']['postarchives'], $this->auth->id, '发布文章');
+                Db::commit();
             } catch (Exception $e) {
+                Db::rollback();
                 $this->error("发生错误:" . $e->getMessage());
             }
-            $this->success("发布成功！请等待审核!");
+            if ($status === 'hidden') {
+                //发送通知
+                $status === 'hidden' && Service::notice('CMS收到一篇新的文章审核', $config['auditnotice'], $config['noticetemplateid']);
+                $this->success("发布成功！请等待审核!");
+            } else {
+                $this->success("发布成功！");
+            }
             exit;
         }
 

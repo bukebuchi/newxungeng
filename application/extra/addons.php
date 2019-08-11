@@ -35,13 +35,14 @@ return array (
   ),
   'route' => 
   array (
-    '/$' => 'cms/index/index',
-    '/a/[:diyname]' => 'cms/archives/index',
-    '/t/[:name]' => 'cms/tags/index',
-    '/p/[:diyname]' => 'cms/page/index',
-    '/s' => 'cms/search/index',
-    '/c/[:diyname]' => 'cms/channel/index',
-    '/d/[:diyname]' => 'cms/diyform/index',
-    '/special/[:diyname]' => 'cms/special/index',
+    '/cms/$' => 'cms/index/index',
+    '/cms/a/[:diyname]' => 'cms/archives/index',
+    '/cms/t/[:name]' => 'cms/tags/index',
+    '/cms/p/[:diyname]' => 'cms/page/index',
+    '/cms/s' => 'cms/search/index',
+    '/cms/c/[:diyname]' => 'cms/channel/index',
+    '/cms/d/[:diyname]' => 'cms/diyform/index',
+    '/cms/special/[:diyname]' => 'cms/special/index',
+    '/u/[:id]' => 'cms/user/index',
   ),
 );

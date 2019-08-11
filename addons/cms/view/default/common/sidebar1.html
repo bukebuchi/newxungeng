@@ -1,0 +1,27 @@
+
+
+
+<!-- S 热门资讯 -->
+<div class="panel panel-default hot-article">
+    <div class="panel-heading">
+        <h3 class="panel-title">{:__('Recommend news')}</h3>
+    </div>
+    <div class="panel-body">
+        {cms:arclist id="item" model="1" row="10" flag="recommend" orderby="id" orderway="asc"}
+        <div class="media media-number">
+            <div class="media-left">
+                <span class="num">{$i}</span>
+            </div>
+            <div class="media-body">
+                <a class="link-dark" href="{$item.url}" title="{$item.title}">{$item.title}</a>
+            </div>
+        </div>
+        {/cms:arclist}
+    </div>
+</div>
+<!-- E 热门资讯 -->
+
+
+
+
+

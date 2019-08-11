@@ -4,6 +4,7 @@ namespace addons\cms\library;
 
 use addons\cms\library\aip\AipContentCensor;
 use addons\cms\library\aip\AipNlp;
+use think\Hook;
 
 class Service
 {
@@ -16,19 +17,17 @@ class Service
     public static function isContentLegal($content)
     {
         $config = get_addon_config('cms');
-        if ($config['isaudit']) {
-            if ($config['audittype'] == 'local') {
-                // 敏感词过滤
-                $handle = SensitiveHelper::init()->setTreeByFile(ADDON_PATH . 'cms/data/words.dic');
-                //首先检测是否合法
-                $isLegal = $handle->islegal($content);
-                return $isLegal ? true : false;
-            } else {
-                $client = new AipContentCensor($config['aip_appid'], $config['aip_apikey'], $config['aip_secretkey']);
-                $result = $client->antiSpam($content);
-                if (isset($result['result']) && $result['result']['spam'] > 0) {
-                    return false;
-                }
+        if ($config['audittype'] == 'local') {
+            // 敏感词过滤
+            $handle = SensitiveHelper::init()->setTreeByFile(ADDON_PATH . 'cms/data/words.dic');
+            //首先检测是否合法
+            $isLegal = $handle->islegal($content);
+            return $isLegal ? true : false;
+        } else {
+            $client = new AipContentCensor($config['aip_appid'], $config['aip_apikey'], $config['aip_secretkey']);
+            $result = $client->antiSpam($content);
+            if (isset($result['result']) && $result['result']['spam'] > 0) {
+                return false;
             }
         }
         return true;
@@ -92,6 +91,29 @@ class Service
         return preg_replace_callback('/<(\d+)>/', function ($match) use (&$links) {
             return $links[$match[1] - 1];
         }, $value);
+    }
+
+    /**
+     * 推送消息通知
+     * @param string $content     内容
+     * @param string $type        类型
+     * @param string $template_id 模板ID
+     */
+    public static function notice($content, $type, $template_id)
+    {
+        try {
+            if ($type == 'dinghorn') {
+                Hook::listen('msg_notice', $template_id, [
+                    'content' => $content
+                ]);
+            } elseif ($type == 'vbot') {
+                Hook::listen('vbot_send_msg', $template_id, [
+                    'content' => $content
+                ]);
+            }
+        } catch (\Exception $e) {
+
+        }
     }
 
 }

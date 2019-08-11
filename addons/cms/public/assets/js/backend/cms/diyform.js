@@ -94,6 +94,21 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         },
         api: {
             bindevent: function () {
+                $.validator.config({
+                    rules: {
+                        diyname: function (element) {
+                            if (element.value.toString().match(/^\d+$/)) {
+                                return __('Can not be digital');
+                            }
+                            return $.ajax({
+                                url: 'cms/diyform/check_element_available',
+                                type: 'POST',
+                                data: {id: $("#page-id").val(), name: element.name, value: element.value},
+                                dataType: 'json'
+                            });
+                        }
+                    }
+                });
                 Form.api.bindevent($("form[role=form]"));
             }
         }

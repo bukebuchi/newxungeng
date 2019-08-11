@@ -69,6 +69,23 @@ $(function () {
         });
     });
 
+    // 加载更多
+    $(document).on("click", ".btn-loadmore", function () {
+        var that = this;
+        var page = parseInt($(this).data("page"));
+        page++;
+        CMS.api.ajax({
+            url: $(that).attr("href"),
+        }, function (data, ret) {
+            $(data).insertBefore($(that).parent());
+            $(that).remove();
+            return false;
+        }, function (data) {
+
+        });
+        return false;
+    });
+
     //评论列表
     if ($("#comment-container").size() > 0) {
         var ci, si;
@@ -121,12 +138,12 @@ $(function () {
                     btn.removeAttr("disabled");
                     if (json.code == 1) {
                         $("#pid").val(0);
-                        tips.addClass("text-success").html("评论成功！").fadeIn(300).change();
+                        tips.addClass("text-success").html(json.msg || "评论成功！").fadeIn(300).change();
                         $("#commentcontent").val('');
                         $("#commentcount").text(parseInt($("#commentcount").text()) + 1);
                         setTimeout(function () {
                             location.reload();
-                        }, 300);
+                        }, 1000);
                     } else {
                         tips.addClass("text-danger").html(json.msg).fadeIn().change();
                     }
@@ -166,6 +183,18 @@ $(function () {
             }
         });
     }
+    // 余额支付提示
+    $(document).on('click', '.btn-balance', function (e) {
+        var that = this;
+        layer.confirm("确认支付￥" + $(this).data("price") + "元用于购买？", function () {
+            CMS.api.ajax({
+                url: $(that).attr("href")
+            }, function (data, ret) {
+                CMS.api.msg(ret.msg, ret.url);
+            });
+        });
+        return false;
+    });
     // 回到顶部
     $('#back-to-top').on('click', function (e) {
         e.preventDefault();

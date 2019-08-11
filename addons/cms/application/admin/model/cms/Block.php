@@ -19,6 +19,13 @@ class Block extends Model
         'status_text'
     ];
 
+    protected static function init()
+    {
+        self::afterInsert(function ($row) {
+            $row->save(['weigh' => $row['id']]);
+        });
+    }
+
     public function getStatusList()
     {
         return ['normal' => __('Normal'), 'hidden' => __('Hidden')];

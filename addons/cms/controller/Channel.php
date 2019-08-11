@@ -53,9 +53,13 @@ class Channel extends Base
             $this->error(__('No specified model found'));
         }
         $fields = [];
+        $multiValueField = [];
         foreach ($model->fields_list as $k => $v) {
             if (!$v['isfilter'] || !in_array($v['type'], ['select', 'selects', 'checkbox', 'radio', 'array']) || !$v['content_list']) {
                 continue;
+            }
+            if (in_array($v['type'], ['selects', 'checkbox'])) {
+                $multiValueField[] = $v['name'];
             }
             $fields[] = [
                 'name' => $v['name'], 'title' => $v['title'], 'content' => $v['content_list']
@@ -71,6 +75,7 @@ class Channel extends Base
                 $url = '?' . http_build_query(array_merge(['filter' => $prepare], array_diff_key($params, ['filter' => ''])));
                 $content[] = ['value' => $m, 'title' => $n, 'active' => $active, 'url' => $url];
             }
+
             $filterlist[] = [
                 'name'    => $v['name'],
                 'title'   => $v['title'],
@@ -97,7 +102,16 @@ class Channel extends Base
         $pagelist = Archives::alias('a')
             ->where('status', 'normal')
             ->where('deletetime', 'exp', \think\Db::raw('IS NULL'))
-            ->where($filter)
+            ->where(function ($query) use ($filter, $multiValueField) {
+                foreach ($filter as $index => $item) {
+                    if (in_array($index, $multiValueField)) {
+                        $query->where("FIND_IN_SET(:{$index}, `{$index}`)");
+                    } else {
+                        $query->where($index, $item);
+                    }
+                }
+            })
+            ->bind($multiValueField ? array_intersect_key($filter, array_flip($multiValueField)) : [])
             ->join($model['table'] . ' n', 'a.id=n.id', 'LEFT')
             ->field('a.*')
             ->field('id,content', true, config('database.prefix') . $model['table'], 'n')
@@ -106,15 +120,24 @@ class Channel extends Base
             ->paginate($channel['pagesize'], false, ['type' => '\\addons\\cms\\library\\Bootstrap']);
 
         $pagelist->appends($params);
+        // $topchannel = ChannelModel::getTopChannel($channel['id']);
+        // $elastichannel = ChannelModel::getElastiChannel($channel['id']);
         $this->view->assign("__FILTERLIST__", $filterlist);
         $this->view->assign("__ORDERLIST__", $orderlist);
         $this->view->assign("__PAGELIST__", $pagelist);
         $this->view->assign("__CHANNEL__", $channel);
 
+        // $this->view->assign("__TOPCHANNEL__", $topchannel);
+        // $this->view->assign("__ELASTICHANNEL__", $elastichannel);
+
         Config::set('cms.title', $channel['name']);
         Config::set('cms.keywords', $channel['keywords']);
         Config::set('cms.description', $channel['description']);
         $template = preg_replace('/\.html$/', '', $channel["{$channel['type']}tpl"]);
+
+        if ($this->request->isAjax()) {
+            $this->success("", "", $this->view->fetch('common/' . $template . '_ajax'));
+        }
         return $this->view->fetch('/' . $template);
     }
 }

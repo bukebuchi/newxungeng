@@ -359,9 +359,78 @@ a {
 .wow {
   visibility: hidden;
 }
-.navbar-inverse .navbar-nav > li > a {
-  color: #caced2;
+.navbar-default {
+  background-color: #0da2e4;
+  border-color: #0a8ec9;
 }
+.navbar-default .navbar-brand {
+  color: #ecf1f1;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #030513;
+}
+.navbar-default .navbar-text {
+  color: #ecf1f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf1f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #030513;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #030513;
+  background-color: #0a8ec9;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #030513;
+  background-color: #0a8ec9;
+}
+.navbar-default .navbar-toggle {
+  border-color: #0a8ec9;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #0a8ec9;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf1f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf1f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf1f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #030513;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf1f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #030513;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #030513;
+    background-color: #0a8ec9;
+  }
+}
+
+
+
 @media (hover: hover) {
   .dropdown a:hover + .dropdown-menu {
     display: block;
@@ -1513,6 +1582,7 @@ h1 .breadcrumb li {
   font-size: 14px;
   padding-right: 15px;
 }
+
 .channel-list .row ul.inner-list li {
   margin-bottom: 5px;
   white-space: nowrap;
@@ -1775,6 +1845,7 @@ h1 .breadcrumb li {
   .navbar-header {
     width: 44px;
     overflow: hidden;
+
   }
 }
 @media (max-width: 767px) {
@@ -1868,6 +1939,9 @@ h1 .breadcrumb li {
   #download-focus .item .carousel-img {
     height: 272px;
     width: 100%;
+  }
+  .navbar-form .form-search .form-control {
+    width: 150px;
   }
 }
 @media (min-width: 979px) {
@@ -2018,3 +2092,14 @@ h1 .breadcrumb li {
 .focus-img img {
   width: 100%;
 }
+/* 侧栏菜单 */
+.sideMenuBox { float: left; width: 100%; border-top: 2px solid #0da2e4; margin-bottom: 15px; }
+.sideMenuBox .hd {height:56px; line-height:56px; border-left: 1px solid #ddd; border-right: 1px solid #ddd; overflow:hidden; text-align: left; background: url("../img/boxbg.png") repeat-x; }
+.sideMenuBox .hd h3 { margin: 0 5px; padding: 0 10px; font-size: 20px; color: #0da2e4; background: url("../img/pageIcon.png") -30px 5px no-repeat;}
+.sideMenuBox .bd {width: 228px; border: 1px solid #ddd; border-top: none; _overflow: hidden;}
+.sideMenuBox .bd ul {position: relative; left: -1px; top: 0; }
+.sideMenuBox .bd li {width: 150px; height:36px; line-height:36px; text-align:center; overflow: hidden; }
+.sideMenuBox .bd li a{height:36px; line-height:36px;  font-size: 14px; display:block; border-top: 1px solid #ddd; background: url("../img/pageIcon.png") -200px -65px no-repeat; }
+.sideMenuBox .bd li a:hover{color:#fff; font-weight:bold; background: #0da2e4 url("../img/pageIcon.png") -200px -30px no-repeat; border:none; }
+.sideMenuBox .bd li.on { background: #0da2e4; border:none; }
+.sideMenuBox .bd li.on a{ color:#fff; font-weight:bold; background: url("../img/pageIcon.png") -200px -30px no-repeat; border-top: 1px solid #0da2e4;}

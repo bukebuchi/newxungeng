@@ -52,7 +52,7 @@ return [
     'Serving state'           => '服务群众信息',
     'Social conditions'       => '社情民意',
     'On duty'                 => '执勤守点',
-    'Capture situation'       => '安全隐患排查',
+    'Capture situation'       => '安全隐患',
     'Membership statistics'   => '社员统计',
     'Membership state'        => '社区总人数',
     'Contradictions disputes' => '矛盾纠纷',

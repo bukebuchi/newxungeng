@@ -2,6 +2,7 @@
 
 namespace app\admin\model\cms;
 
+use app\common\model\User;
 use think\Model;
 
 class Comment extends Model
@@ -22,6 +23,21 @@ class Comment extends Model
         'status_text'
     ];
 
+    protected static function init()
+    {
+        $config = get_addon_config('cms');
+        self::afterWrite(function ($row) use ($config) {
+            $changedData = $row->getChangedData();
+            if (isset($changedData['status']) && $changedData['status'] == 'normal') {
+                User::score($config['score']['postcomment'], $row['user_id'], '发表评论');
+            }
+        });
+        self::afterDelete(function ($row) use ($config) {
+            if ($row['status'] == 'normal') {
+                User::score(-$config['score']['postcomment'], $row['user_id'], '删除评论');
+            }
+        });
+    }
 
     public function getTypeList()
     {

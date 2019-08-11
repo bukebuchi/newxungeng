@@ -43,7 +43,7 @@
             <div class="panel panel-default index-gallary">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <span>热门图集</span>
+                        <span>新闻组图</span>
                         <div class="more">
                             <a href="{:addon_url('cms/channel/index', [':id'=>2, ':diyname'=>'product'])}">查看更多</a>
                         </div>
@@ -53,7 +53,7 @@
                 <div class="panel-body">
                     <div class="related-article">
                         <div class="row">
-                            <!-- S 热门图集 -->
+                            <!-- S 新闻组图 -->
                             {cms:arclist id="item" model="2" orderby="views" row="4"}
                             <div class="col-sm-3 col-xs-6">
                                 <a href="{$item.url}" class="img-zoom">
@@ -64,7 +64,7 @@
                                 <h5>{$item.title}</h5>
                             </div>
                             {/cms:arclist}
-                            <!-- E 热门图集 -->
+                            <!-- E 新闻组图 -->
                         </div>
                     </div>
                 </div>
@@ -106,6 +106,8 @@
                         <li>
                             <span>[<a href="{$new.channel.url}">{$new.channel.name}</a>]</span>
                             <a class="link-dark" href="{$new.url}" title="{$new.title}">{$new.title}</a>
+
+        <span itemprop="date" style="float:right;vertical-align:top;">{:date("m-d", $item['publishtime'])}</span>
                         </li>
                         {/cms:arclist}
                     </ul>
@@ -117,7 +119,7 @@
 
             </div>
 
-          
+            {include file="common/sidebar1" /}
 
         </aside>
     </div>

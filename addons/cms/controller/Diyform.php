@@ -2,6 +2,7 @@
 
 namespace addons\cms\controller;
 
+use addons\cms\library\Service;
 use addons\cms\model\Diyform as DiyformModel;
 use addons\cms\model\Fields;
 use think\Config;
@@ -81,6 +82,7 @@ class Diyform extends Base
     public function post()
     {
         if ($this->request->isPost()) {
+            $config = get_addon_config('cms');
             $diyname = $this->request->post('__diyname__');
             $token = $this->request->post('__token__');
             if (session('__token__') != $token) {
@@ -118,6 +120,9 @@ class Diyform extends Base
             } catch (Exception $e) {
                 $this->error("发生错误:" . $e->getMessage());
             }
+            //发送通知
+            Service::notice('CMS收到新的' . $diyform['name'], $config['auditnotice'], $config['noticetemplateid']);
+
             $this->success($diyform['successtips'] ? $diyform['successtips'] : '提交成功！', $diyform['redirecturl'] ? url($diyform['redirecturl']) : addon_url('cms/index/index'));
         }
         return;

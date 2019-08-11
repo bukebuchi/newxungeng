@@ -131,6 +131,11 @@ class Bootstrap extends Paginator
         }
     }
 
+    public function getNextPage()
+    {
+        return $this->currentPage + 1;
+    }
+
     /**
      * 生成一个可点击的按钮
      *

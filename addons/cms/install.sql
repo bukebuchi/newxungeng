@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `__PREFIX__cms_addondownload` (
   `version` varchar(255) DEFAULT '' COMMENT '最新版本',
   `filesize` varchar(255) DEFAULT '' COMMENT '文件大小',
   `language` set('zh-cn','en') DEFAULT '' COMMENT '语言',
-  `downloadurl` varchar(255) DEFAULT '' COMMENT '下载地址',
+  `downloadurl` varchar(1500) DEFAULT '' COMMENT '下载地址',
   `screenshots` varchar(1500) DEFAULT '' COMMENT '预览截图',
   `price` decimal(10,2) DEFAULT '0.00' COMMENT '价格',
   `downloads` varchar(10) DEFAULT '0' COMMENT '下载次数',
@@ -92,6 +92,7 @@ CREATE TABLE IF NOT EXISTS `__PREFIX__cms_block` (
   `image` varchar(100) NOT NULL DEFAULT '' COMMENT '图片',
   `url` varchar(100) NOT NULL DEFAULT '' COMMENT '链接',
   `content` mediumtext COMMENT '内容',
+  `weigh` int(10) NULL DEFAULT 0 COMMENT '权重',
   `createtime` int(10) DEFAULT NULL COMMENT '添加时间',
   `updatetime` int(10) DEFAULT NULL COMMENT '更新时间',
   `status` enum('normal','hidden') NOT NULL DEFAULT 'normal' COMMENT '状态',
@@ -354,34 +355,34 @@ COMMIT;
 -- 转存表中的数据 `__PREFIX__cms_block`
 --
 
-INSERT INTO `__PREFIX__cms_block` (`id`, `type`, `name`, `title`, `image`, `url`, `content`, `createtime`, `updatetime`, `status`) VALUES
-(1, '焦点图', 'indexfocus', '首页焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/25.jpg', 'http://www.fastadmin.net', '', 1553606219, 1553606219, 'normal'),
-(2, '焦点图', 'indexfocus', '首页焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/6.jpg', 'http://www.fastadmin.net', '', 1553606219, 1553606219, 'normal'),
-(3, '焦点图', 'indexfocus', '首页焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/24.jpg', 'http://www.fastadmin.net', '', 1553606219, 1553606219, 'normal'),
-(4, '文字', 'contactus', '联系我们', '', '', '', 1553606219, 1553606219, 'normal'),
-(5, '文字', 'partner', '合作伙伴', '', '', '<li><a href=\"/\"><img src=\"__ADDON__/img/logo/58.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/360.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/alipay.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/baidu.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/boc.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/cctv.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/didi.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/iqiyi.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/qq.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/suning.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/taobao.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/tuniu.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/weibo.png\" /></a></li>', 1553606219, 1553757753, 'normal'),
-(6, '文字', 'footer', '底部链接', '', '', '<div class=\"col-md-3 col-sm-3\">\n                            <div class=\"footer-logo\">\n                                <a href=\"#\"><i class=\"fa fa-bookmark\"></i></a>\n                            </div>\n                            <p class=\"copyright\"><small>© 2017. All Rights Reserved. <br>\n                                    FastAdmin\n                                </small>\n                            </p>\n                        </div>\n                        <div class=\"col-md-5 col-md-push-1 col-sm-5 col-sm-push-1\">\n                            <div class=\"row\">\n                                <div class=\"col-xs-4\">\n                                    <ul class=\"links\">\n                                        <li><a href=\"#\">关于我们</a></li>\n                                        <li><a href=\"#\">发展历程</a></li>\n                                        <li><a href=\"#\">服务项目</a></li>\n                                        <li><a href=\"#\">团队成员</a></li>\n                                    </ul>\n                                </div>\n                                <div class=\"col-xs-4\">\n                                    <ul class=\"links\">\n                                        <li><a href=\"#\">新闻</a></li>\n                                        <li><a href=\"#\">资讯</a></li>\n                                        <li><a href=\"#\">推荐</a></li>\n                                        <li><a href=\"#\">博客</a></li>\n                                    </ul>\n                                </div>\n                                <div class=\"col-xs-4\">\n                                    <ul class=\"links\">\n                                        <li><a href=\"#\">服务</a></li>\n                                        <li><a href=\"#\">圈子</a></li>\n                                        <li><a href=\"#\">论坛</a></li>\n                                        <li><a href=\"#\">广告</a></li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-3 col-sm-3 col-md-push-1 col-sm-push-1\">\n                            <div class=\"footer-social\">\n                                <a href=\"#\"><i class=\"fa fa-weibo\"></i></a>\n                                <a href=\"#\"><i class=\"fa fa-qq\"></i></a>\n                                <a href=\"#\"><i class=\"fa fa-wechat\"></i></a>\n                            </div>\n                        </div>', 1553606219, 1553606219, 'normal'),
-(7, '文字', 'friendlink', '友情链接 ', '', '', '<a href=\"https://www.fastadmin.net\" title=\"FastAdmin - 极速后台开发框架\">FastAdmin</a> <a href=\"https://gitee.com\" title=\"FastAdmin码云仓库\">码云</a> <a href=\"https://github.com\" title=\"FastAdminGithub仓库\">Github</a> <a href=\"https://doc.fastadmin.net\" title=\"FastAdmin文档 - 极速后台开发框架\">FastAdmin文档</a> <a href=\"https://ask.fastadmin.net\" title=\"FastAdmin问答社区 - 极速后台开发框架\">FastAdmin问答社区</a>', 1553606219, 1553757863, 'normal'),
-(8, '焦点图', 'sidebarad1', '边栏广告1', 'https://cdn.fastadmin.net/assets/addons/ask/img/sidebar/howto.png', 'http://www.fastadmin.net', '<a href=\"https://www.fastadmin.net/store/ask.html\">\r\n    <img src=\"https://cdn.fastadmin.net/assets/addons/ask/img/sidebar/howto.png\" class=\"img-responsive\">\r\n</a>', 1553606219, 1553958914, 'normal'),
-(9, '焦点图', 'sidebarad2', '边栏广告2', 'https://cdn.fastadmin.net/uploads/store/aliyun-sidebar.png', 'http://www.fastadmin.net', '<a href=\"https://www.fastadmin.net/go/aliyun\" rel=\"nofollow\" title=\"FastAdmin推荐企业服务器\" target=\"_blank\">\r\n        <img src=\"https://cdn.fastadmin.net/uploads/store/aliyun-sidebar.png\" class=\"img-responsive\" alt=\"\">\r\n</a>', 1553606219, 1553958942, 'normal'),
-(10, '焦点图', 'downloadfocus', '下载中心焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/4.jpg', '/', '', 1553606219, 1553606257, 'normal'),
-(11, '焦点图', 'downloadfocus', '下载中心焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/5.jpg', '/', '', 1553606243, 1553606273, 'normal'),
-(12, '焦点图', 'downloadfocus', '下载中心焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/6.jpg', '/', '', 1553607965, 1553607965, 'normal'),
-(13, '焦点图', 'downloadfocus', '下载中心焦点图标题4', 'https://cdn.fastadmin.net/uploads/focus/7.jpg', '/', '', 1553608006, 1553608006, 'normal'),
-(14, '焦点图', 'downloadfocus', '下载中心焦点图标题5', 'https://cdn.fastadmin.net/uploads/focus/8.jpg', '/', '', 1553608049, 1553608049, 'normal'),
-(15, '焦点图', 'downloadfocus', '下载中心焦点图标题6', 'https://cdn.fastadmin.net/uploads/focus/9.jpg', '/', '', 1553608086, 1553608086, 'normal'),
-(16, '焦点图', 'newsfocus', '新闻中心焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/10.jpg', '/', '', 1553606219, 1553606257, 'normal'),
-(17, '焦点图', 'newsfocus', '新闻中心焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/11.jpg', '/', '', 1553606243, 1553606273, 'normal'),
-(18, '焦点图', 'newsfocus', '新闻中心焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/12.jpg', '/', '', 1553607965, 1553607965, 'normal'),
-(19, '焦点图', 'newsfocus', '新闻中心焦点图标题4', 'https://cdn.fastadmin.net/uploads/focus/13.jpg', '/', '', 1553608006, 1553608006, 'normal'),
-(20, '焦点图', 'newsfocus', '新闻中心焦点图标题5', 'https://cdn.fastadmin.net/uploads/focus/14.jpg', '/', '', 1553608049, 1553608049, 'normal'),
-(21, '焦点图', 'newsfocus', '新闻中心焦点图标题6', 'https://cdn.fastadmin.net/uploads/focus/15.jpg', '/', '', 1553608086, 1553608086, 'normal'),
-(22, '焦点图', 'productfocus', '产品中心焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/16.jpg', '/', '', 1553606219, 1553606257, 'normal'),
-(23, '焦点图', 'productfocus', '产品中心焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/17.jpg', '/', '', 1553606243, 1553606273, 'normal'),
-(24, '焦点图', 'productfocus', '产品中心焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/18.jpg', '/', '', 1553607965, 1553607965, 'normal'),
-(25, '焦点图', 'productfocus', '产品中心焦点图标题4', 'https://cdn.fastadmin.net/uploads/focus/19.jpg', '/', '', 1553608006, 1553608006, 'normal'),
-(26, '焦点图', 'productfocus', '产品中心焦点图标题5', 'https://cdn.fastadmin.net/uploads/focus/20.jpg', '/', '', 1553608049, 1553608049, 'normal'),
-(27, '焦点图', 'productfocus', '产品中心焦点图标题6', 'https://cdn.fastadmin.net/uploads/focus/21.jpg', '/', '', 1553608086, 1553608086, 'normal');
+INSERT INTO `__PREFIX__cms_block` (`id`, `type`, `name`, `title`, `image`, `url`, `content`, `weigh`, `createtime`, `updatetime`, `status`) VALUES
+(1, '焦点图', 'indexfocus', '首页焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/25.jpg', 'http://www.fastadmin.net', '', 1, 1553606219, 1553606219, 'normal'),
+(2, '焦点图', 'indexfocus', '首页焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/6.jpg', 'http://www.fastadmin.net', '', 2, 1553606219, 1553606219, 'normal'),
+(3, '焦点图', 'indexfocus', '首页焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/24.jpg', 'http://www.fastadmin.net', '', 3, 1553606219, 1553606219, 'normal'),
+(4, '文字', 'contactus', '联系我们', '', '', '', 4, 1553606219, 1553606219, 'normal'),
+(5, '文字', 'partner', '合作伙伴', '', '', '<li><a href=\"/\"><img src=\"__ADDON__/img/logo/58.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/360.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/alipay.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/baidu.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/boc.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/cctv.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/didi.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/iqiyi.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/qq.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/suning.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/taobao.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/tuniu.png\" /></a></li><li><a href=\"/\"><img src=\"__ADDON__/img/logo/weibo.png\" /></a></li>', 5, 1553606219, 1553757753, 'normal'),
+(6, '文字', 'footer', '底部链接', '', '', '<div class=\"col-md-3 col-sm-3\">\n                            <div class=\"footer-logo\">\n                                <a href=\"#\"><i class=\"fa fa-bookmark\"></i></a>\n                            </div>\n                            <p class=\"copyright\"><small>© 2017. All Rights Reserved. <br>\n                                    FastAdmin\n                                </small>\n                            </p>\n                        </div>\n                        <div class=\"col-md-5 col-md-push-1 col-sm-5 col-sm-push-1\">\n                            <div class=\"row\">\n                                <div class=\"col-xs-4\">\n                                    <ul class=\"links\">\n                                        <li><a href=\"#\">关于我们</a></li>\n                                        <li><a href=\"#\">发展历程</a></li>\n                                        <li><a href=\"#\">服务项目</a></li>\n                                        <li><a href=\"#\">团队成员</a></li>\n                                    </ul>\n                                </div>\n                                <div class=\"col-xs-4\">\n                                    <ul class=\"links\">\n                                        <li><a href=\"#\">新闻</a></li>\n                                        <li><a href=\"#\">资讯</a></li>\n                                        <li><a href=\"#\">推荐</a></li>\n                                        <li><a href=\"#\">博客</a></li>\n                                    </ul>\n                                </div>\n                                <div class=\"col-xs-4\">\n                                    <ul class=\"links\">\n                                        <li><a href=\"#\">服务</a></li>\n                                        <li><a href=\"#\">圈子</a></li>\n                                        <li><a href=\"#\">论坛</a></li>\n                                        <li><a href=\"#\">广告</a></li>\n                                    </ul>\n                                </div>\n                            </div>\n                        </div>\n                        <div class=\"col-md-3 col-sm-3 col-md-push-1 col-sm-push-1\">\n                            <div class=\"footer-social\">\n                                <a href=\"#\"><i class=\"fa fa-weibo\"></i></a>\n                                <a href=\"#\"><i class=\"fa fa-qq\"></i></a>\n                                <a href=\"#\"><i class=\"fa fa-wechat\"></i></a>\n                            </div>\n                        </div>', 6, 1553606219, 1553606219, 'normal'),
+(7, '文字', 'friendlink', '友情链接 ', '', '', '<a href=\"https://www.fastadmin.net\" title=\"FastAdmin - 极速后台开发框架\">FastAdmin</a> <a href=\"https://gitee.com\" title=\"FastAdmin码云仓库\">码云</a> <a href=\"https://github.com\" title=\"FastAdminGithub仓库\">Github</a> <a href=\"https://doc.fastadmin.net\" title=\"FastAdmin文档 - 极速后台开发框架\">FastAdmin文档</a> <a href=\"https://ask.fastadmin.net\" title=\"FastAdmin问答社区 - 极速后台开发框架\">FastAdmin问答社区</a>', 7, 1553606219, 1553757863, 'normal'),
+(8, '焦点图', 'sidebarad1', '边栏广告1', 'https://cdn.fastadmin.net/assets/addons/ask/img/sidebar/howto.png', 'http://www.fastadmin.net', '<a href=\"https://www.fastadmin.net/store/ask.html\">\r\n    <img src=\"https://cdn.fastadmin.net/assets/addons/ask/img/sidebar/howto.png\" class=\"img-responsive\">\r\n</a>', 8, 1553606219, 1553958914, 'normal'),
+(9, '焦点图', 'sidebarad2', '边栏广告2', 'https://cdn.fastadmin.net/uploads/store/aliyun-sidebar.png', 'http://www.fastadmin.net', '<a href=\"https://www.fastadmin.net/go/aliyun\" rel=\"nofollow\" title=\"FastAdmin推荐企业服务器\" target=\"_blank\">\r\n        <img src=\"https://cdn.fastadmin.net/uploads/store/aliyun-sidebar.png\" class=\"img-responsive\" alt=\"\">\r\n</a>', 9, 1553606219, 1553958942, 'normal'),
+(10, '焦点图', 'downloadfocus', '下载中心焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/4.jpg', '/', '', 10, 1553606219, 1553606257, 'normal'),
+(11, '焦点图', 'downloadfocus', '下载中心焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/5.jpg', '/', '', 11, 1553606243, 1553606273, 'normal'),
+(12, '焦点图', 'downloadfocus', '下载中心焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/6.jpg', '/', '', 12, 1553607965, 1553607965, 'normal'),
+(13, '焦点图', 'downloadfocus', '下载中心焦点图标题4', 'https://cdn.fastadmin.net/uploads/focus/7.jpg', '/', '', 13, 1553608006, 1553608006, 'normal'),
+(14, '焦点图', 'downloadfocus', '下载中心焦点图标题5', 'https://cdn.fastadmin.net/uploads/focus/8.jpg', '/', '', 14, 1553608049, 1553608049, 'normal'),
+(15, '焦点图', 'downloadfocus', '下载中心焦点图标题6', 'https://cdn.fastadmin.net/uploads/focus/9.jpg', '/', '', 15, 1553608086, 1553608086, 'normal'),
+(16, '焦点图', 'newsfocus', '新闻中心焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/10.jpg', '/', '', 16, 1553606219, 1553606257, 'normal'),
+(17, '焦点图', 'newsfocus', '新闻中心焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/11.jpg', '/', '', 17, 1553606243, 1553606273, 'normal'),
+(18, '焦点图', 'newsfocus', '新闻中心焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/12.jpg', '/', '', 18, 1553607965, 1553607965, 'normal'),
+(19, '焦点图', 'newsfocus', '新闻中心焦点图标题4', 'https://cdn.fastadmin.net/uploads/focus/13.jpg', '/', '', 19, 1553608006, 1553608006, 'normal'),
+(20, '焦点图', 'newsfocus', '新闻中心焦点图标题5', 'https://cdn.fastadmin.net/uploads/focus/14.jpg', '/', '', 20, 1553608049, 1553608049, 'normal'),
+(21, '焦点图', 'newsfocus', '新闻中心焦点图标题6', 'https://cdn.fastadmin.net/uploads/focus/15.jpg', '/', '', 21, 1553608086, 1553608086, 'normal'),
+(22, '焦点图', 'productfocus', '产品中心焦点图标题1', 'https://cdn.fastadmin.net/uploads/focus/16.jpg', '/', '', 22, 1553606219, 1553606257, 'normal'),
+(23, '焦点图', 'productfocus', '产品中心焦点图标题2', 'https://cdn.fastadmin.net/uploads/focus/17.jpg', '/', '', 23, 1553606243, 1553606273, 'normal'),
+(24, '焦点图', 'productfocus', '产品中心焦点图标题3', 'https://cdn.fastadmin.net/uploads/focus/18.jpg', '/', '', 24, 1553607965, 1553607965, 'normal'),
+(25, '焦点图', 'productfocus', '产品中心焦点图标题4', 'https://cdn.fastadmin.net/uploads/focus/19.jpg', '/', '', 25, 1553608006, 1553608006, 'normal'),
+(26, '焦点图', 'productfocus', '产品中心焦点图标题5', 'https://cdn.fastadmin.net/uploads/focus/20.jpg', '/', '', 26, 1553608049, 1553608049, 'normal'),
+(27, '焦点图', 'productfocus', '产品中心焦点图标题6', 'https://cdn.fastadmin.net/uploads/focus/21.jpg', '/', '', 27, 1553608086, 1553608086, 'normal');
 
 --
 -- 转存表中的数据 `__PREFIX__cms_diyform`
@@ -487,3 +488,9 @@ BEGIN;
 ALTER TABLE `__PREFIX__cms_comment` MODIFY COLUMN `type` enum('archives','page','special') CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT 'archives' COMMENT '类型' AFTER `user_id`;
 COMMIT;
 
+--
+-- 旧版本修复表结构
+--
+BEGIN;
+ALTER TABLE `__PREFIX__cms_block` ADD COLUMN `weigh` int(10) NULL DEFAULT 0 COMMENT '权重' AFTER `content`;
+COMMIT;

@@ -4,6 +4,7 @@ namespace app\admin\model\cms;
 
 use addons\cms\library\Service;
 use app\common\model\Config;
+use app\common\model\User;
 use think\Model;
 use traits\model\SoftDelete;
 
@@ -56,6 +57,7 @@ class Archives extends Model
 
     protected static function init()
     {
+        $config = get_addon_config('cms');
         self::afterInsert(function ($row) {
             $pk = $row->getPk();
             $channel = Channel::get($row['channel_id']);
@@ -83,7 +85,7 @@ class Archives extends Model
                 $row->$k = $value;
             }
         });
-        self::afterWrite(function ($row) {
+        self::afterWrite(function ($row) use ($config) {
             if (isset($row['channel_id'])) {
                 //在更新成功后刷新副表、TAGS表数据、栏目表
                 $channel = Channel::get($row->channel_id);
@@ -119,6 +121,15 @@ class Archives extends Model
                         (new Tags())->saveAll($list);
                     }
                 }
+            }
+            $changedData = $row->getChangedData();
+            if (isset($changedData['status']) && $changedData['status'] == 'normal') {
+                User::score($config['score']['postarchives'], $row['user_id'], '发布文章');
+            }
+        });
+        self::afterDelete(function ($row) use ($config) {
+            if ($row['status'] == 'normal') {
+                User::score(-$config['score']['postarchives'], $row['user_id'], '删除文章');
             }
         });
     }

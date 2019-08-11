@@ -126,7 +126,7 @@
                             <strong>温馨提示!</strong> 你需要支付 <b>￥{cms:archives name='price' /}</b> 元后才能查看付费内容
                             <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id])}" class="btn btn-success"><i class="fa fa-wechat"></i> 立即支付</a>
                             <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id,'paytype'=>'alipay'])}" class="btn btn-primary"><i class="fa fa-money"></i> 支付宝支付</a>
-                            <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id,'paytype'=>'balance'])}" class="btn btn-warning"><i class="fa fa-dollar"></i> 余额支付</a>
+                            <a href="{:addon_url('cms/order/submit', ['id'=>$__ARCHIVES__.id,'paytype'=>'balance'])}" class="btn btn-warning btn-balance" data-price="{cms:archives name='price' /}"><i class="fa fa-dollar"></i> 余额支付</a>
                         </div>
                         {/if}
                     </div>
@@ -135,7 +135,7 @@
 
                     <div class="article-donate">
                         <a href="javascript:" class="btn btn-primary btn-like btn-lg" data-action="vote" data-type="like" data-id="{cms:archives name='id' /}" data-tag="archives"><i class="fa fa-thumbs-up"></i> 点赞(<span>{cms:archives name='likes' /}</span>)</a>
-                        <a href="javascript:" class="btn btn-outline-primary btn-donate btn-lg" data-image="{$config.donateimage|cdnurl}" data-action="donate" data-id="{cms:archives name='id' /}"><i class="fa fa-cny"></i> 打赏</a>
+                        
                     </div>
 
                     <div class="entry-meta">
