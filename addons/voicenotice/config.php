@@ -9,7 +9,7 @@ return array (
     'content' => 
     array (
     ),
-    'value' => 'qjVlYrdTn0YWaa2q3com9n2i',
+    'value' => '9nxSYQhR7YqF4ddwfG6wPvZr',
     'rule' => 'required',
     'msg' => '',
     'tip' => '',
@@ -24,7 +24,7 @@ return array (
     'content' => 
     array (
     ),
-    'value' => 'u7VMIANwYWG73VvLZdpQdlZIZexP9UZL',
+    'value' => 'wc45xWiemAXRnYWjhD0Vktkqd4Hbo103',
     'rule' => 'required',
     'msg' => '',
     'tip' => '',

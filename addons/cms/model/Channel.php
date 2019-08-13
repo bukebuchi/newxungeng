@@ -67,6 +67,7 @@ class Channel extends Model
         $index = $data['id'] % count($color);
         return isset($color[$index]) ? $color[$index] : $color[0];
     }
+    
 
     /**
      * 判断是否拥有子列表
@@ -199,7 +200,46 @@ class Channel extends Model
         self::render($list, $imgwidth, $imgheight);
         return $list;
     }
+/**
+ * 获取顶级栏目数据
+ */
+public static function getTopChannel($id)
+{
+    $channel = self::where('status', 'normal')
+        ->where('id', $id)
+        ->order('weigh desc,id desc')
+        ->field('*')->cache(true)->find();
+    $pid = $channel['parent_id'];
+    if ($pid == 0) {
+        return $channel;
+    } else {
+        return self::getTopChannel($pid);
+    }
+}
 
+/**
+ * 弹性d栏目id, 父级或子级栏目id
+ * 当有子栏目,则为当前id,如果无子栏目,则为上级栏目id,如果为一级栏目,无子栏目,则为当前栏目id
+ */
+public static function getElastiChannel($id)
+{
+    $channel = self::where('status', 'normal')
+        ->where('id', $id)
+        ->order('weigh desc,id desc')
+        ->field('*')->cache(true)->find();
+    //dump($channel->has_child);
+    $pid = $channel['parent_id'];
+    if ($channel->has_child) {
+        return $channel;
+    } elseif ($pid) {
+        return self::where('status', 'normal')
+            ->where('id', $pid)
+            ->order('weigh desc,id desc')
+            ->field('*')->cache(true)->find();
+    } else {
+        return $channel;
+    }
+}
     /**
      * 渲染数据
      * @param array $list

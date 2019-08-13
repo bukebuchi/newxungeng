@@ -54,7 +54,7 @@ return [
     'On duty'                 => '执勤守点',
     'Capture situation'       => '安全隐患',
     'Membership statistics'   => '社员统计',
-    'Membership state'        => '社区总人数',
+    'Membership state'        => '社区人数',
     'Contradictions disputes' => '矛盾纠纷',
     'Number online'           => '在线人数',
     'Number all'              => '总人数',

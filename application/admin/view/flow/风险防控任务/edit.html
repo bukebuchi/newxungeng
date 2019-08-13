@@ -1,0 +1,157 @@
+{if condition="$instance['instancestatus'] neq 0"}
+    <style>
+       .flowcontent input{
+           pointer-events: none;
+           border: 1px solid #DDD;
+            background-color: #F5F5F5;
+        }
+        .flowcontent select{
+           pointer-events: none;
+           border: 1px solid #DDD;
+            background-color: #F5F5F5;
+        }
+       .flowcontent textarea{
+           pointer-events: none;
+           border: 1px solid #DDD;
+            background-color: #F5F5F5;
+        }
+       
+    </style>
+{/if}
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <div class="flowcontent">
+      <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">申请人:</label>
+        <div class="col-xs-12 col-sm-8">
+            {$auth->nickname}
+        </div>
+      </div>
+          <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Category_ids')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-category_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"flow_flowtest"}' data-multiple="true" class="form-control selectpage" name="row[category_ids]" type="text" value="{$row.category_ids}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Addressname')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-addressname" data-rule="required" class="form-control" name="row[addressname]" type="text" value="{$row.addressname}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Activitytime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-activitytime" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[activitytime]" type="text" value="{$row.activitytime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('End_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_time" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_time]" type="text" value="{$row.end_time}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Images')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-images" data-rule="required" class="form-control" size="50" name="row[images]" type="text" value="{$row.images}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-images" class="btn btn-danger plupload" data-input-id="c-images" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-images" class="btn btn-primary fachoose" data-input-id="c-images" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-images"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-images"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xingshihobbydata')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="checkbox">
+            {foreach name="xingshihobbydataList" item="vo"}
+            <label for="row[xingshihobbydata][]-{$key}"><input id="row[xingshihobbydata][]-{$key}" name="row[xingshihobbydata][]" type="checkbox" value="{$key}" {in name="key" value="$row.xingshihobbydata"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Contenthobbydata')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <div class="checkbox">
+            {foreach name="contenthobbydataList" item="vo"}
+            <label for="row[contenthobbydata][]-{$key}"><input id="row[contenthobbydata][]-{$key}" name="row[contenthobbydata][]" type="checkbox" value="{$key}" {in name="key" value="$row.contenthobbydata"}checked{/in} /> {$vo}</label> 
+            {/foreach}
+            </div>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xianqingcontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-xianqingcontent" data-rule="required" class="form-control editor" rows="5" name="row[xianqingcontent]" cols="50">{$row.xianqingcontent}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Addcontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-addcontent" data-rule="required" class="form-control" name="row[addcontent]" type="text" value="{$row.addcontent}">
+        </div>
+    </div>
+   </div>
+    {if condition="$instance['instancestatus'] neq 2"}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">审批意见</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-comment" class="form-control" data-use-current="true" name="comment" ></textarea>
+        </div>
+    </div>
+    {/if}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">审批历史</label>
+        <div class="col-xs-12 col-sm-8">
+            <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>审批人</td>
+                    <td>审批步骤</td>
+                    <td>审批意见</td>
+                    <td>审批时间</td>
+                </tr>
+            </thead>
+            <tbody>
+                {volist name="history" id="vo"  }
+                    <tr>
+                        <td>{$vo.nickname}</td>
+                        <td>{$vo.stepname}</td>                       
+                        <td>{$vo.comment}</td>
+                        <td>{$vo.completedtime}</td>
+                    </tr>
+                {/volist}
+            </tbody>
+        </table>
+        </div>
+    </div>
+    
+   <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            {if condition="$mode neq 'view'"}
+                {if condition="$instance['instancestatus'] eq 0"}
+                  <button type="button" id='start' class="btn btn-success btn-embossed">提交</button>
+                {elseif condition="$instance['instancestatus'] eq 1"/}
+                <button type="submit" id='agree' class="btn btn-success btn-embossed disabled">{:__('同意')}</button>
+                <button type="submit" id='refuse' class="btn btn-danger btn-embossed disabled">{:__('拒绝')}</button>
+                {else/}
+                {/if}
+            {/if}
+            {if condition="$instance['instancestatus'] neq 2 and $instance['instancestatus'] neq 3 and $instance['originator'] eq $auth->id"}
+                 <button type="submit" id='cancel' class="btn btn-danger btn-embossed disabled">{:__('取消')}</button>
+            {/if}
+             <button type="button" id='flowchart' class="btn btn-warning btn-embossed">{:__('流程图')}</button>
+        </div>
+    </div>
+    
+</form>

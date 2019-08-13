@@ -1,4 +1,0 @@
-<?php
-//000000000000
- exit();?>
-a:1:{i:0;a:24:{s:2:"id";i:147;s:7:"user_id";i:0;s:10:"channel_id";i:26;s:8:"model_id";i:1;s:10:"special_id";i:0;s:5:"title";s:102:"区委书记唐川到统景镇调研乡村振兴、脱贫攻坚和“三社”融合发展试点工作";s:5:"style";s:0:"";s:4:"flag";s:0:"";s:5:"image";s:54:"/uploads/20190803/8d570ea3d9b194d8951385700056a3bd.jpg";s:8:"keywords";s:0:"";s:11:"description";s:0:"";s:4:"tags";s:0:"";s:5:"weigh";i:0;s:5:"views";i:0;s:8:"comments";i:0;s:5:"likes";i:0;s:8:"dislikes";i:0;s:7:"diyname";s:0:"";s:10:"createtime";i:1565461458;s:10:"updatetime";i:1565495292;s:11:"publishtime";i:1565461437;s:10:"deletetime";N;s:4:"memo";s:0:"";s:6:"status";s:6:"normal";}}

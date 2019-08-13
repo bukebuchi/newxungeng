@@ -41,7 +41,7 @@ return array (
     '/cms/p/[:diyname]' => 'cms/page/index',
     '/cms/s' => 'cms/search/index',
     '/cms/c/[:diyname]' => 'cms/channel/index',
-    '/cms/d/[:diyname]' => 'cms/diyform/index',
+    '/cmsd/[:diyname]' => 'cms/diyform/index',
     '/cms/special/[:diyname]' => 'cms/special/index',
     '/u/[:id]' => 'cms/user/index',
   ),
