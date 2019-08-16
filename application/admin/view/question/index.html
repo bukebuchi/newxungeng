@@ -38,55 +38,54 @@
     <!--form表单必须添加form-commsearch这个类-->
     <form action="" class="form-commonsearch">
         <div class="row">
-             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
                 <div class="form-group ">
-                    <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('carid')}:</label>
-
-                    <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-name="carid" value="like"/>
-                    <input id="c-carid " data-rule="required" data-live-search="true" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="carid" type="text" value=""/>
-
+                    <label class="control-label col-xs-4">{:__('carid')}:</label>
+<div class="col-xs-8">
+                    <input class="operate" type="hidden" data-name="carid" value="like"/>
+                    <input id="c-carid " data-rule="required" data-live-search="true" class="form-control" name="carid" type="text" value=""/>
+</div>
                 </div>
 
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
                 <div class="form-group ">
-                    <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Carowname')}:</label>
-
-                    <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-name="carowname" value="like"/>
-                    <input id="c-carowname " data-rule="required" data-live-search="true" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="carowname" type="text" value=""/>
-
+                    <label class="control-label col-xs-4">{:__('Carowname')}:</label>
+   <div class="col-xs-8">
+                    <input class="operate " type="hidden" data-name="carowname" value="like"/>
+                    <input id="c-carowname " data-rule="required" data-live-search="true" class="form-control" name="carowname" type="text" value=""/>
+</div>
                 </div>
 
             </div>
             
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
                 <div class="form-group">
-                    <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Questionname')}:</label>
-
-                    <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-live-search="true" data-name="questionname" value="like"/>
+                    <label class="control-label col-xs-4">{:__('Questionname')}:</label>
+ <div class="col-xs-8">
+                    <input class="operate" type="hidden" data-live-search="true" data-name="questionname" value="like"/>
                     <input id="c-questionname" data-rule="required" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="questionname" type="text" value=""/>
-
+  </div>
                 </div>
             </div>
 
              
-        </div>
-        <div class="row">
+        
 
 
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-                    <div class="form-group">
-                        <label class="control-label">{:__('Activitytime')}:</label>
+               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
+            <div class="form-group">
+                <label class="control-label col-md-4">{:__('Activitytime')}:</label>
 
-                        <div class="row row-between">
-                            
-                             <input type="hidden" class="operate" data-name="activitytime" value="RANGE"/>
-                             <input type="text" class="form-control datetimerange" data-date-format="YYYY-MM-DD HH:mm:ss" name="activitytime" value="" />
-                           
-                        </div>
+                <div class="col-md-8">
 
-                    </div>
-                </div>    
+                   <input type="hidden" class="operate" data-name="activitytime" value="RANGE"/>
+                   <input type="text" class="form-control datetimerange" data-date-format="YYYY-MM-DD HH:mm:ss" name="activitytime" value="" />
+
+               </div>
+
+            </div>
+        </div>   
                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">   
                     <div class="form-group">
                         <label class="control-label"></label>

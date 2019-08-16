@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:57:"C:\www\public/../application/admin\view\service\edit.html";i:1560769460;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:54:"C:\www\public/../application/admin\view\duty\edit.html";i:1560769460;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -52,7 +52,7 @@
                             <div class="content">
                                 <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
-   <div class="form-group">
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2"><?php echo __('Category_ids'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-category_ids" data-rule="required" data-source="auth/admin/selectpage" data-field="nickname" data-multiple="true" class="form-control selectpage" name="row[category_ids]" type="text" value="<?php echo htmlentities($row['category_ids']); ?>">
@@ -71,65 +71,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Images'); ?>:</label>
+        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Content'); ?>:</label>
         <div class="col-xs-12 col-sm-8">
-            <div class="input-group">
-                <input id="c-images" data-rule="required" class="form-control" size="50" name="row[images]" type="text" value="<?php echo htmlentities($row['images']); ?>">
-                <div class="input-group-addon no-border no-padding">
-                    <span><button type="button" id="plupload-images" class="btn btn-danger plupload" data-input-id="c-images" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-images"><i class="fa fa-upload"></i> <?php echo __('Upload'); ?></button></span>
-                    <span><button type="button" id="fachoose-images" class="btn btn-primary fachoose" data-input-id="c-images" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> <?php echo __('Choose'); ?></button></span>
-                </div>
-                <span class="msg-box n-right" for="c-images"></span>
-            </div>
-            <ul class="row list-inline plupload-preview" id="p-images"></ul>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Keywords'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-keywords" data-rule="required" class="form-control" name="row[keywords]" type="text" value="<?php echo htmlentities($row['keywords']); ?>">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Age'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-age" data-rule="required" class="form-control" name="row[age]" type="number" value="<?php echo htmlentities($row['age']); ?>">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Identity'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-identity" data-rule="required" class="form-control" name="row[identity]" type="text" value="<?php echo htmlentities($row['identity']); ?>">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('City'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <div class='control-relative'><input id="c-city" data-rule="required" class="form-control" data-toggle="city-picker" name="row[city]" type="text" value="<?php echo htmlentities($row['city']); ?>"></div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Telhone'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-telhone" data-rule="required" class="form-control" name="row[telhone]" type="text" value="<?php echo htmlentities($row['telhone']); ?>">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Genderdata'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            
-            <div class="radio">
-            <?php if(is_array($genderdataList) || $genderdataList instanceof \think\Collection || $genderdataList instanceof \think\Paginator): if( count($genderdataList)==0 ) : echo "" ;else: foreach($genderdataList as $key=>$vo): ?>
-            <label for="row[genderdata]-<?php echo $key; ?>"><input id="row[genderdata]-<?php echo $key; ?>" name="row[genderdata]" type="radio" value="<?php echo $key; ?>" <?php if(in_array(($key), is_array($row['genderdata'])?$row['genderdata']:explode(',',$row['genderdata']))): ?>checked<?php endif; ?> /> <?php echo $vo; ?></label> 
-            <?php endforeach; endif; else: echo "" ;endif; ?>
-            </div>
-
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2"><?php echo __('Addcontent'); ?>:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-addcontent" data-rule="required" class="form-control" name="row[addcontent]" type="text" value="<?php echo htmlentities($row['addcontent']); ?>">
+            <textarea id="c-content" data-rule="required" class="form-control editor" rows="5" name="row[content]" cols="50"><?php echo htmlentities($row['content']); ?></textarea>
         </div>
     </div>
     <div class="form-group layer-footer">

@@ -21,6 +21,7 @@ class Calendar extends Backend
     protected $model = null;
     protected $childrenAdminIds = [];
 
+
     public function _initialize()
     {
         parent::_initialize();
@@ -56,7 +57,7 @@ class Calendar extends Backend
             $adminIds = $admin_id ? [$admin_id] : $this->childrenAdminIds;
 
             $list = $this->model
-                    ->where('admin_id', 'in', $adminIds)
+                   
                     ->where('starttime', 'between', [strtotime($start), strtotime($end)])
                     ->order('id desc')
                     ->select();
@@ -68,7 +69,7 @@ class Calendar extends Backend
             }
             return json($result);
         }
-        $eventList = CalendarEvent::where('admin_id', $this->auth->id)->order('id desc')->select();
+        $eventList = CalendarEvent::order('id desc')->select();
         $this->view->assign("eventList", $eventList);
         return $this->view->fetch();
     }
@@ -218,7 +219,7 @@ class Calendar extends Backend
     {
         if ($ids)
         {
-            $count = $this->model->where('admin_id', 'in', $this->childrenAdminIds)->where('id', 'in', $ids)->delete();
+            $count = $this->model->where('id', 'in', $ids)->delete();
             if ($count)
             {
                 $this->success();

@@ -17,6 +17,7 @@ class Duty extends Backend
      * @var \app\admin\model\Duty
      */
     protected $model = null;
+    
 
     public function _initialize()
     {

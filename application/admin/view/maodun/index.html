@@ -38,21 +38,21 @@
     <!--form表单必须添加form-commsearch这个类-->
     <form action="" class="form-commonsearch">
         <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
                 <div class="form-group">
-                    <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Category_ids')}:</label>
-                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                        <input type="hidden" class="operate" data-name="category_ids" value="like"/>
-                        <input id="c-category_ids" data-rule="required" data-source="auth/admin/selectpage"  data-field="nickname"  data-live-search="true" data-multiple="true" class="form-control selectpage" name="category_ids" type="text" value="">
-                    </div>
+                     <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Category_ids')}:</label>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <input type="hidden" class="operate" data-name="category_ids" value="like"/>
+                    <input id="c-category_ids" data-rule="required" data-source="auth/admin/selectpage"  data-field="nickname"  data-live-search="true" data-multiple="true" class="form-control selectpage" name="category_ids" type="text" value="">
+                </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3"> 
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
                 <div class="form-group ">
-                    <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Addcontent')}:</label>
+                    <label class="control-label col-xs-4">{:__('Addcontent')}:</label>
 
-                    <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-name="addcontent" value="like"/>
-                    <input id="c-addcontent" data-rule="required" data-live-search="true" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="addcontent" type="text" value=""/>
+                    <input class="operate col-xs-8" type="hidden" data-name="addcontent" value="like"/>
+                    <input id="c-addcontent" data-rule="required" data-live-search="true" class="form-control" name="addcontent" type="text" value=""/>
 
                 </div>
 
@@ -61,37 +61,36 @@
             
 
              
-        </div>
-        <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
+            <div class="form-group">
+                <label class="control-label col-md-4">{:__('Activitytime')}:</label>
+
+                <div class="col-md-8">
+
+                   <input type="hidden" class="operate" data-name="activitytime" value="RANGE"/>
+                   <input type="text" class="form-control datetimerange" data-date-format="YYYY-MM-DD HH:mm:ss" name="activitytime" value="" />
+
+               </div>
+
+            </div>
+        </div> 
+        
 
 
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-                    <div class="form-group">
-                        <label class="control-label">{:__('Activitytime')}:</label>
-
-                        <div class="row row-between">
-                            
-                             <input type="hidden" class="operate" data-name="activitytime" value="RANGE"/>
-                             <input type="text" class="form-control datetimerange" data-date-format="YYYY-MM-DD HH:mm:ss" name="activitytime" value="" />
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">   
-                    <div class="form-group">
-                        <label class="control-label"></label>
-                        <div class="row">
-                            <div class="col-xs-6">
-                                <input type="submit" class="btn btn-success btn-block" value="查询"/>
-                            </div>
-                            <div class="col-xs-6">
-                                <input type="reset" class="btn btn-primary btn-block" value="重置"/>
-                            </div>
-                        </div>
-                    </div>
+            
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">   
+                <div class="form-group">
+                <label class="control-label"></label>
+                <div class="row">
+                <div class="col-xs-6">
+                    <input type="submit" class="btn btn-success btn-block" value="查询"/>
                 </div>
-                        </div>
+                <div class="col-xs-6">
+                    <input type="reset" class="btn btn-primary btn-block" value="重置"/>
+                </div>
+                </div>
+                </div>
 
-                    </div>
-                </div>    
-                
-            </div> 
 
     </div>        
 </form>

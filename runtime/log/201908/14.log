@@ -1,0 +1,120 @@
+---------------------------------------------------------------
+[ 2019-08-14T23:56:00+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000965s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000981s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:56:10+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:56:20+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010477s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:56:30+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001080s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:56:40+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011464s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:56:50+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011288s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:57:00+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011202s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:57:10+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011211s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:57:20+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011023s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.001043s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000523s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:57:30+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000904s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000482s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:57:40+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000460s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:57:50+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011298s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000410s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:58:00+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000930s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:58:10+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010970s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:58:20+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010844s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:58:30+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011392s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:58:40+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010824s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000500s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:58:50+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010722s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:59:00+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011523s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:59:10+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010825s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:59:20+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010526s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:59:30+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010889s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:59:40+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010813s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[ 2019-08-14T23:59:50+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000899s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000417s ]
