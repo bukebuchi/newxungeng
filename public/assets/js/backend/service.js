@@ -34,15 +34,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id'), operate: false},
-                        {field: 'category_ids', title: __('Category_ids'),formatter: Table.api.formatter.search},
+                         {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.search, operate: 'like'},
+                        {field: 'category_ids', title: __('Category_ids'),formatter: Table.api.formatter.search,visible:false},
+
                         {field: 'addressname', title: __('Addressname'),operate: false},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange', sortable: true},
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
-                        {field: 'keywords', title: __('Keywords')},
+                        {field: 'keywords', title: __('Keywords'),formatter: Table.api.formatter.search},
                         {field: 'age', title: __('Age'), operate: false},
-                        {field: 'identity', title: __('Identity')},
+                        {field: 'identity', title: __('Identity'),formatter: Table.api.formatter.search},
                         {field: 'city', title: __('City'), operate: false},
-                        {field: 'telhone', title: __('Telhone')},
+                        {field: 'telhone', title: __('Telhone'),formatter: Table.api.formatter.search},
                         {field: 'genderdata', title: __('Genderdata'), searchList: {"male":__('Genderdata male'),"female":__('Genderdata female')}, formatter: Table.api.formatter.normal, operate: false},
                         {field: 'addcontent', title: __('Addcontent'), operate: false},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}

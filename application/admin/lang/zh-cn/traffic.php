@@ -2,7 +2,8 @@
 
 return [
     'Id'                => 'ID',
-    'Category_ids'      => '记录人员',
+    'Admin_ids'      => '参与人员姓名',
+    'Category_ids'      => '人员编号',
     'Addressname'       => '服务地址',
     'Activitytime'      => '服务时间',
     'Images'            => '现场照片',

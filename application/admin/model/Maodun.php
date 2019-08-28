@@ -63,5 +63,9 @@ class Maodun extends Model
         return is_array($value) ? implode(',', $value) : $value;
     }
 
-
+public function admin()
+    {
+        return $this->belongsTo("app\admin\model\Admin", "admin_ids", 'id', [], 'LEFT')->setEagerlyType(0);
+    }
+    
 }

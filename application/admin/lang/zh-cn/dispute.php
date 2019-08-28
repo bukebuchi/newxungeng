@@ -2,6 +2,7 @@
 
 return [
     'Id'                 => 'ID',
+    'Admin_ids'       => '参与人员姓名',
     'Category_ids'       => '参与人员',
     'City'               => '矛盾纠纷地点',
     'Addressname'        => '具体地址',

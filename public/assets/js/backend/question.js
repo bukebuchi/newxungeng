@@ -34,7 +34,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id'),operate: false},
+                         {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: false},
                         {field: 'category_ids', title: __('Category_ids'), formatter: Table.api.formatter.search,visible:false,operate: false},
+                       
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
                         {field: 'carid', title: __('Carid'), operate:'like'},
                         {field: 'cartype', title: __('Cartype'),operate: false},
@@ -63,12 +65,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         add: function () {
             Form.events.selectpage($("form"));
             Form.events.datetimepicker($("form"));
-            Controller.api.bindevent();
+             Form.api.bindevent($("form[role=form]"));
         },
         edit: function () {
             Form.events.selectpage($("form"));
     Form.events.datetimepicker($("form"));
-            Controller.api.bindevent();
+            Form.api.bindevent($("form[role=form]"));
         },
          map: function () {
             Form.api.bindevent($("form[role=form]"));

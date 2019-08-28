@@ -25,9 +25,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id')},
-                        {field: 'category_ids', title: __('Category_ids')},
+                        {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: 'like'},
+                        {field: 'category_ids', title: __('Category_ids'),visible:false,},
                         {field: 'addressname', title: __('Addressname')},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange'},
+                        {field: 'content', title: __('Content'), operate: false},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
                 ]

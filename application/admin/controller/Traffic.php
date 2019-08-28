@@ -36,5 +36,43 @@ class Traffic extends Backend
      * 需要将application/admin/library/traits/Backend.php中对应的方法复制到当前控制器,然后进行修改
      */
     
+ 
+      /**
+     * 查看
+     */
+    public function index()
+    {
+        $this->relationSearch = true;
+        $this->searchFields = "admin.username,id";
+        if ($this->request->isAjax()) {
+            list($where, $sort, $order, $offset, $limit) = $this->buildparams();
+            $total = $this->model 
+                    ->with('admin')                   
+                    ->where($where)
+                    ->order($sort, $order)
+                    ->count();
+            $list = $this->model 
+            ->with('admin')                  
+                    ->where($where)
+                    ->order($sort, $order)
+                    ->limit($offset, $limit)
+                    ->select();
+                    $list = addtion($list, [
+            [
+                'field'    => 'admin_ids',
+                'display'  => 'admin_nicknames',
+                'primary'  => 'id',
+                'column'   => 'nickname',
+                'model'    => '\app\admin\model\Admin',
+                'name'     => 'Admin',
+                'table'    => 'Admin'
+            ]
+        ]);
+        $list = collection($list)->toArray();
+            $result = array("total" => $total, "rows" => $list);
 
+            return json($result);
+        }
+        return $this->view->fetch();
+    }
 }

@@ -34,15 +34,14 @@ table.on('post-body.bs.table', function (e, settings, json, xhr) {
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id'),operate: false},
-                        {field: 'category_ids', title: __('Category_ids'), operate: 'like', formatter: Table.api.formatter.search,visible:false},
+                        {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: false},
+                        {field: 'category_ids', title: __('Category_ids'), formatter: Table.api.formatter.search,visible:false},
                         {field: 'hobbydata', title: __('Hobbydata'), searchList: {"music":__('Hobbydata music'),"reading":__('Hobbydata reading'),"swimming":__('Hobbydata swimming')}, operate:'FIND_IN_SET', formatter: Table.api.formatter.label},
                         {field: 'city', title: __('City'),operate: false},
                         {field: 'addressname', title: __('Addressname'),operate: false},
-                        {field: 'longtitude', title: __('Longtitude'), operate: false,visible:false},
-                        {field: 'latitude', title: __('Latitude'), operate: false,visible:false},
+                  
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
-                        {field: 'keywords', title: __('Keywords'),formatter: Table.api.formatter.search,visible:false, operate: 'like'},
-                        {field: 'identity', title: __('Identity'), formatter: Table.api.formatter.search,visible:false, operate: 'like'},
+                        
                         {field: 'addcontent', title: __('Addcontent'), operate: 'like'},
                         {field: 'genderdata', title: __('Genderdata'), searchList: {"male":__('Genderdata male'),"female":__('Genderdata female')}, formatter: Table.api.formatter.normal, operate: false,visible:false},
                         {field: 'views', title: __('Views'), operate: false},
@@ -59,13 +58,13 @@ table.on('post-body.bs.table', function (e, settings, json, xhr) {
         add: function () {
             Form.events.selectpage($("form"));
     Form.events.datetimepicker($("form"));
-            Controller.api.bindevent();
+           Form.api.bindevent($("form[role=form]"));
         },
         edit: function () {
             Form.events.selectpage($("form"));
     Form.events.datetimepicker($("form"));
    
-            Controller.api.bindevent();
+            Form.api.bindevent($("form[role=form]"));
         },
         map: function () {
             Form.api.bindevent($("form[role=form]"));

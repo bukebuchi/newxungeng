@@ -51,8 +51,8 @@ class Dashboard extends Backend
             'uploadmode'       => $uploadmode,
 
             'test1'            => 111111,
-            'test2'            => 222222,
-            'test3'            => 333333,
+            'relief_people'            => $this->getReliefPeople(),
+            'relief_count'            => $this->getRelief(),
             'user_count'       => $this->getUser(),
             'duty_count'       => $this->getDuty(),
             'maodun_count'     => $this->getMaodun(),
@@ -100,6 +100,18 @@ class Dashboard extends Backend
         $count = model('Traffic')->count();
         return $count;
     }
+    /*救灾次数*/
+    private function getRelief() {
+        $count = model('relief')->count();
+        return $count;
+    }
+
+/*救灾人数*/
+    private function getReliefPeople() {
+        $count = model('relief')->count();
+        return $count;
+    }
+
     /*admin数量*/
     private function getAdmin() {
         $count = model('Admin')->count();

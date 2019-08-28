@@ -57,7 +57,10 @@ class Dispute extends Model
         return isset($list[$value]) ? $list[$value] : '';
     }
 
-
+public function admin()
+    {
+        return $this->belongsTo("app\admin\model\Admin", "admin_ids", 'id', [], 'LEFT')->setEagerlyType(0);
+    }
 
 
 }

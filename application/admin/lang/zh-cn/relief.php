@@ -2,7 +2,8 @@
 
 return [
     'Id'               => 'ID',
-    'Category_ids'     => '参与抢险人员',
+    'Admin_ids'      => '抢险救灾人员姓名',
+    'Category_ids'     => '参与抢险人员编号',
     'Addressname'      => '抢险地址',
     'Activitytime'     => '抢险时间',
     'Images'           => '抢险照片',

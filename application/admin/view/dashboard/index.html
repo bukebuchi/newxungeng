@@ -285,7 +285,7 @@
                                 <div class="panel-title">
                                     <span class="label label-success pull-right">{:__('Real time')}</span>
                                      <h1 class="no-margins">
-                                    <a href="/admin/question?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('Traffic safety')}</a> 
+                                    <a href="/admin/traffic?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('Traffic safety')}</a> 
                                      </h1>
                                 </div>
                                 <div class="panel-content">
@@ -346,7 +346,7 @@
                                     <span class="label label-primary pull-right">{:__('Real time')}</span>
                                    
                                      <h1 class="no-margins">
-                                    <a href="/admin/calendar?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('On duty')}</a> 
+                                    <a href="/admin/question?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('On duty')}</a> 
                                      </h1>
                                 </div>
                                 <div class="ibox-content">
@@ -373,22 +373,22 @@
                                     <span class="label label-success pull-right">{:__('Real time')}</span>
                                    
                                     <h1 class="no-margins">
-                                    <a href="/admin/safety?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('Capture situation')}</a> 
+                                    <a href="/admin/relief?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('Capture situation')}</a> 
                                      </h1>
                                 </div>
                                 <div class="panel-content">
                                       <div class="row">
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="map">{$Traffic_count}</a>
+                                            <h1>
+                                                {$relief_count}
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>交通安全</small>
+                                                <small>救灾次数</small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="map">{$Fire_count}</a>
+                                            <h1>
+                                                {$Fire_count}
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
                                                 <small>消防安全</small>

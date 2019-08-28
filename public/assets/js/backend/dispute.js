@@ -34,21 +34,23 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id'), operate: false},
-                        {field: 'category_ids', title: __('Category_ids'),formatter: Table.api.formatter.search},
+
+                        {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: 'like'},
+                        {field: 'category_ids', title: __('Category_ids'),formatter: Table.api.formatter.search,visible:false,operate: false},
                         {field: 'city', title: __('City'),operate: false},
                         {field: 'addressname', title: __('Addressname'),operate: false},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange', sortable: true},
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
-                        {field: 'keywordsA', title: __('Keywordsa'),operate:'like'},
+                        {field: 'keywordsA', title: __('Keywordsa'),operate:'LIKE %...%'},
                         {field: 'ageA', title: __('Agea'), operate: false},
-                        {field: 'identityA', title: __('Identitya'),operate:'like'},
+                        {field: 'identityA', title: __('Identitya'),operate:'LIKE %...%'},
                         {field: 'Acity', title: __('Acity'), operate: false},
                         {field: 'telhoneA', title: __('Telhonea'), operate: false},
                         {field: 'genderdataA', title: __('Genderdataa'), searchList: {"male":__('Genderdataa male'),"female":__('Genderdataa female')}, formatter: Table.api.formatter.normal, operate: false},
                         {field: 'Bcity', title: __('Bcity'), operate: false},
-                        {field: 'keywordsB', title: __('Keywordsb'),operate:'like'},
+                        {field: 'keywordsB', title: __('Keywordsb'),operate:'LIKE %...%'},
                         {field: 'ageB', title: __('Ageb'), operate: false},
-                        {field: 'identityB', title: __('Identityb'),operate:'like'},
+                        {field: 'identityB', title: __('Identityb'),operate:'LIKE %...%'},
                         {field: 'telhoneB', title: __('Telhoneb'), operate: false},
                         {field: 'genderdataB', title: __('Genderdatab'), searchList: {"male":__('Genderdatab male'),"female":__('Genderdatab female')}, formatter: Table.api.formatter.normal, operate: false},
                         {field: 'addcontent', title: __('Addcontent'), operate: false},
@@ -63,7 +65,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         add: function () {
             Form.events.selectpage($("form"));
             Form.events.datetimepicker($("form"));
-            Controller.api.bindevent();
+         Controller.api.bindevent();
         },
         edit: function () {
         Form.events.selectpage($("form"));

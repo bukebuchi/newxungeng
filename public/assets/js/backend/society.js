@@ -34,15 +34,16 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                     [
                         {checkbox: true},
                         {field: 'id', title: __('Id'), operate: false},
-                        {field: 'category_ids', title: __('Category_ids'),formatter: Table.api.formatter.search},
+                        {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: 'like'},
+                        {field: 'category_ids', title: __('Category_ids'), formatter: Table.api.formatter.search,visible:false,operate: false},
                         {field: 'addressname', title: __('Addressname'),operate: false},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange', sortable: true},
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
-                        {field: 'keywords', title: __('Keywords')},
+                        {field: 'keywords', title: __('Keywords'),formatter: Table.api.formatter.search},
                         {field: 'age', title: __('Age'), operate: false},
-                        {field: 'identity', title: __('Identity')},
+                        {field: 'identity', title: __('Identity'),formatter: Table.api.formatter.search},
                         {field: 'city', title: __('City'), operate: false},
-                        {field: 'telhone', title: __('Telhone')},
+                        {field: 'telhone', title: __('Telhone'),formatter: Table.api.formatter.search},
                         {field: 'genderdata', title: __('Genderdata'), searchList: {"male":__('Genderdata male'),"female":__('Genderdata female')}, formatter: Table.api.formatter.normal, operate: false},
                         {field: 'flag', title: __('Flag'), searchList: {"weifa":__('Flag weifa'),"anquan":__('Flag anquan'),"shiping":__('Flag shiping'),"weiwen":__('Flag weiwen'),"qita":__('Flag qita')}, operate:'FIND_IN_SET', formatter: Table.api.formatter.label, operate: false},
                         {field: 'addcontent', title: __('Addcontent'), operate: false},
@@ -57,12 +58,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         add: function () {
             Form.events.selectpage($("form"));
             Form.events.datetimepicker($("form"));
-            Controller.api.bindevent();
+               Form.api.bindevent($("form[role=form]"));
         },
         edit: function () {
             Form.events.selectpage($("form"));
         Form.events.datetimepicker($("form"));
-            Controller.api.bindevent();
+               Form.api.bindevent($("form[role=form]"));
         },
         api: {
             bindevent: function () {

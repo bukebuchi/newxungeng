@@ -2,6 +2,7 @@
 
 return [
     'Id'                => 'ID',
+    'Admin_ids'      => '登记人员姓名',
     'Category_ids'      => '登记人员',
     'Addressname'       => '具体地址',
     'Activitytime'      => '社会民情反应时间',

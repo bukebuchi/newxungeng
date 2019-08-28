@@ -2,6 +2,7 @@
 
 return [
     'Id'                => 'ID',
+     'Admin_ids'      => '参与盘查人员姓名',
     'Category_ids'      => '参与盘查人员',
     'Images'            => '盘查现场照片',
     'Carid'             => '盘查车牌号',

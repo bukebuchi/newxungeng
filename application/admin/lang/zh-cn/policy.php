@@ -2,7 +2,8 @@
 
 return [
     'Id'                  => 'ID',
-    'Category_ids'        => '宣传人员',
+    'Admin_ids'      => '法律宣传人员姓名',
+    'Category_ids'        => '宣传人员编号',
     'Addressname'         => '宣传地址',
     'Activitytime'        => '宣传时间',
     'Images'              => '宣传照片',
