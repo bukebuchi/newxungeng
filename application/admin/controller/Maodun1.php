@@ -17,6 +17,10 @@ class Maodun1 extends Backend
      * @var \app\admin\model\Maodun1
      */
     protected $model = null;
+	
+	protected $noNeedRight = ['selectpage'];
+    protected $dataLimit = 'auth';
+    protected $dataLimitField = 'admin_id';
 
     public function _initialize()
     {

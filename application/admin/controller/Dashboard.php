@@ -14,7 +14,9 @@ use think\Db;
  */
 class Dashboard extends Backend
 {
-
+protected $noNeedRight = ['selectpage'];
+    protected $dataLimit = 'auth';
+    protected $dataLimitField = 'admin_id';
     /**
      * 查看
      */
@@ -53,11 +55,15 @@ class Dashboard extends Backend
             'test1'            => 111111,
             'relief_people'            => $this->getReliefPeople(),
             'relief_count'            => $this->getRelief(),
+            'relief_fire'            => $this->getReliefFire(),
+            'policy_count'            => $this->getPolicy(),
             'user_count'       => $this->getUser(),
             'duty_count'       => $this->getDuty(),
             'maodun_count'     => $this->getMaodun(),
             'Maoduncivil_count'=> $this->getMaoduncivil(),
             'Maoduncrimi_count'=> $this->getMaoduncriminal(),
+            'maodun_people'=> $this->getMaodunPeople(),
+            'dispute_count'=> $this->getDispute(),
             'all_count'        => $this->getMap(),
             'oline_count'      => $this->getMap(),
             'question_count'   => $this->getQuestion(),
@@ -105,10 +111,25 @@ class Dashboard extends Backend
         $count = model('relief')->count();
         return $count;
     }
+     /*救灾次数*/
+    private function getReliefFire() {
+        $count = model('relief')->sum('fireviews');
+        return $count;
+    }
 
 /*救灾人数*/
     private function getReliefPeople() {
-        $count = model('relief')->count();
+        $count = model('relief')->sum('views');
+        return $count;
+    }
+    /*法律政策次数*/
+     private function getPolicy() {
+        $count = model('policy')->count();
+        return $count;
+    }
+    /*矛盾纠纷次数*/
+     private function getDispute() {
+        $count = model('dispute')->count();
         return $count;
     }
 
@@ -147,6 +168,13 @@ class Dashboard extends Backend
         $count = model('Maodun')->where("hobbydata='reading'")->count();
         return $count;
     }
+     /*刑事纠纷*/
+    private function getMaodunPeople() {
+        $count = model('Maodun')->sum('views');
+        return $count;
+    }
+
+    
     /*执勤守点*/
     private function getDuty() {
         $count = model('Duty')->count();

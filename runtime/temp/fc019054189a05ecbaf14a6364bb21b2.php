@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1567007654;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1567238037;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -232,7 +232,7 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-blue"><i class="fa fa-shopping-bag"></i></span>
                             <div class="sm-st-info">
-                                <span><?php echo $totalorder; ?></span>
+                                <span><?php echo $dispute_count; ?></span>
                                 <?php echo __('Total order'); ?>
                             </div>
                         </div>
@@ -241,7 +241,7 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-green"><i class="fa fa-cny"></i></span>
                             <div class="sm-st-info">
-                                <span><?php echo $totalorderamount; ?></span>
+                                <span><?php echo $relief_count; ?></span>
                                 <?php echo __('Total order amount'); ?>
                             </div>
                         </div>
@@ -252,74 +252,8 @@
                     <div class="col-lg-8">
                         <div id="echart" style="height:200px;width:100%;"></div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card sameheight-item stats">
-                            <div class="card-block">
-                                <div class="row row-sm stats-container">
-                                    <div class="col-xs-6 stat-col">
-                                        <div class="stat-icon"><i class="fa fa-rocket"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> <?php echo $todayusersignup; ?></div>
-                                            <div class="name"> <?php echo __('Today user signup'); ?></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 30%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 stat-col">
-                                        <div class="stat-icon"><i class="fa fa-shopping-cart"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> <?php echo $todayuserlogin; ?></div>
-                                            <div class="name"> <?php echo __('Today user login'); ?></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6  stat-col">
-                                        <div class="stat-icon"><i class="fa fa-line-chart"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> <?php echo $todayorder; ?></div>
-                                            <div class="name"> <?php echo __('Today order'); ?></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6  stat-col">
-                                        <div class="stat-icon"><i class="fa fa-users"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> <?php echo $unsettleorder; ?></div>
-                                            <div class="name"> <?php echo __('Unsettle order'); ?></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6  stat-col">
-                                        <div class="stat-icon"><i class="fa fa-list-alt"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> <?php echo $sevendnu; ?></div>
-                                            <div class="name"> <?php echo __('Seven dnu'); ?></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 stat-col">
-                                        <div class="stat-icon"><i class="fa fa-dollar"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> <?php echo $sevendau; ?></div>
-                                            <div class="name"> <?php echo __('Seven dau'); ?></div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
 
                 <div class="row" style="margin-top:15px;">
@@ -435,18 +369,19 @@
                                                 <?php echo $relief_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>交通安全</small>
+                                                <small>救灾次数</small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <h1>
-                                                <?php echo $Fire_count; ?>
+                                                <?php echo $relief_people; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>消防安全</small>
+                                                <small>救灾人数</small>
                                             </div>
                                         </div>
                                     </div>
+                                     
                                     <!-- <h1 class="no-margins">
                                         <a href="flow/finishworkitem"><?php echo $safety_count; ?></a>
                                     </h1>
@@ -470,17 +405,17 @@
                                     <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
                                     
                                     <h1 class="no-margins">
-                                    <a href="/admin/user/user?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Membership statistics'); ?></a> 
+                                    <a href="/admin/policy?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Membership statistics'); ?></a> 
                                      </h1>
                                 </div>
                                 <div class="ibox-content">
                                      <div class="row">
                                         <div class="col-md-6">
                                             <h1>
-                                                <?php echo $user_count; ?>
+                                                <?php echo $policy_count; ?>
                                             </h1>
                                              <div class="font-bold"><i class="fa fa-commenting"></i>
-                                            <small><?php echo __('Membership state'); ?></small>
+                                            <small>宣传次数</small>
                                             </div>
                                       </div>
                                     </div>
@@ -502,20 +437,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <h1>
-                                                <?php echo $Maoduncrimi_count; ?>
+                                                <?php echo $dispute_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Civil dispute'); ?></small>
+                                                <small>纠纷次数</small>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $Maoduncivil_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-heart"></i>
-                                                <small><?php echo __('Criminal disputes'); ?></small>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -526,29 +454,32 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    <h1><?php echo __('Number online'); ?></h1>
+                                     <h1 class="no-margins">
+                                    <a href="/admin/maodun?ref=addtabs" style="color: #ffffff" class="btn-addtabs">抓获现行</a> 
+                                     </h1>
 
                                 </div>
                                 <div class="ibox-content">
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="map"><?php echo $oline_count; ?></a>
+                                            <h1>
+                                                <?php echo $maodun_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Number online'); ?></small>
+                                                <small>处理次数</small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="map"><?php echo $all_count; ?></a>
+                                            <h1>
+                                                <?php echo $Maoduncivil_count; ?>
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small><?php echo __('Number all'); ?></small>
+                                                <small>民事纠纷</small>
                                             </div>
-                                        </div>
+                                        </div>                                        
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>

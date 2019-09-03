@@ -180,7 +180,7 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-blue"><i class="fa fa-shopping-bag"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalorder}</span>
+                                <span>{$dispute_count}</span>
                                 {:__('Total order')}
                             </div>
                         </div>
@@ -189,7 +189,7 @@
                         <div class="sm-st clearfix">
                             <span class="sm-st-icon st-green"><i class="fa fa-cny"></i></span>
                             <div class="sm-st-info">
-                                <span>{$totalorderamount}</span>
+                                <span>{$relief_count}</span>
                                 {:__('Total order amount')}
                             </div>
                         </div>
@@ -200,74 +200,8 @@
                     <div class="col-lg-8">
                         <div id="echart" style="height:200px;width:100%;"></div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="card sameheight-item stats">
-                            <div class="card-block">
-                                <div class="row row-sm stats-container">
-                                    <div class="col-xs-6 stat-col">
-                                        <div class="stat-icon"><i class="fa fa-rocket"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> {$todayusersignup}</div>
-                                            <div class="name"> {:__('Today user signup')}</div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 30%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 stat-col">
-                                        <div class="stat-icon"><i class="fa fa-shopping-cart"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> {$todayuserlogin}</div>
-                                            <div class="name"> {:__('Today user login')}</div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6  stat-col">
-                                        <div class="stat-icon"><i class="fa fa-line-chart"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> {$todayorder}</div>
-                                            <div class="name"> {:__('Today order')}</div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6  stat-col">
-                                        <div class="stat-icon"><i class="fa fa-users"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> {$unsettleorder}</div>
-                                            <div class="name"> {:__('Unsettle order')}</div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6  stat-col">
-                                        <div class="stat-icon"><i class="fa fa-list-alt"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> {$sevendnu}</div>
-                                            <div class="name"> {:__('Seven dnu')}</div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 stat-col">
-                                        <div class="stat-icon"><i class="fa fa-dollar"></i></div>
-                                        <div class="stat">
-                                            <div class="value"> {$sevendau}</div>
-                                            <div class="name"> {:__('Seven dau')}</div>
-                                        </div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 25%"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
 
                 <div class="row" style="margin-top:15px;">
@@ -388,13 +322,14 @@
                                         </div>
                                         <div class="col-md-6">
                                             <h1>
-                                                {$Fire_count}
+                                                {$relief_people}
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>消防安全</small>
+                                                <small>救灾人数</small>
                                             </div>
                                         </div>
                                     </div>
+                                     
                                     <!-- <h1 class="no-margins">
                                         <a href="flow/finishworkitem">{$safety_count}</a>
                                     </h1>
@@ -418,17 +353,17 @@
                                     <span class="label label-info pull-right">{:__('Real time')}</span>
                                     
                                     <h1 class="no-margins">
-                                    <a href="/admin/user/user?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('Membership statistics')}</a> 
+                                    <a href="/admin/policy?ref=addtabs" style="color: #ffffff" class="btn-addtabs">{:__('Membership statistics')}</a> 
                                      </h1>
                                 </div>
                                 <div class="ibox-content">
                                      <div class="row">
                                         <div class="col-md-6">
                                             <h1>
-                                                {$user_count}
+                                                {$policy_count}
                                             </h1>
                                              <div class="font-bold"><i class="fa fa-commenting"></i>
-                                            <small>{:__('Membership state')}</small>
+                                            <small>宣传次数</small>
                                             </div>
                                       </div>
                                     </div>
@@ -450,20 +385,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <h1>
-                                                {$Maoduncrimi_count}
+                                                {$dispute_count}
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>{:__('Civil dispute')}</small>
+                                                <small>纠纷次数</small>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <h1>
-                                                {$Maoduncivil_count}
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-heart"></i>
-                                                <small>{:__('Criminal disputes')}</small>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -474,29 +402,32 @@
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right">{:__('Real time')}</span>
-                                    <h1>{:__('Number online')}</h1>
+                                     <h1 class="no-margins">
+                                    <a href="/admin/maodun?ref=addtabs" style="color: #ffffff" class="btn-addtabs">抓获现行</a> 
+                                     </h1>
 
                                 </div>
                                 <div class="ibox-content">
 
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="map">{$oline_count}</a>
+                                            <h1>
+                                                {$maodun_count}
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>{:__('Number online')}</small>
+                                                <small>处理次数</small>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <h1 class="no-margins">
-                                                <a href="map">{$all_count}</a>
+                                            <h1>
+                                                {$Maoduncivil_count}
                                             </h1>
                                             <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>{:__('Number all')}</small>
+                                                <small>民事纠纷</small>
                                             </div>
-                                        </div>
+                                        </div>                                        
                                     </div>
+                                    
                                 </div>
                             </div>
                         </div>
