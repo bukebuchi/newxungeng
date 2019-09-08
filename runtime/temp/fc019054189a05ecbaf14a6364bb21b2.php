@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1567238037;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1567846494;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -398,6 +398,42 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="col-xs-6 col-md-3">
+                        <div class="panel bg-green-gradient">
+                            <div class="panel-body">
+                                <div class="ibox-title">
+                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
+                                     <h1 class="no-margins">
+                                    <a href="/admin/maodun?ref=addtabs" style="color: #ffffff" class="btn-addtabs">抓获现行</a> 
+                                     </h1>
+
+                                </div>
+                                <div class="ibox-content">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h1>
+                                                <?php echo $maodun_count; ?>
+                                            </h1>
+                                            <div class="font-bold"><i class="fa fa-commenting"></i>
+                                                <small>处理次数</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h1>
+                                                <?php echo $Maoduncivil_count; ?>
+                                            </h1>
+                                            <div class="font-bold"><i class="fa fa-user"></i>
+                                                <small>民事纠纷</small>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-xs-6 col-md-3">
                         <div class="panel bg-aqua-gradient">
                             <div class="panel-body">
@@ -445,41 +481,6 @@
                                         </div>
                                         
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-green-gradient">
-                            <div class="panel-body">
-                                <div class="ibox-title">
-                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                     <h1 class="no-margins">
-                                    <a href="/admin/maodun?ref=addtabs" style="color: #ffffff" class="btn-addtabs">抓获现行</a> 
-                                     </h1>
-
-                                </div>
-                                <div class="ibox-content">
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $maodun_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>处理次数</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $Maoduncivil_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>民事纠纷</small>
-                                            </div>
-                                        </div>                                        
-                                    </div>
-                                    
                                 </div>
                             </div>
                         </div>

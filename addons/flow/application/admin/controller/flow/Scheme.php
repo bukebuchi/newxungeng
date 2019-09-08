@@ -421,4 +421,12 @@ class Scheme extends Backend
         $this->model = new \app\admin\model\AuthGroup();
         return parent::selectpage();
     }
+    /**
+     * 获取父级组
+     */
+    public function selectrolepage()
+    {
+        $this->model = new \app\admin\model\AuthGroup();
+        return parent::selectpage();
+    }
 }

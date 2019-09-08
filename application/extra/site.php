@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => '巡更系统',
+  'name' => '智能乡镇',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',

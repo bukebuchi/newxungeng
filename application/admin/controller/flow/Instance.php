@@ -79,10 +79,12 @@ class Instance extends Backend
             }
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = Db::name('view_workitem')
+                ->where('receiveid', $this->auth->id)
                 ->where($where)
                 ->order($sort, $order)
                 ->count();
             $list = Db::name('view_workitem')
+                ->where('receiveid', $this->auth->id)
                 ->where($where)
                 ->order($sort, $order)
                 ->limit($offset, $limit)

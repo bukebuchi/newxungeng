@@ -41,11 +41,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
                         {field: 'hobbydata', title: __('Hobbydata'), searchList: {"qd":__('Hobbydata qd'),"sd":__('Hobbydata sd'),"xc":__('Hobbydata xc')}, operate:'FIND_IN_SET', formatter: Table.api.formatter.label, operate: false},
                         {field: 'keywords', title: __('Keywords'), operate: false,formatter: Table.api.formatter.search},
-                        {field: 'age', title: __('Age'), operate: false},
-                        {field: 'identity', title: __('Identity'), operate: false,formatter: Table.api.formatter.search},
-                        {field: 'city', title: __('City'), operate: false},
-                        {field: 'telhone', title: __('Telhone'), operate: false,formatter: Table.api.formatter.search},
-                        {field: 'genderdata', title: __('Genderdata'), searchList: {"male":__('Genderdata male'),"female":__('Genderdata female')}, formatter: Table.api.formatter.normal, operate: false},
+                        {field: 'age', title: __('Age'), operate: false,visible:false},
+                        {field: 'identity', title: __('Identity'), operate: false,formatter: Table.api.formatter.search,visible:false},
+                        {field: 'city', title: __('City'), operate: false,visible:false},
+                        {field: 'telhone', title: __('Telhone'), operate: false,formatter: Table.api.formatter.search,visible:false},
+                        {field: 'genderdata', title: __('Genderdata'), searchList: {"male":__('Genderdata male'),"female":__('Genderdata female')}, formatter: Table.api.formatter.normal, operate: false,visible:false},
                         {field: 'addcontent', title: __('Addcontent'), operate: false},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]
