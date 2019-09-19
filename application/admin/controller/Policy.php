@@ -48,18 +48,18 @@ class Policy extends Backend
         if ($this->request->isAjax()) {
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model 
-                    ->with('admin')                   
+                          ->with('admin','addressname','mesh')                    
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
             $list = $this->model 
-            ->with('admin')                  
+                    ->with('admin','addressname','mesh')                   
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
                     $list = addtion($list, [
-            [
+           [
                 'field'    => 'admin_ids',
                 'display'  => 'admin_nicknames',
                 'primary'  => 'id',
@@ -67,6 +67,24 @@ class Policy extends Backend
                 'model'    => '\app\admin\model\Admin',
                 'name'     => 'Admin',
                 'table'    => 'Admin'
+            ],
+            [
+                'field'    => 'addressname_ids',
+                'display'  => 'addressname_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
+            ],
+            [
+                'field'    => 'mesh_ids',
+                'display'  => 'mesh_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
             ]
         ]);
         $list = collection($list)->toArray();

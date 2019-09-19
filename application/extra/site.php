@@ -20,7 +20,7 @@ return array (
     'article' => 'Article',
     'test' => 'Test',
     'username' => 'username',
-    'test_copy' => 'test_copy',
+    'mesh' => 'mesh',
   ),
   'configgroup' => 
   array (

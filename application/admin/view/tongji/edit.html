@@ -1,0 +1,112 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+   <!--  <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Admin_ids')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-admin_ids" data-rule="required" data-source="auth/admin/selectpage" data-multiple="true" data-field="nickname" class="form-control selectpage" name="row[admin_ids]" type="text" value="{$row.admin_ids|htmlentities}">
+        </div>
+    </div> -->
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Miles')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-miles" data-rule="required" class="form-control" name="row[miles]" type="number" value="{$row.miles|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Patrol')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-patrol" data-rule="required" class="form-control" name="row[patrol]" type="number" value="{$row.patrol|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Patrolcar')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-patrolcar" data-rule="required" class="form-control" name="row[patrolcar]" type="number" value="{$row.patrolcar|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Questioncar')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-questioncar" data-rule="required" class="form-control" name="row[questioncar]" type="number" value="{$row.questioncar|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Questionpeople')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-questionpeople" data-rule="required" class="form-control" name="row[questionpeople]" type="number" value="{$row.questionpeople|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Capturepeople')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-capturepeople" data-rule="required" class="form-control" name="row[capturepeople]" type="number" value="{$row.capturepeople|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fishpeople')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fishpeople" data-rule="required" class="form-control" name="row[fishpeople]" type="number" value="{$row.fishpeople|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Outfire')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-outfire" data-rule="required" class="form-control" name="row[outfire]" type="number" value="{$row.outfire|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Society')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-society" data-rule="required" class="form-control" name="row[society]" type="number" value="{$row.society|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Danger')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-danger" data-rule="required" class="form-control" name="row[danger]" type="number" value="{$row.danger|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Clear')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-clear" data-rule="required" class="form-control" name="row[clear]" type="number" value="{$row.clear|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Songzheng')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-songzheng" data-rule="required" class="form-control" name="row[songzheng]" type="number" value="{$row.songzheng|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Goodthing')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-goodthing" data-rule="required" class="form-control" name="row[goodthing]" type="number" value="{$row.goodthing|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Help')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-help" data-rule="required" class="form-control" name="row[help]" type="number" value="{$row.help|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Dispute')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dispute" data-rule="required" class="form-control" name="row[dispute]" type="number" value="{$row.dispute|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Activitytime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-activitytime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[activitytime]" type="text" value="{$row.activitytime}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

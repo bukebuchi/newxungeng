@@ -21,6 +21,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.on('post-body.bs.table', function (e, settings, json, xhr) {
                 $(".btn-editone").data("area", ["100%", "100%"]);
             });
+            $(".btn-edit").data("area", ["100%", "100%"]);
+            //当内容渲染完成给编辑按钮添加`data-area`属性
+            table.on('post-body.bs.table', function (e, settings, json, xhr) {
+                $(".btn-editone").data("area", ["100%", "100%"]);
+            });
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
@@ -35,8 +40,8 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'id', title: __('Id'), operate: false},
                         {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: 'like'},
-                        {field: 'category_ids', title: __('Category_ids'),formatter: Table.api.formatter.search,visible:false},
-                        {field: 'addressname', title: __('Addressname')},
+                       {field: 'addressname_names', title: __('Addressname_ids'),operate: 'like',formatter: Table.api.formatter.search},
+                        {field: 'mesh_names', title: __('Mesh_ids'),operate: 'like',formatter: Table.api.formatter.search},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange', sortable: true},
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
                         {field: 'xingshihobbydata', title: __('Xingshihobbydata'), searchList: {"kt":__('Xingshihobbydata kt'),"ff":__('Xingshihobbydata ff'),"yb":__('Xingshihobbydata yb'),"xl":__('Xingshihobbydata xl'),"zb":__('Xingshihobbydata zb'),"ll":__('Xingshihobbydata ll')}, operate:'FIND_IN_SET', formatter: Table.api.formatter.label},

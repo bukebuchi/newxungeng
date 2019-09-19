@@ -21,6 +21,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             table.on('post-body.bs.table', function (e, settings, json, xhr) {
                 $(".btn-editone").data("area", ["100%", "100%"]);
             });
+            $(".btn-edit").data("area", ["100%", "100%"]);
+            //当内容渲染完成给编辑按钮添加`data-area`属性
+            table.on('post-body.bs.table', function (e, settings, json, xhr) {
+                $(".btn-editone").data("area", ["100%", "100%"]);
+            });
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
@@ -51,8 +56,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'identity', title: __('Identity'),operate: false},
                         {field: 'city', title: __('City'),operate: false},
                         {field: 'telphone', title: __('Telphone'),operate: false},
-                        {field: 'addressname', title: __('Addressname'),operate: false},
-                        
+                       
+                           {field: 'addressname_names', title: __('Addressname_ids'),operate: 'like',formatter: Table.api.formatter.search},
+                        {field: 'mesh_names', title: __('Mesh_ids'),operate: 'like',formatter: Table.api.formatter.search},
                         {field: 'activitytime', title: __('Activitytime'), formatter: Table.api.formatter.datetime,operate:'RANGE', addclass:'datetimerange', sortable: true},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

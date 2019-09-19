@@ -42,12 +42,12 @@ public function index()
         if ($this->request->isAjax()) {
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model 
-                    ->with('admin')                   
+                    ->with('admin','addressname','mesh','street')                   
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
             $list = $this->model 
-            ->with('admin')                  
+              ->with('admin','addressname','mesh','street')                 
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
@@ -61,6 +61,33 @@ public function index()
                 'model'    => '\app\admin\model\Admin',
                 'name'     => 'Admin',
                 'table'    => 'Admin'
+            ],
+            [
+                'field'    => 'addressname_ids',
+                'display'  => 'addressname_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
+            ],
+            [
+                'field'    => 'mesh_ids',
+                'display'  => 'mesh_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
+            ],
+            [
+                'field'    => 'street_ids',
+                'display'  => 'street_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
             ]
         ]);
         $list = collection($list)->toArray();

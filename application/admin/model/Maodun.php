@@ -67,5 +67,13 @@ public function admin()
     {
         return $this->belongsTo("app\admin\model\Admin", "admin_ids", 'id', [], 'LEFT')->setEagerlyType(0);
     }
+    public function addressname()
+    {
+        return $this->belongsTo("app\common\model\Category", "addressname_ids", 'id', [], 'LEFT')->setEagerlyType(0);
+    }   
+    public function mesh()
+    {
+        return $this->belongsTo("app\common\model\Category", "mesh_ids", 'id', [], 'LEFT')->setEagerlyType(0);
+    }   
     
 }

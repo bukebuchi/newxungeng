@@ -1,0 +1,145 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Admin_ids')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-admin_ids" data-rule="required" data-source="auth/admin/selectpage" data-multiple="true" data-field="nickname" class="form-control selectpage" name="row[admin_ids]" type="text" value="{$row.admin_ids|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('City')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-city" data-rule="required" class="form-control" data-toggle="city-picker" name="row[city]" type="text" value="{$row.city|htmlentities}"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Addressname_ids')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-addressname_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"test"}' data-order-by="id desc" data-multiple="true" class="form-control selectpage" name="row[addressname_ids]" type="text" value="{$row.addressname_ids|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mesh_ids')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mesh_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"mesh"}' data-order-by="id desc" data-multiple="true" class="form-control selectpage" name="row[mesh_ids]" type="text" value="{$row.mesh_ids|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Activitytime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-activitytime" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[activitytime]" type="text" value="{$row.activitytime}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Images')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-images" data-rule="required" class="form-control" size="50" name="row[images]" type="text" value="{$row.images|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-images" class="btn btn-danger plupload" data-input-id="c-images" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-images"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-images" class="btn btn-primary fachoose" data-input-id="c-images" data-mimetype="image/*" data-multiple="true"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-images"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-images"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keywordsa')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keywordsA" data-rule="required" class="form-control" name="row[keywordsA]" type="text" value="{$row.keywordsA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Agea')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ageA" data-rule="required:range(0~)" class="form-control" name="row[ageA]" type="number" value="{$row.ageA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Identitya')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-identityA" data-rule="required:IDcard" class="form-control" name="row[identityA]" type="text" value="{$row.identityA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Acity')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-Acity" data-rule="required" class="form-control" data-toggle="city-picker" name="row[Acity]" type="text" value="{$row.Acity|htmlentities}"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Telhonea')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-telhoneA" data-rule="required:mobile" class="form-control" name="row[telhoneA]" type="text" value="{$row.telhoneA|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Genderdataa')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-genderdataA" data-rule="required" class="form-control selectpicker" name="row[genderdataA]">
+                {foreach name="genderdataaList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.genderdataA"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Bcity')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class='control-relative'><input id="c-Bcity" data-rule="required" class="form-control" data-toggle="city-picker" name="row[Bcity]" type="text" value="{$row.Bcity|htmlentities}"></div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Keywordsb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-keywordsB" data-rule="required" class="form-control" name="row[keywordsB]" type="text" value="{$row.keywordsB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Ageb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-ageB" data-rule="required:range(0~)" class="form-control" name="row[ageB]" type="number" value="{$row.ageB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Identityb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-identityB" data-rule="required:IDcard" class="form-control" name="row[identityB]" type="text" value="{$row.identityB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Telhoneb')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-telhoneB" data-rule="required:mobile" class="form-control" name="row[telhoneB]" type="text" value="{$row.telhoneB|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Genderdatab')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-genderdataB" data-rule="required" class="form-control selectpicker" name="row[genderdataB]">
+                {foreach name="genderdatabList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.genderdataB"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Addcontent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-addcontent" data-rule="required" class="form-control" name="row[addcontent]" type="text" value="{$row.addcontent|htmlentities}">
+        </div>
+    </div>
+   
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

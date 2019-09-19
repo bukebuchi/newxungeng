@@ -7,9 +7,15 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Addressname')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Addressname_ids')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-addressname" data-rule="required" class="form-control" name="row[addressname]" type="text">
+            <input id="c-addressname_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"test"}' data-order-by="id desc" data-multiple="true" class="form-control selectpage" name="row[addressname_ids]" type="text" value="">
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mesh_ids')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mesh_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"mesh"}' data-order-by="id desc" data-multiple="true" class="form-control selectpage" name="row[mesh_ids]" type="text" value="">
         </div>
     </div>
     <div class="form-group">
@@ -50,42 +56,7 @@
             <input id="c-keywords" data-rule="required" class="form-control" name="row[keywords]" type="text" value="">
         </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Age')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-age" data-rule="required:range(0~)" class="form-control" name="row[age]" type="number">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Identity')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-identity" data-rule="required:IDcard" class="form-control" name="row[identity]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('City')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <div class='control-relative'><input id="c-city" data-rule="required" class="form-control" data-toggle="city-picker" name="row[city]" type="text" value=""></div>
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Telhone')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-telhone" data-rule="required:mobile" class="form-control" name="row[telhone]" type="text" value="">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Genderdata')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            
-            <div class="radio">
-            {foreach name="genderdataList" item="vo"}
-            <label for="row[genderdata]-{$key}"><input id="row[genderdata]-{$key}" name="row[genderdata]" type="radio" value="{$key}" {in name="key" value="male"}checked{/in} /> {$vo}</label> 
-            {/foreach}
-            </div>
-
-        </div>
-    </div>
+    
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Addcontent')}:</label>
         <div class="col-xs-12 col-sm-8">

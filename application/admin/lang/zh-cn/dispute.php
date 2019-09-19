@@ -3,9 +3,10 @@
 return [
     'Id'                 => 'ID',
     'Admin_ids'       => '参与人员姓名',
-    'Category_ids'       => '参与人员',
+    
     'City'               => '矛盾纠纷地点',
-    'Addressname'        => '具体地址',
+     'Addressname_ids'       => '矛盾详细地址',
+    'Mesh_ids'       => '矛盾详细网格',
     'Activitytime'       => '纠纷时间',
     'Images'             => '矛盾纠纷现场照片',
     'Keywordsa'          => '纠纷人员甲姓名',
@@ -24,6 +25,6 @@ return [
     'Genderdatab'        => '纠纷人员乙性别(单选)',
     'Genderdatab male'   => '男',
     'Genderdatab female' => '女',
-    'Addcontent'         => '纠纷情况',
-    'Content'            => '调处具体情况'
+    'Addcontent'         => '纠纷情况'
+   
 ];

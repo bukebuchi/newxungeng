@@ -129,7 +129,7 @@ protected $noNeedRight = ['selectpage'];
     }
     /*矛盾纠纷次数*/
      private function getDispute() {
-        $count = model('dispute')->count();
+        $count = model('disputetest')->count();
         return $count;
     }
 

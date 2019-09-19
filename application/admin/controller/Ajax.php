@@ -242,6 +242,27 @@ class Ajax extends Backend
         $this->success('', null, $categorylist);
     }
 
+    
+public function institutions()
+    {
+        $first = $this->request->get('first');
+        $second = $this->request->get('second');
+        $institutionslist = null;
+        if ($second !==null)
+        {
+            $where['city']=$second;
+            $institutionslist = DB::name('institutions')->where(array('city'=> $second))->field('id as value,name')->select();
+
+        }elseif ($first !==null && $first !=='')
+        {
+            $where['province']=$first;
+            $institutionslist=Db::name('institutions')->distinct(true)->where($where)->field('city as value,city as name')->order('id desc')->select();
+        }else
+        {
+            $institutionslist=Db::name('institutions')->distinct(true)->field('province as value,province as name')->select();
+        }
+        $this->success('', null, $institutionslist);
+    }
     /**
      * 读取省市区数据,联动列表
      */

@@ -15,12 +15,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             });
 
             var table = $("#table");
-//给添加按钮添加`data-area`属性
-$(".btn-add").data("area", ["100%", "100%"]);
-//当内容渲染完成给编辑按钮添加`data-area`属性
-table.on('post-body.bs.table', function (e, settings, json, xhr) {
-    $(".btn-editone").data("area", ["100%", "100%"]);
-});
+            //给添加按钮添加`data-area`属性
+            $(".btn-add").data("area", ["100%", "100%"]);
+            //当内容渲染完成给编辑按钮添加`data-area`属性
+            table.on('post-body.bs.table', function (e, settings, json, xhr) {
+            $(".btn-editone").data("area", ["100%", "100%"]);
+            });
+            $(".btn-edit").data("area", ["100%", "100%"]);
+            //当内容渲染完成给编辑按钮添加`data-area`属性
+            table.on('post-body.bs.table', function (e, settings, json, xhr) {
+            $(".btn-editone").data("area", ["100%", "100%"]);
+            });
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
@@ -35,14 +40,29 @@ table.on('post-body.bs.table', function (e, settings, json, xhr) {
                         {checkbox: true},
                         {field: 'id', title: __('Id'),operate: false},
                         {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: false},
-                        {field: 'category_ids', title: __('Category_ids'), formatter: Table.api.formatter.search,visible:false},
+                        
                         {field: 'hobbydata', title: __('Hobbydata'), searchList: {"music":__('Hobbydata music'),"reading":__('Hobbydata reading'),"swimming":__('Hobbydata swimming')}, operate:'FIND_IN_SET', formatter: Table.api.formatter.label},
                         {field: 'city', title: __('City'),operate: false},
-                        {field: 'addressname', title: __('Addressname'),operate: false},
+                         {field: 'addressname_names', title: __('Addressname_ids'),operate: 'like',formatter: Table.api.formatter.search},
+                        {field: 'mesh_names', title: __('Mesh_ids'),operate: 'like',formatter: Table.api.formatter.search},
                   
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
                         
-                        {field: 'addcontent', title: __('Addcontent'), operate: 'like'},
+                        {field: 'addcontent', title: __('Addcontent'), operate: 'like',formatter:function(value,row,index){ 
+                             var str=row.addcontent;
+                             var obj1='';
+                             var xqo = eval('(' + str + ')');
+                             console.log(xqo);
+                                for(var i in xqo){
+                                var obj='姓名'+' : '+xqo[i].Name+'<br/>'+'身份证'+' : '+xqo[i].Id+'<br/>'+'性别'+' : '+xqo[i].Sex+'<br/>'+'电话'+' : '+xqo[i].Telephone+'<br/>';
+                                var obj1=obj1+obj;
+                                }
+
+                             return obj1;
+   
+                             
+                        }
+                        },
                         {field: 'genderdata', title: __('Genderdata'), searchList: {"male":__('Genderdata male'),"female":__('Genderdata female')}, formatter: Table.api.formatter.normal, operate: false,visible:false},
                         {field: 'views', title: __('Views'), operate: false},
                         {field: 'title', title: __('Title'), operate: false},
@@ -58,13 +78,13 @@ table.on('post-body.bs.table', function (e, settings, json, xhr) {
         add: function () {
             Form.events.selectpage($("form"));
     Form.events.datetimepicker($("form"));
-           Form.api.bindevent($("form[role=form]"));
+          Controller.api.bindevent();
         },
         edit: function () {
             Form.events.selectpage($("form"));
     Form.events.datetimepicker($("form"));
    
-            Form.api.bindevent($("form[role=form]"));
+            Controller.api.bindevent();
         },
         map: function () {
             Form.api.bindevent($("form[role=form]"));

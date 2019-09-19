@@ -27,7 +27,7 @@ class Traffic extends Backend
         parent::_initialize();
         $this->model = new \app\admin\model\Traffic;
         $this->view->assign("hobbydataList", $this->model->getHobbydataList());
-        $this->view->assign("genderdataList", $this->model->getGenderdataList());
+        
     }
     
     /**
@@ -47,12 +47,12 @@ class Traffic extends Backend
         if ($this->request->isAjax()) {
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model 
-                    ->with('admin')                   
+                    ->with('admin','addressname','mesh')                   
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
             $list = $this->model 
-            ->with('admin')                  
+            ->with('admin','addressname','mesh')                   
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
@@ -66,6 +66,24 @@ class Traffic extends Backend
                 'model'    => '\app\admin\model\Admin',
                 'name'     => 'Admin',
                 'table'    => 'Admin'
+            ],
+            [
+                'field'    => 'addressname_ids',
+                'display'  => 'addressname_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
+            ],
+            [
+                'field'    => 'mesh_ids',
+                'display'  => 'mesh_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
             ]
         ]);
         $list = collection($list)->toArray();
