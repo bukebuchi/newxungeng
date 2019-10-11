@@ -52,6 +52,24 @@ class Relief extends Backend
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
+            $sum['totalviews'] = $this->model 
+                     ->with('admin','addressname','mesh')                     
+                    ->where($where)
+                    ->order($sort, $order)
+                    ->sum('views');
+            $sum['totalfireviews'] = $this->model 
+                     ->with('admin','addressname','mesh')                     
+                    ->where($where)
+                    ->order($sort, $order)
+                    ->sum('fireviews');
+            $sum['views']=0;//这里我们要统计的值是views救助群众 
+           $sum['fireviews']=0;//这里我们要统计的值是views救助群众 
+            foreach ($list as $row) {
+                $row->visible(['id', 'admin_nicknames','addressname_names','mesh_names','activitytime','images','views','hobbydata','fireviews','addcontent']);
+                $sum['views']+=$row['views'];
+                $sum['fireviews']+=$row['fireviews'];
+            }
+
                     $list = addtion($list, [
             [
                 'field'    => 'admin_ids',
@@ -82,10 +100,11 @@ class Relief extends Backend
             ]
         ]);
         $list = collection($list)->toArray();
-            $result = array("total" => $total, "rows" => $list);
-
+            $result = array("total" => $total, "rows" => $list, "sum" => $sum);
+           
             return json($result);
         }
+
         return $this->view->fetch();
     }
 

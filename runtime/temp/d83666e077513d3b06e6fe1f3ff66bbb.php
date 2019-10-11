@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:62:"C:\www\public/../application/admin\view\disputetest\index.html";i:1568712311;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:62:"C:\www\public/../application/admin\view\disputetest\index.html";i:1570635660;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -107,46 +107,16 @@
    
 
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-        <div class="form-group ">
-            <label class="control-label col-xs-4"><?php echo __('Keywordsa'); ?>:</label>
-<div class="col-xs-8">
-            <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-name="keywordsA" value="like"/>
-            <input id="c-keywordsA " data-rule="required" data-live-search="true" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="keywordsA" type="text" value=""/>
-             </div>
+                <div class="form-group ">
+                    <label class="control-label col-xs-4"><?php echo __('Information'); ?>:</label>
+ <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <input class="operate" type="hidden" data-name="information" value="like"/>
+                    <input id="c-information" data-rule="required" data-live-search="true" class="form-control" name="information" type="text" value=""/>
+  </div>
+                </div>
 
-        </div>
-
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-        <div class="form-group">
-            <label class="control-label col-xs-4"><?php echo __('Identitya'); ?>:</label>
-<div class="col-xs-8">
-            <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-live-search="true" data-name="Identitya" value="like"/>
-            <input id="c-Identitya" data-rule="required:IDcard" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="Identitya" type="text" value=""/>
-        </div>
-        </div>
-    </div>                          
-
-
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-        <div class="form-group ">
-            <label class="control-label col-xs-4"><?php echo __('Keywordsb'); ?>:</label>
-<div class="col-xs-8">
-            <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-name="keywordsB" value="like"/>
-            <input id="c-keywordsB " data-rule="required" data-live-search="true" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="keywordsB" type="text" value=""/>
- </div>
-        </div>
-
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-        <div class="form-group">
-            <label class="control-label col-xs-4"><?php echo __('Identityb'); ?>:</label>
-<div class="col-xs-8">
-            <input class="operate col-xs-12 col-sm-6 col-md-4 col-lg-3" type="hidden" data-live-search="true" data-name="Identityb" value="like"/>
-            <input id="c-Identityb" data-rule="required:IDcard" class="form-control col-xs-12 col-sm-6 col-md-4 col-lg-3" name="Identityb" type="text" value=""/>
- </div>
-        </div>
-    </div>
+            </div>
+    
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
             <div class="form-group">
                 <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3"><?php echo __('Addressname_ids'); ?>:</label>

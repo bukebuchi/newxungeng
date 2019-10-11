@@ -4,6 +4,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         index: function () {
             // 初始化表格参数配置
             Table.api.init({
+                showFooter:true,
                 extend: {
                     index_url: 'disputetest/index' + location.search,
                     add_url: 'disputetest/add',
@@ -15,7 +16,17 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             });
 
             var table = $("#table");
-
+//给添加按钮添加`data-area`属性
+            $(".btn-add").data("area", ["100%", "100%"]);
+            //当内容渲染完成给编辑按钮添加`data-area`属性
+            table.on('post-body.bs.table', function (e, settings, json, xhr) {
+            $(".btn-editone").data("area", ["100%", "100%"]);
+            });
+            $(".btn-edit").data("area", ["100%", "100%"]);
+            //当内容渲染完成给编辑按钮添加`data-area`属性
+            table.on('post-body.bs.table', function (e, settings, json, xhr) {
+            $(".btn-editone").data("area", ["100%", "100%"]);
+            });
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
@@ -25,9 +36,14 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                 commonSearch: true,
                 searchFormVisible: true,
                 searchFormTemplate: 'customformtpl',
+
                 columns: [
                     [
-                        {checkbox: true},
+                        
+                        {checkbox: true,footerFormatter:function(data){
+                                return '总计';//在第一列开头写上总计、统计之类
+                            }
+                        },
                         {field: 'id', title: __('Id')},
                         
                         {field: 'admin_nicknames', title: __('Admin_ids'),formatter: Table.api.formatter.label, operate: 'like'}, 
@@ -36,18 +52,22 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'mesh_names', title: __('Mesh_ids'), operate: 'like',formatter: Table.api.formatter.search},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange'},
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images},
-                        {field: 'keywordsA', title: __('Keywordsa')},
-                        {field: 'ageA', title: __('Agea')},
-                        {field: 'identityA', title: __('Identitya')},
-                        {field: 'Acity', title: __('Acity')},
-                        {field: 'telhoneA', title: __('Telhonea')},
-                        {field: 'genderdataA', title: __('Genderdataa'), searchList: {"male":__('Genderdataa male'),"female":__('Genderdataa female')}, formatter: Table.api.formatter.normal},
-                        {field: 'Bcity', title: __('Bcity')},
-                        {field: 'keywordsB', title: __('Keywordsb')},
-                        {field: 'ageB', title: __('Ageb')},
-                        {field: 'identityB', title: __('Identityb')},
-                        {field: 'telhoneB', title: __('Telhoneb')},
-                        {field: 'genderdataB', title: __('Genderdatab'), searchList: {"male":__('Genderdatab male'),"female":__('Genderdatab female')}, formatter: Table.api.formatter.normal},
+                        {field: 'information', title: __('Information'), operate: 'like',formatter:function(value,row,index){ 
+                             var str=row.information;
+                             var obj1='';
+                             var xqo = eval('(' + str + ')');
+                             console.log(xqo);
+                                for(var i in xqo){
+                                var obj='姓名'+' : '+xqo[i].Name+'<br/>'+'身份证'+' : '+xqo[i].Id+'<br/>'+'性别'+' : '+xqo[i].Sex+'<br/>'+'电话'+' : '+xqo[i].Telephone+'<br/>';
+                                var obj1=obj1+obj;
+                                }
+
+                             return obj1;
+   
+                             
+                        }
+                    },
+                       
                         {field: 'addcontent', title: __('Addcontent')},
                         {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate, formatter: Table.api.formatter.operate}
                     ]

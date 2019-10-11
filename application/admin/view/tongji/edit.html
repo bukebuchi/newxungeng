@@ -1,11 +1,11 @@
 <form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
-   <!--  <div class="form-group">
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Admin_ids')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-admin_ids" data-rule="required" data-source="auth/admin/selectpage" data-multiple="true" data-field="nickname" class="form-control selectpage" name="row[admin_ids]" type="text" value="{$row.admin_ids|htmlentities}">
         </div>
-    </div> -->
+    </div>
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Miles')}:</label>
         <div class="col-xs-12 col-sm-8">
@@ -25,6 +25,25 @@
         </div>
     </div>
     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Meshnumber')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-meshnumber" data-rule="required" class="form-control" name="row[meshnumber]" type="number" value="{$row.meshnumber|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Pointnumber')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pointnumber" data-rule="required" class="form-control" name="row[pointnumber]" type="number" value="{$row.pointnumber|htmlentities}">
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yuanbanumber')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yuanbanumber" data-rule="required" class="form-control" name="row[yuanbanumber]" type="number" value="{$row.yuanbanumber|htmlentities}">
+        </div>
+    </div>
+
+    <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Questioncar')}:</label>
         <div class="col-xs-12 col-sm-8">
             <input id="c-questioncar" data-rule="required" class="form-control" name="row[questioncar]" type="number" value="{$row.questioncar|htmlentities}">
@@ -43,21 +62,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Fishpeople')}:</label>
+        <label class="control-label col-xs-12 col-sm-2">{:__('Dispute')}:</label>
         <div class="col-xs-12 col-sm-8">
-            <input id="c-fishpeople" data-rule="required" class="form-control" name="row[fishpeople]" type="number" value="{$row.fishpeople|htmlentities}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Outfire')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-outfire" data-rule="required" class="form-control" name="row[outfire]" type="number" value="{$row.outfire|htmlentities}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Society')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-society" data-rule="required" class="form-control" name="row[society]" type="number" value="{$row.society|htmlentities}">
+            <input id="c-dispute" data-rule="required" class="form-control" name="row[dispute]" type="number" value="{$row.dispute|htmlentities}">
         </div>
     </div>
     <div class="form-group">
@@ -66,6 +73,94 @@
             <input id="c-danger" data-rule="required" class="form-control" name="row[danger]" type="number" value="{$row.danger|htmlentities}">
         </div>
     </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Society')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-society" data-rule="required" class="form-control" name="row[society]" type="number" value="{$row.society|htmlentities}">
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Service')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-service" data-rule="required" class="form-control" name="row[service]" type="number" value="{$row.service|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Relief')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-relief" data-rule="required" class="form-control" name="row[relief]" type="number" value="{$row.relief|htmlentities}">
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Outfire')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-outfire" data-rule="required" class="form-control" name="row[outfire]" type="number" value="{$row.outfire|htmlentities}">
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Mafeng')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-mafeng" data-rule="required" class="form-control" name="row[mafeng]" type="number" value="{$row.mafeng|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Help')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-help" data-rule="required" class="form-control" name="row[help]" type="number" value="{$row.help|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Xuanchuan')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-xuanchuan" data-rule="required" class="form-control" name="row[xuanchuan]" type="number" value="{$row.xuanchuan|htmlentities}">
+        </div>
+    </div>
+     <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fangfanxuanchuan')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fangfanxuanchuan" data-rule="required" class="form-control" name="row[fangfanxuanchuan]" type="number" value="{$row.fangfanxuanchuan|htmlentities}">
+        </div>
+    </div>
+      <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Huxiao')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-huxiao" data-rule="required" class="form-control" name="row[huxiao]" type="number" value="{$row.huxiao|htmlentities}">
+        </div>
+    </div>
+      <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Inhuxiao')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-inhuxiao" data-rule="required" class="form-control" name="row[inhuxiao]" type="number" value="{$row.inhuxiao|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Infish')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-infish" data-rule="required" class="form-control" name="row[infish]" type="number" value="{$row.infish|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Fishpeople')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-fishpeople" data-rule="required" class="form-control" name="row[fishpeople]" type="number" value="{$row.fishpeople|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Dianping')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dianping" data-rule="required" class="form-control" name="row[dianping]" type="number" value="{$row.dianping|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Yuju')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-yuju" data-rule="required" class="form-control" name="row[yuju]" type="number" value="{$row.yuju|htmlentities}">
+        </div>
+    </div>
+   
+   
+   
+    
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Clear')}:</label>
         <div class="col-xs-12 col-sm-8">
@@ -84,18 +179,8 @@
             <input id="c-goodthing" data-rule="required" class="form-control" name="row[goodthing]" type="number" value="{$row.goodthing|htmlentities}">
         </div>
     </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Help')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-help" data-rule="required" class="form-control" name="row[help]" type="number" value="{$row.help|htmlentities}">
-        </div>
-    </div>
-    <div class="form-group">
-        <label class="control-label col-xs-12 col-sm-2">{:__('Dispute')}:</label>
-        <div class="col-xs-12 col-sm-8">
-            <input id="c-dispute" data-rule="required" class="form-control" name="row[dispute]" type="number" value="{$row.dispute|htmlentities}">
-        </div>
-    </div>
+    
+    
     <div class="form-group">
         <label class="control-label col-xs-12 col-sm-2">{:__('Activitytime')}:</label>
         <div class="col-xs-12 col-sm-8">
