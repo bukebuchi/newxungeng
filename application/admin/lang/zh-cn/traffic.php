@@ -4,8 +4,10 @@ return [
     'Id'                => 'ID',
     'Admin_ids'      => '参与人员姓名',
    
-    'Addressname_ids'       => '交通地址',
-    'Mesh_ids'       => '详细网格',
+    
+     'Addressname_ids'       => '交通所属镇地址',
+    'Mesh_ids'       => '交通所属村居',
+     'Dname_ids'       => '交通所属网格',
     'Activitytime'      => '处理时间',
     'Images'            => '现场照片',
     'Hobbydata'         => '工作内容',

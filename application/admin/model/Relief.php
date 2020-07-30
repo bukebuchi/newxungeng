@@ -58,7 +58,10 @@ public function addressname()
     {
         return $this->belongsTo("app\common\model\Category", "mesh_ids", 'id', [], 'LEFT')->setEagerlyType(0);
     }   
-
+public function dname()
+    {
+        return $this->belongsTo("app\common\model\Category", "dname_ids", 'id', [], 'LEFT')->setEagerlyType(0);
+    }
 
 
 

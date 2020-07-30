@@ -6,7 +6,7 @@
  * Time: 16:49
  */
 
-namespace addons\voicenotice\controller;
+namespace app\admin\controller\controller;
 
 use addons\voicenotice\library\Voice;
 use app\admin\library\Auth;

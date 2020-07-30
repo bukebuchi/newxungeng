@@ -1,6 +1,53 @@
 define(function () {
     var time, listen_stop = false, loop = true;
+   
+   var updateEntity = 'http://localhost:8080/api/entity/update';
+    var ak = 'bKUAfOc5AYml0vlGgRZiABG60mfE5Wp8';
+    var  service_id = '216597';
+    
+   
+
     var Controller = {
+    	 // 矩形区域检索entity
+    
+    
+
+    /**
+     * JSONP
+     *
+     * @param {string} url 请求url
+     * @param {object} params 请求参数
+     * @param {function} callbakc 请求成功回调函数
+     * @param {function} before 请求前函数
+     */
+    jsonp: function (url, params, callback, before) {
+        var that = this;
+        if (before) {
+            before();
+        }
+        params.timeStamp = new Date().getTime();
+        //params.ak = Commonfun.getQueryString('ak');
+        //params.service_id = Commonfun.getQueryString('service_id');
+        params.ak = 'bKUAfOc5AYml0vlGgRZiABG60mfE5Wp8';
+        params.service_id = '216597';
+        url = url + '?';
+        for (let i in params) {
+            url = url + i + '=' + params[i] + '&';
+        }
+        var timeStamp = (Math.random() * 100000).toFixed(0);
+        window['ck' + timeStamp] = callback || function () {};
+        var completeUrl = url + '&callback=ck' + timeStamp;
+        var script = document.createElement('script');
+        script.src = completeUrl;
+        script.id = 'jsonp';
+        document.getElementsByTagName('head')[0].appendChild(script);
+        script.onload = function (e) {
+            $('#jsonp').remove();
+        };
+        script.onerror = function (e) {
+            that.jsonp(url, params, callback, before)
+        };
+    },
         btts: function (param, options) {
             var url = '//tsn.baidu.com/text2audio';
             var opt = options || {};
@@ -97,6 +144,7 @@ define(function () {
         },
         play: function (notice, token) {
             var audio = null;
+            
             audio = Controller.btts({
                 tex: notice.text,
                 tok: notice.token,
@@ -117,6 +165,29 @@ define(function () {
                     listen_stop = true;
                     audio = htmlAudioElement;
                     htmlAudioElement.src && Controller.AudioPlay(audio, 2000, 3000);
+                  notice.text = notice.text.substring(3);
+                  var entity_name = notice.text.substring(0,notice.text.length-4);
+                  var alarm = notice.text.substring(notice.text.length-4);
+					var params = {
+						'ak':ak,
+						'service_id':service_id,
+						'entity_name': entity_name,
+						'alarm': alarm,
+					};
+                  console.log(params);
+					$.ajax({
+						type: 'POST',
+						url: updateEntity,
+						data: params,
+						dataType: 'json',
+						success: function (json) {
+							console.log(json);
+						},
+						error: function () {
+							console.log('error');
+						}
+					});
+				
                     Toastr["info"](notice.text, "消息提示", {
                         closeButton: false,
                         debug: false,
@@ -178,7 +249,7 @@ define(function () {
         open: function (url, url_type) {
             if (url && url_type) {
                 if (url_type == "addtabs") {
-                    Fast.api.addtabs(url)
+                    Fasopent.api.addtabs(url)
                 } else {
                     Fast.api.open(url)
                 }
@@ -192,6 +263,7 @@ define(function () {
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
                     var result = JSON.parse(xhr.responseText);
+                    console.log(result);
                     if (result.state) loop = typeof result.data.loop == 'boolean' ? true : parseInt(result.data.loop);
                     result.state && result.data.text && Controller.play(result.data)
                 }

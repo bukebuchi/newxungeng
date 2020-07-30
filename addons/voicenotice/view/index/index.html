@@ -49,7 +49,7 @@
             height: 300px;
             text-align: center;
             position: absolute;
-            top: 34%;
+            top: 40%;
             left: 50%;
             margin: -150px 0 0 -200px;
             border-radius: 3px
@@ -765,9 +765,18 @@
 <div id="container">
     <div id="output">
         <div class="containerT">
-            <h1>一键语音报警</h1>
+         
             <form class="form" method="post">
-                <input type="text" name="text" value="请求救援" placeholder="文字描述">
+                <input type="text" name="text1" value="" placeholder="下发命令">
+                <div style="margin: 20px 0;">
+                                      
+                                        <select name="text" class="selectpicker" title="警情类型" multiple>
+                                            <option value="紧急求援">紧急求援</option>
+                                            <option value="交通堵塞">交通堵塞</option>
+                                            <option value="山石滑坡">山石滑坡</option>
+                                            <option value="抢救病人">抢救病人</option>
+                                        </select>
+                </div>
 
                 <div style="margin: 20px 0;">
                     <select class="selectpicker" name="admin[]" title="管理员" multiple>
@@ -786,20 +795,20 @@
                 </div>
 
 
-                <div style="margin: 20px 0;">
+                <div style="margin: 20px 0;" hidden=''>
                     <span style="font-size: 20px;color: red">播放次数：</span>
                     <input placeholder="默认true表示循环播放直到点击" type="number" name="loop" value="true">
                 </div>
 
 
-                <div style="margin: 10px 0">
+                <div style="margin: 10px 0" hidden=''>
                     <select class="selectpicker" title="打开窗口方式" name="url_type">
                         <option value="open">弹窗</option>
                         <option value="addtabs">侧边栏</option>
                     </select>
                 </div>
 
-                <div style="margin: 10px 0">
+                <div style="margin: 10px 0" hidden=''>
                     <span style="font-size: 20px;color: red">打开链接：</span>
                     <input name="url" type="text" value="https://www.fastadmin.net/">
                 </div>

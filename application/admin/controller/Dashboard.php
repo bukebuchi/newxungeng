@@ -17,6 +17,10 @@ class Dashboard extends Backend
 protected $noNeedRight = ['selectpage'];
     protected $dataLimit = 'auth';
     protected $dataLimitField = 'admin_id';
+    protected $prefix = "";
+
+     protected $model = null;
+
     /**
      * 查看
      */
@@ -73,6 +77,8 @@ protected $noNeedRight = ['selectpage'];
             'admin_count'      => $this->getAdmin(),
             'safety_count'     => $this->getSafety(),
             'Traffic_count'    => $this->getTrafficsafety(),
+            'Tongji_count'    => $this->getTongji(),
+            'risk_count'    => $this->getRisk(),                        
             'Fire_count'       => $this->getFiresafety(),
             'Production_count' => $this->getProductionsafety(),
             'Natural_count'    => $this->getNaturalsafety(),
@@ -130,6 +136,11 @@ protected $noNeedRight = ['selectpage'];
     /*矛盾纠纷次数*/
      private function getDispute() {
         $count = model('disputetest')->count();
+        return $count;
+    }
+     /*矛盾纠纷次数*/
+     private function getTongji() {
+        $count = model('tongji')->count();
         return $count;
     }
 
@@ -195,6 +206,13 @@ protected $noNeedRight = ['selectpage'];
         $count = model('Safety')->count();
         return $count;
     }
+     /*生产安全隐患排查*/
+    private function getRisk() {
+    	//$this->model = new \app\admin\model\flow\Flowtest;
+		$count = \app\admin\model\flow\Flowtest::count();
+    	// $count = model('Safety')->count();
+        return $count;
+    }
 
     /*交通安全隐患排查*/
     private function getTrafficsafety() {
@@ -211,6 +229,7 @@ protected $noNeedRight = ['selectpage'];
         $count = model('Safety')->where("xingshihobbydata='yb'")->count();
         return $count;
     }
+   
     /*自然灾害隐患排查*/
     private function getNaturalsafety() {
         $count = model('Safety')->where("xingshihobbydata='xl'")->count();

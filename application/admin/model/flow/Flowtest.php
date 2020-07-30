@@ -22,7 +22,7 @@ class Flowtest extends Model
         'contenthobbydata_text'
     ];
     
-
+	
     
     public function getXingshihobbydataList()
     {

@@ -31,7 +31,7 @@ define('script/modules/common/views/title', function(require, exports, module) {
               _react2['default'].createElement(
                   'span',
                   { className: 'headName' },
-                  '巡更系统'
+                  '农村智慧巡逻系统'
               )
           );
       }

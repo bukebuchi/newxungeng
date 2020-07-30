@@ -42,30 +42,30 @@ class Relief extends Backend
         if ($this->request->isAjax()) {
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model 
-                     ->with('admin','addressname','mesh')                     
+                     ->with('admin','addressname','mesh','dname')                     
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
             $list = $this->model 
-            ->with('admin','addressname','mesh')                    
+            ->with('admin','addressname','mesh','dname')                    
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
                     ->select();
             $sum['totalviews'] = $this->model 
-                     ->with('admin','addressname','mesh')                     
+                     ->with('admin','addressname','mesh','dname')                     
                     ->where($where)
                     ->order($sort, $order)
                     ->sum('views');
             $sum['totalfireviews'] = $this->model 
-                     ->with('admin','addressname','mesh')                     
+                     ->with('admin','addressname','mesh','dname')                     
                     ->where($where)
                     ->order($sort, $order)
                     ->sum('fireviews');
             $sum['views']=0;//这里我们要统计的值是views救助群众 
            $sum['fireviews']=0;//这里我们要统计的值是views救助群众 
             foreach ($list as $row) {
-                $row->visible(['id', 'admin_nicknames','addressname_names','mesh_names','activitytime','images','views','hobbydata','fireviews','addcontent']);
+                $row->visible(['id', 'admin_nicknames','addressname_names','mesh_names','dname_names','activitytime','images','views','hobbydata','fireviews','addcontent']);
                 $sum['views']+=$row['views'];
                 $sum['fireviews']+=$row['fireviews'];
             }
@@ -92,6 +92,15 @@ class Relief extends Backend
             [
                 'field'    => 'mesh_ids',
                 'display'  => 'mesh_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
+            ],
+            [
+                'field'    => 'dname_ids',
+                'display'  => 'dname_names',
                 'primary'  => 'id',
                 'column'   => 'name',
                 'model'    => '\app\admin\model\Category',

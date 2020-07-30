@@ -1,0 +1,1560 @@
+---------------------------------------------------------------
+[ 2019-11-06T23:55:07+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020688s] [吞吐率：48.34req/s] [内存消耗：563.51kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000846s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000881s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000815s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000239s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000756s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:55:17+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.027421s] [吞吐率：36.47req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000092s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001040s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001075s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001130s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000210s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000396s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:55:27+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020981s] [吞吐率：47.66req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000873s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000936s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000811s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000209s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000666s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000876s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:55:37+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030063s] [吞吐率：33.26req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000811s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000845s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000760s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000260s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010568s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000456s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:55:47+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029560s] [吞吐率：33.83req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000789s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000822s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000772s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000217s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010632s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:55:57+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029478s] [吞吐率：33.92req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000785s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000818s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000766s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000213s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010652s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000441s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:56:07+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030706s] [吞吐率：32.57req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000822s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000855s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000816s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000221s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011057s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000416s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:56:17+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020411s] [吞吐率：48.99req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000797s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000832s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000777s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000216s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:56:27+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020450s] [吞吐率：48.90req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000840s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000874s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000812s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000218s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000698s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000420s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:56:37+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020283s] [吞吐率：49.30req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000829s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000862s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000818s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000231s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000711s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000407s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:56:47+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020038s] [吞吐率：49.91req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000810s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000844s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000777s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000211s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000413s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:56:57+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029612s] [吞吐率：33.77req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000790s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000823s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000780s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000219s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010641s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000414s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:57:07+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029597s] [吞吐率：33.79req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000783s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000820s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000770s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000254s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010212s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:57:17+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020436s] [吞吐率：48.93req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000786s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000819s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000813s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000229s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000699s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:57:27+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.036497s] [吞吐率：27.40req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001022s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001055s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001324s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000217s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010540s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000417s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:57:37+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.020457s] [吞吐率：48.88req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000858s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000893s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000813s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000211s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:57:47+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.021864s] [吞吐率：45.74req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000082s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000860s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000893s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001125s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000298s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.001055s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:57:57+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029036s] [吞吐率：34.44req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000819s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000852s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000771s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000216s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010339s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:58:07+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029626s] [吞吐率：33.75req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000794s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000828s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000766s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000224s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010210s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000449s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:58:17+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.021796s] [吞吐率：45.88req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000797s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000832s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000759s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000362s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000710s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000490s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:58:27+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030057s] [吞吐率：33.27req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000778s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000812s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000767s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000215s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010962s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000420s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:58:37+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029718s] [吞吐率：33.65req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000805s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000840s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000763s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000220s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010384s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000454s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:58:47+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030698s] [吞吐率：32.58req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000810s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000846s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000764s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000238s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010375s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000475s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:58:57+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030184s] [吞吐率：33.13req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000795s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000828s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000774s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000211s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011014s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:59:07+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029675s] [吞吐率：33.70req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000795s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000829s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000765s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000278s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010277s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:59:17+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030570s] [吞吐率：32.71req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000785s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000829s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000773s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000214s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010862s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:59:27+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.029638s] [吞吐率：33.74req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000793s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000826s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000766s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000225s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010311s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:59:37+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.037708s] [吞吐率：26.52req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001084s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001120s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001136s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000215s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010497s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000439s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:59:47+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.030666s] [吞吐率：32.61req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000923s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000958s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000795s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000276s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010683s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000456s ]
+---------------------------------------------------------------
+[ 2019-11-06T23:59:57+08:00 ] 0.0.0.0 GET localhost/addons/voicenotice/notice/voice
+[运行时间：0.021175s] [吞吐率：47.23req/s] [内存消耗：563.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000819s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000854s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36',
+  'accept' => '*/*',
+  'sec-fetch-site' => 'same-origin',
+  'referer' => 'http://localhost/admin/traffic?ref=addtabs',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_f8d0a8c400404989e195270b0bbf060a=1568691166,1569126419,1571041568,1571044223; Hm_lpvt_f8d0a8c400404989e195270b0bbf060a=1571044223; PHPSESSID=jguovqtti9q39ihvuhlsscaubr',
+)
+[ info ] [ PARAM ] array (
+  'addon' => 'voicenotice',
+  'controller' => 'notice',
+  'action' => 'voice',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ C:\www\vendor\karsonzhang\fastadmin-addons\src\addons\Route.php ]
+[ info ] [ LANG ] C:\www\public/../application/common\lang\zh-cn\addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.000775s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000212s ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;port=3308;dbname=fastadmin;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_voicenotice_que` [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT `id`,`text`,`loop`,`url_type`,`url` FROM `fa_voicenotice_que` WHERE  `aid` = 1 LIMIT 1 [ RunTime:0.000404s ]

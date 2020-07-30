@@ -47,12 +47,12 @@ class Traffic extends Backend
         if ($this->request->isAjax()) {
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model 
-                    ->with('admin','addressname','mesh')                   
+                    ->with('admin','addressname','mesh','dname')                   
                     ->where($where)
                     ->order($sort, $order)
                     ->count();
             $list = $this->model 
-            ->with('admin','addressname','mesh')                   
+            ->with('admin','addressname','mesh','dname')                   
                     ->where($where)
                     ->order($sort, $order)
                     ->limit($offset, $limit)
@@ -79,6 +79,15 @@ class Traffic extends Backend
             [
                 'field'    => 'mesh_ids',
                 'display'  => 'mesh_names',
+                'primary'  => 'id',
+                'column'   => 'name',
+                'model'    => '\app\admin\model\Category',
+                'name'     => 'Category',
+                'table'    => 'Category'
+            ],
+            [
+                'field'    => 'dname_ids',
+                'display'  => 'dname_names',
                 'primary'  => 'id',
                 'column'   => 'name',
                 'model'    => '\app\admin\model\Category',

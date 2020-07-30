@@ -69,22 +69,27 @@
 
             </div>
         </div> 
-<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
+
+<!-- <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
             <div class="form-group">
                 <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Addressname_ids')}:</label>
                 <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
                     <input type="hidden" class="operate" data-name="addressname_ids" value="="/>
-                 <input id="c-addressname_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"test"}' data-order-by="id desc" data-live-search="true" data-multiple="true" class="form-control selectpage" name="addressname_ids" type="text" value="">
+                 <input id="c-addressname_ids" data-rule="required" data-source="category/selectpage" data-params='{"custom[type]":"dname"}' data-order-by="id desc" data-live-search="true" data-multiple="true" class="form-control selectpage" name="addressname_ids" type="text" value="">
                 </div>
             </div>
-        </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"> 
-            <div class="form-group">
-                <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Mesh_ids')}:</label>
-                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-                    <input type="hidden" class="operate" data-name="mesh_ids" value="="/>
-                 <input id="c-mesh_ids" data-rule="required" data-source="category/selectpage" data-live-search="true" data-params='{"custom[type]":"mesh"}' data-order-by="id desc" data-multiple="true" class="form-control selectpage" name="mesh_ids" type="text" value="">
-                </div>
+        </div> -->
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+          <label class="control-label col-xs-12 col-sm-6 col-md-4 col-lg-3">{:__('Addressname_ids')}:</label> 
+            <div class="form-inline col-xs-12 col-sm-6 col-md-4 col-lg-3" data-toggle="cxselect" data-selects="first,second,third">
+            <select class="first form-control col-xs-12 col-sm-2" name="addressname_ids" data-url="ajax/category?type=dname&pid=0" ></select>
+            <input type="hidden" class="form-control operate" data-name="addressname_ids" value="=" /> 
+            <select class="second form-control col-xs-12 col-sm-2" name="mesh_ids" data-url="ajax/category?type=dname"
+            data-query-name="pid"></select>
+            <input type="hidden" class="form-control operate" data-name="mesh_ids" value="=" /> 
+            <select  id="c-dname_ids" class="third form-control col-xs-12 col-sm-4" name="dname_ids" data-url="ajax/category?type=dname" data-rule="required" data-query-name="pid"></select>
+            <input type="hidden" class="form-control operate" data-name="dname_ids" value="=" /> 
             </div>
         </div>
      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">   

@@ -27,9 +27,11 @@ class Index extends Controller
     public function _initialize()
     {
         $this->admin_auth = Auth::instance();
-        if (!$this->admin_auth->isLogin()) {
-            $this->error("请先登录管理后台", "");
-        }
+
+       
+       // if (!$this->admin_auth->isLogin()) {
+        //    $this->error("请先登录管理后台", "");
+       // }
         Lang::load(APP_PATH . "admin" . '/lang/' . $this->request->langset() . '.php');
         $list = AuthGroup::all();
         $list = collection($list)->toArray();
@@ -44,9 +46,35 @@ class Index extends Controller
         if ($this->request->isPost()) {
             $post = $this->request->post();
 
-            !isset($post['admin']) && !isset($post['group']) && $this->error("管理员/管理组请至少选择一项", addon_url('voicenotice/index/index'));
+            !isset($post['text']) && !isset($post['admin']) && !isset($post['group']) && $this->error("警情类型/管理员/管理组请至少选择一项", addon_url('voicenotice/index/index'));
+            
+             
+             var_dump($this->admin_auth->username);
+             
+            if($this->admin_auth->username == '13212384180')
+			{
+			
+            $text = $post['text1'];
+            
+			}
+			else if($this->admin_auth->username == '13212384184')
+			{
+				$text = $post['text1'];
+			}
+			else if($this->admin_auth->username == 'admin')
+			{
+				$text = $post['text1'];
+			}
+			else
+			{
+				$text2='请注意';
+             $text1=$this->admin_auth->username;
+             $text3=$this->admin_auth->nickname;
 
             $text = $post['text'];
+            $text= $text2.$text1.$text3.$text;
+			}
+            /*
             $rule = [
                 'text' => 'require|length:2,100',
             ];
@@ -54,18 +82,19 @@ class Index extends Controller
                 'text.require' => '消息不能为空',
                 'text.length' => '消息内容在2-100之间',
             ];
+            */
             $data = [
                 'text' => $text,
                 'admin' => !isset($post['admin']) ? false : $post['admin'],
                 'group' => !isset($post['group']) ? false : $post['group']
             ];
-
+            /*
             $validate = new Validate($rule, $msg);
             $result = $validate->check($data);
             if (!$result) {
                 $this->error(__($validate->getError()));
             }
-
+			*/
             empty($post['loop'])&&$post['loop']=true;
             $worker = voice::addNotice($data['text'], $data['admin'], $data['group'],$post['loop'],$post['url'],$post['url_type']);
             if (!$worker) {

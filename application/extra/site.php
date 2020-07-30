@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'name' => '智能乡镇',
+  'name' => '农村智慧巡逻系统',
   'beian' => '',
   'cdnurl' => '',
   'version' => '1.0.1',
@@ -21,6 +21,7 @@ return array (
     'test' => 'Test',
     'username' => 'username',
     'mesh' => 'mesh',
+    'dname' => 'dname',
   ),
   'configgroup' => 
   array (
@@ -33,8 +34,8 @@ return array (
   'mail_type' => '1',
   'mail_smtp_host' => 'smtp.qq.com',
   'mail_smtp_port' => '465',
-  'mail_smtp_user' => '10000',
-  'mail_smtp_pass' => 'password',
+  'mail_smtp_user' => '247364041@qq.com',
+  'mail_smtp_pass' => 'trzncmvfglubbgja',
   'mail_verify_type' => '2',
-  'mail_from' => '10000@qq.com',
+  'mail_from' => '247364041@qq.com',
 );

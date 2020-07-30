@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1567846494;s:49:"C:\www\application\admin\view\layout\default.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:60:"C:\www\public/../application/admin\view\dashboard\index.html";i:1596014535;s:49:"C:\www\application\admin\view\layout\default.html";i:1595838839;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -37,16 +37,7 @@
                             </section>
                             <?php if(!IS_DIALOG && !$config['fastadmin']['multiplenav']): ?>
                             <!-- RIBBON -->
-                            <div id="ribbon">
-                                <ol class="breadcrumb pull-left">
-                                    <li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> <?php echo __('Dashboard'); ?></a></li>
-                                </ol>
-                                <ol class="breadcrumb pull-right">
-                                    <?php foreach($breadcrumb as $vo): ?>
-                                    <li><a href="javascript:;" data-url="<?php echo $vo['url']; ?>"><?php echo $vo['title']; ?></a></li>
-                                    <?php endforeach; ?>
-                                </ol>
-                            </div>
+                            
                             <!-- END RIBBON -->
                             <?php endif; ?>
                             <div class="content">
@@ -209,102 +200,52 @@
         <div id="myTabContent" class="tab-content">
             <div class="tab-pane fade active in" id="one">
 
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="sm-st clearfix">
-                            <span class="sm-st-icon st-red"><i class="fa fa-users"></i></span>
-                            <div class="sm-st-info">
-                                <span><?php echo $totaluser; ?></span>
-                                <?php echo __('Total user'); ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="sm-st clearfix">
-                            <span class="sm-st-icon st-violet"><i class="fa fa-book"></i></span>
-                            <div class="sm-st-info">
-                                <span><?php echo $totalviews; ?></span>
-                                <?php echo __('Total view'); ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="sm-st clearfix">
-                            <span class="sm-st-icon st-blue"><i class="fa fa-shopping-bag"></i></span>
-                            <div class="sm-st-info">
-                                <span><?php echo $dispute_count; ?></span>
-                                <?php echo __('Total order'); ?>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="sm-st clearfix">
-                            <span class="sm-st-icon st-green"><i class="fa fa-cny"></i></span>
-                            <div class="sm-st-info">
-                                <span><?php echo $relief_count; ?></span>
-                                <?php echo __('Total order amount'); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+             
 
                 <div class="row">
-                    <div class="col-lg-8">
-                        <div id="echart" style="height:200px;width:100%;"></div>
-                    </div>
-                    
-                    
-                </div>
-
-                <div class="row" style="margin-top:15px;">
                     
                    
                 
                    
                     
-                    <!--第二行-->
-                    <div class="col-lg-12">
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-blue">
-                            <div class="panel-body">
-                                <div class="panel-title">
-                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
-                                     <h1 class="no-margins">
-                                    <a href="/admin/traffic?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Traffic safety'); ?></a> 
-                                     </h1>
-                                </div>
-                                <div class="panel-content">
-                                   
-                                    <h1><?php echo $traffic_count; ?></h1>
-                                    <div class="font-bold"><i class="fa fa-commenting"></i>
-                                    <small><?php echo __('Traffic state'); ?></small>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-aqua-gradient">
-                            <div class="panel-body">
+                    
+                   
+                                        
+                           
+                    <div class="col-xs-12 col-md-3" >
+                       
+                        <div class="panel bg-purple-gradient" >
+                           
+                            <div class="panel-body" >
+
                                 <div class="ibox-title">
-                                    <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
-                                   
+                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
+                                    
                                     <h1 class="no-margins">
-                                    <a href="/admin/service?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Serving masses'); ?></a> 
+                                    <a href="/admin/disputetest?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Contradictions disputes'); ?></a> 
                                      </h1>
                                 </div>
                                 <div class="ibox-content">
-                                    <h1><?php echo $service_count; ?></h1>
-                                    <div class="font-bold"><i class="fa fa-commenting"></i>
-                                    <small><?php echo __('Serving state'); ?></small>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h1>
+                                                <?php echo $dispute_count; ?>
+                                            </h1>
+                                            <div class="font-bold"><i class="fa fa-commenting"></i>
+                                                <small>纠纷次数</small>
+                                            </div>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
+                      
                     </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-purple-gradient">
+                
+
+                    <div class="col-xs-12 col-md-3">
+                        <div class="panel bg-olive">
                             <div class="panel-body">
                                 <div class="ibox-title">
                                     <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
@@ -325,116 +266,29 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-green-gradient">
+
+
+                    
+ 					<div class="col-xs-12 col-md-3">
+                        <div class="panel bg-yellow">
                             <div class="panel-body">
                                 <div class="ibox-title">
-                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                   
-                                     <h1 class="no-margins">
-                                    <a href="/admin/question?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('On duty'); ?></a> 
-                                     </h1>
-                                </div>
-                                <div class="ibox-content">
-
-                                   
-                                            <h1>
-                                                <?php echo $question_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small><?php echo __('Investigate vehicles'); ?></small>
-                                            </div>
-                                       
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--第三行-->
-                    <div class="col-lg-12">
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-blue">
-                            <div class="panel-body">
-                                <div class="panel-title">
-                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
+                                    <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
                                    
                                     <h1 class="no-margins">
-                                    <a href="/admin/relief?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Capture situation'); ?></a> 
+                                    <a href="/admin/flow/start?ref=addtabs" style="color: #ffffff" class="btn-addtabs">风险防控</a> 
                                      </h1>
-                                </div>
-                                <div class="panel-content">
-                                      <div class="row">
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $relief_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>救灾次数</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $relief_people; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>救灾人数</small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                     
-                                    <!-- <h1 class="no-margins">
-                                        <a href="flow/finishworkitem"><?php echo $safety_count; ?></a>
-                                    </h1>
-                                    <div class="stat-percent font-bold text-gray">
-                                            <div class="row">
-                                        
-                                      <h1> </h1>
-                                        <h1>  </h1>
-                                     
-                                            </div>    
-
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-green-gradient">
-                            <div class="panel-body">
-                                <div class="ibox-title">
-                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                     <h1 class="no-margins">
-                                    <a href="/admin/maodun?ref=addtabs" style="color: #ffffff" class="btn-addtabs">抓获现行</a> 
-                                     </h1>
-
                                 </div>
                                 <div class="ibox-content">
-
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $maodun_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>处理次数</small>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $Maoduncivil_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-user"></i>
-                                                <small>民事纠纷</small>
-                                            </div>
-                                        </div>                                        
+                                    <h1><?php echo $risk_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
+                                    <small>风险防控</small>
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-3">
+                    <div class="col-xs-12 col-md-3">
                         <div class="panel bg-aqua-gradient">
                             <div class="panel-body">
                                 <div class="ibox-title">
@@ -444,51 +298,137 @@
                                     <a href="/admin/policy?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Membership statistics'); ?></a> 
                                      </h1>
                                 </div>
-                                <div class="ibox-content">
-                                     <div class="row">
-                                        <div class="col-md-6">
+                                <div class="panel-content">
+                                    
                                             <h1>
                                                 <?php echo $policy_count; ?>
                                             </h1>
                                              <div class="font-bold"><i class="fa fa-commenting"></i>
                                             <small>宣传次数</small>
                                             </div>
-                                      </div>
-                                    </div>
+                                     
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xs-6 col-md-3">
-                        <div class="panel bg-purple-gradient">
+ 				</div>
+ 					<!--第三行-->                
+                <div class="row">            
+                   <div class="col-xs-12 col-md-3">
+                        <div class="panel bg-blue">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
+                                     <h1 class="no-margins">
+                                    <a href="/admin/traffic?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Traffic safety'); ?></a> 
+                                     </h1>
+                                </div>
+                                <div class="panel-content">
+                                   
+                                    <h1><?php echo $traffic_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
+                                    <small><?php echo __('Traffic state'); ?></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   		</div>
+
+                    <div class="col-xs-12 col-md-3">
+                        <div class="panel bg-red">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>                                   
+                                    <h1 class="no-margins">
+                                    <a href="/admin/relief?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Capture situation'); ?></a> 
+                                     </h1>
+                                </div>
+                                <div class="panel-content">                                
+                                        
+                                        
+                                            <h1>
+                                                <?php echo $relief_people; ?>
+                                            </h1>
+                                            <div class="font-bold"><i class="fa fa-user"></i>
+                                                <small>救灾人数</small>
+                                            </div>
+                                 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                   
+                   
+                     <div class="col-xs-12 col-md-3">
+                        <div class="panel bg-green-active">
                             <div class="panel-body">
                                 <div class="ibox-title">
-                                    <span class="label label-primary pull-right"><?php echo __('Real time'); ?></span>
-                                    
+                                    <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
+                                   
                                     <h1 class="no-margins">
-                                    <a href="/admin/dispute?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Contradictions disputes'); ?></a> 
+                                    <a href="/admin/service?ref=addtabs" style="color: #ffffff" class="btn-addtabs"><?php echo __('Serving masses'); ?></a> 
                                      </h1>
                                 </div>
                                 <div class="ibox-content">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <h1>
-                                                <?php echo $dispute_count; ?>
-                                            </h1>
-                                            <div class="font-bold"><i class="fa fa-commenting"></i>
-                                                <small>纠纷次数</small>
-                                            </div>
-                                        </div>
-                                        
+                                    <h1><?php echo $service_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
+                                    <small><?php echo __('Serving state'); ?></small>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                  
+                    <div class="col-xs-12 col-md-3">
+                        <div class="panel bg-aqua-gradient">
+                            <div class="panel-body">
+                                <div class="ibox-title">
+                                    <span class="label label-info pull-right"><?php echo __('Real time'); ?></span>
+                                   
+                                    <h1 class="no-margins">
+                                    <a href="http://114.115.146.220:9080/manager.html" style="color: #ffffff" class="btn-addtabs">位置查询</a> 
+                                     </h1>
+                                </div>
+                                <div class="ibox-content">
+                                    <h1><?php echo $service_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
+                                    <small><?php echo __('Serving state'); ?></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                   
+                      
+                     
+                  
+             
 
-                </div>
-
-                
+            	</div>    
+            	<div class="row">
+            	 <div class="col-xs-12 col-md-3">
+                        <div class="panel bg-blue">
+                            <div class="panel-body">
+                                <div class="panel-title">
+                                    <span class="label label-success pull-right"><?php echo __('Real time'); ?></span>
+                                     <h1 class="no-margins">
+                                    <a href="/admin/voice?ref=addtabs" style="color: #ffffff" class="btn-addtabs">警情语音</a> 
+                                     </h1>
+                                </div>
+                                <div class="panel-content">
+                                   
+                                    <h1><?php echo $traffic_count; ?></h1>
+                                    <div class="font-bold"><i class="fa fa-commenting"></i>
+                                    <small>警情上报下发数量</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   		</div>	
+            	</div>
             </div>
             <div class="tab-pane fade" id="two">
                 <div class="row">

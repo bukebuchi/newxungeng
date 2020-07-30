@@ -16,13 +16,14 @@ return array (
     array (
       0 => 'cms',
     ),
+    'testhook' => 
+    array (
+      0 => 'csmradmin',
+      1 => 'markdown',
+    ),
     'appendcommand' => 
     array (
       0 => 'flow',
-    ),
-    'testhook' => 
-    array (
-      0 => 'markdown',
     ),
     'config_init' => 
     array (

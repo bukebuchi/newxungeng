@@ -103,7 +103,7 @@ define(['jquery', 'bootstrap', 'backend', 'addtabs', 'table', 'echarts', 'echart
             $(window).resize(function () {
                 myChart.resize();
             });
-
+           
             $(document).on("click", ".btn-checkversion", function () {
                 top.window.$("[data-toggle=checkupdate]").trigger("click");
             });

