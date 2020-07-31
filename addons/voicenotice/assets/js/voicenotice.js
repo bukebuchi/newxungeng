@@ -1,7 +1,7 @@
 define(function () {
     var time, listen_stop = false, loop = true;
    
-   var updateEntity = 'http://localhost:8080/api/entity/update';
+   var updateEntity = 'http://114.115.146.220:8080/api/entity/update';
     var ak = 'bKUAfOc5AYml0vlGgRZiABG60mfE5Wp8';
     var  service_id = '216597';
     
@@ -165,9 +165,13 @@ define(function () {
                     listen_stop = true;
                     audio = htmlAudioElement;
                     htmlAudioElement.src && Controller.AudioPlay(audio, 2000, 3000);
-                  notice.text = notice.text.substring(3);
-                  var entity_name = notice.text.substring(0,notice.text.length-4);
-                  var alarm = notice.text.substring(notice.text.length-4);
+                  var testalarm = notice.text.substring(3);
+                  var entity_name = testalarm.substring(0,11);
+                  console.log(entity_name);
+                  var test = testalarm.substring(11);
+                  var alarm = test.substring(test.length-4);
+                  console.log(alarm);
+                  console.log('alarm');
 					var params = {
 						'ak':ak,
 						'service_id':service_id,

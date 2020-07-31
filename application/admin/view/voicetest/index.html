@@ -92,20 +92,20 @@
 	var ak='3WDNXwFzadiC4aSRVu6rgGATHvEtqYav'; //ak
 	var service_id='216597'; //service_id
 	//百度鹰眼接口 查询get 上传post
-	var createcircle_url='http://localhost:8080/api/fence/createcirclefence';//创建圆形
-	var createpolygon_url='http://localhost:8080/api/fence/createpolygonfence';//创建多边形
-	var createpolyline_url='http://localhost:8080/api/fence/createpolylinefence';//创建线形
-	var createpolyline_url='http://localhost:8080/api/fence/createpolylinefence';//创建线形
-	var createdistrict_url='http://localhost:8080/api/fence/createdistrictfence';//创建行政区
-	var updatecircle_url='http://localhost:8080/api/fence/updatecirclefence';//更新圆形
-	var updatepolygon_url='http://localhost:8080/api/fence/updatepolygonfence';//更新多边形
-	var updatepolyline_url='http://localhost:8080/api/fence/updatepolylinefence';//更新线型
-	var updatedistrict_url='http://localhost:8080/api/fence/updatedistrictfence';//更新行政区
-	var delete_url='http://localhost:8080/api/fence/delete';//删除围栏
-	var list_url='http://localhost:8080/api/fence/list';//查询围栏 0-99
-	var addmonitor_url='http://localhost:8080/api/fence/addmonitoredperson';//增加围栏需监控的entity
-	var deletemonitor_url='http://localhost:8080/api/fence/deletemonitoredperson';//删除围栏可去除监控的entity
-	var listmonitor_url='http://localhost:8080/api/fence/listmonitoredperson';//查询围栏监控的所有entity
+	var createcircle_url='http://114.115.146.220:8080/api/fence/createcirclefence';//创建圆形
+	var createpolygon_url='http://114.115.146.220:8080/api/fence/createpolygonfence';//创建多边形
+	var createpolyline_url='http://114.115.146.220:8080/api/fence/createpolylinefence';//创建线形
+	var createpolyline_url='http://114.115.146.220:8080/api/fence/createpolylinefence';//创建线形
+	var createdistrict_url='http://114.115.146.220:8080/api/fence/createdistrictfence';//创建行政区
+	var updatecircle_url='http://114.115.146.220:8080/api/fence/updatecirclefence';//更新圆形
+	var updatepolygon_url='http://114.115.146.220:8080/api/fence/updatepolygonfence';//更新多边形
+	var updatepolyline_url='http://114.115.146.220:8080/api/fence/updatepolylinefence';//更新线型
+	var updatedistrict_url='http://114.115.146.220:8080/api/fence/updatedistrictfence';//更新行政区
+	var delete_url='http://114.115.146.220:8080/api/fence/delete';//删除围栏
+	var list_url='http://114.115.146.220:8080/api/fence/list';//查询围栏 0-99
+	var addmonitor_url='http://114.115.146.220:8080/api/fence/addmonitoredperson';//增加围栏需监控的entity
+	var deletemonitor_url='http://114.115.146.220:8080/api/fence/deletemonitoredperson';//删除围栏可去除监控的entity
+	var listmonitor_url='http://114.115.146.220:8080/api/fence/listmonitoredperson';//查询围栏监控的所有entity
     //相关数据，位置，logo初始化 
 	mapinit();
 	
@@ -325,11 +325,11 @@
 
         fences.length = 0  
 	 	var fence_id = '0,'
-		for(var i = 1; i < 99; i++){	
+		for(var i = 1; i < 199; i++){	
 	        fence_id=fence_id+i;
 	        fence_id=fence_id+',';
 	    }
-	    fence_id=fence_id+99;
+	    fence_id=fence_id+199;
 
 	 	var delete_data={
 			    ak:ak,
@@ -903,7 +903,7 @@ function radiusList(cbk) {
 	    fence_id=fence_id+99;
 
 		$.ajax({
-			url:'http://localhost:8080/api/fence/list',
+			url:'http://114.115.146.220:8080/api/fence/list',
 			type: 'get',
 			dataType:'jsonp',
 			data:{

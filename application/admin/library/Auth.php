@@ -3,6 +3,7 @@
 namespace app\admin\library;
 
 use app\admin\model\Admin;
+use app\admin\model\AuthGroup;
 use fast\Random;
 use fast\Tree;
 use think\Config;
@@ -219,6 +220,13 @@ class Auth extends \fast\Auth
 
         return $uid != $this->id ? Admin::get(intval($uid)) : Session::get('admin');
     }
+    public function getUserPid()
+    {
+    	
+    	return AuthGroup::get('pid');
+       
+    }
+    
 
     public function getRuleIds($uid = null)
     {

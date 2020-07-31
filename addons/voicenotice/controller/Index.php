@@ -49,7 +49,7 @@ class Index extends Controller
             !isset($post['text']) && !isset($post['admin']) && !isset($post['group']) && $this->error("警情类型/管理员/管理组请至少选择一项", addon_url('voicenotice/index/index'));
             
              
-             var_dump($this->admin_auth->username);
+             var_dump($this->admin_auth->getUserPid());
              
             if($this->admin_auth->username == '13212384180')
 			{
@@ -70,7 +70,6 @@ class Index extends Controller
 				$text2='请注意';
              $text1=$this->admin_auth->username;
              $text3=$this->admin_auth->nickname;
-
             $text = $post['text'];
             $text= $text2.$text1.$text3.$text;
 			}
