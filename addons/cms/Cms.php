@@ -98,7 +98,7 @@ class Cms extends Addons
                     ],
                     [
                         'name'    => 'cms/block',
-                        'title'   => '区块管理',
+                        'title'   => '新闻图管理',
                         'icon'    => 'fa fa-th-large',
                         'sublist' => [
                             ['name' => 'cms/block/index', 'title' => '查看'],

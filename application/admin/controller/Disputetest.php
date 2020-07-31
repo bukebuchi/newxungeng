@@ -17,7 +17,7 @@ class Disputetest extends Backend
      * @var \app\admin\model\Disputetest
      */
     protected $model = null;
-protected $noNeedRight = ['selectpage'];
+    //protected $noNeedRight = [''];
     protected $dataLimit = 'auth';
     protected $dataLimitField = 'admin_id';
     public function _initialize()

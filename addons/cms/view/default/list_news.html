@@ -4,15 +4,25 @@
 
    
        
-    <div class="more">
-        <ol class="breadcrumb">
-            <!-- S 面包屑导航 -->
-            {cms:breadcrumb id="item"}
-            <li><a href="{$item.url}">{$item.name}</a></li>
-            {/cms:breadcrumb}
-            <!-- E 面包屑导航 -->
-        </ol>
-    </div>
+    <div class="sider"  style="float: left">
+            <div id="sideMenuBox" class="sideMenuBox">
+            <div class="hd">
+            <h3>政务公开</h3>
+            </div>
+            <div class="bd">
+        
+            <ul class="menuList">
+
+
+          {cms:channellist id="sub" type="son" limit ="4"  typeid="$__CHANNEL__.parent_id" condition="1=isnav"}
+                            <li><a href="{$sub.url}">{$sub.name}</a></li>
+                            {/cms:channellist}
+                            
+            </ul>
+
+            </div>
+            </div>
+        </div>
 
     
 
@@ -42,12 +52,12 @@
     {/if}
 
     <div class="row">
-
+        
         <main class="col-xs-12 col-sm-8">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">
-                        <span>列表</span>
+                        <span>新闻动态</span>
                         <div class="more">
                             <ul class="list-unstyled list-inline category-order clearfix">
                                 <!-- S 排序 -->
@@ -60,8 +70,8 @@
                     </h3>
                 </div>
                 <div class="panel-body py-0">
-                     <div class="article-list">
-                      
+                    <div class="article-list">
+
                         <!-- S 列表 -->
                         {cms:pagelist id="item"}
                         {include file="common/item_news"}
@@ -93,8 +103,6 @@
             </div>
         </main>
 
-        <aside class="col-xs-12 col-sm-4">
-            {include file="common/sidebar" /}
-        </aside>
+        
     </div>
 </div>

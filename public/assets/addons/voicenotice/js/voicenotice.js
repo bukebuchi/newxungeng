@@ -1,53 +1,15 @@
 define(function () {
     var time, listen_stop = false, loop = true;
    
-   var updateEntity = 'http://114.115.146.220:8080/api/entity/update';
-    var ak = 'bKUAfOc5AYml0vlGgRZiABG60mfE5Wp8';
-    var  service_id = '216597';
+   var updateEntity = 'http://localhost:8080/api/entity/update';
+    
     
    
 
     var Controller = {
     	 // 矩形区域检索entity
     
-    
-
-    /**
-     * JSONP
-     *
-     * @param {string} url 请求url
-     * @param {object} params 请求参数
-     * @param {function} callbakc 请求成功回调函数
-     * @param {function} before 请求前函数
-     */
-    jsonp: function (url, params, callback, before) {
-        var that = this;
-        if (before) {
-            before();
-        }
-        params.timeStamp = new Date().getTime();
-        //params.ak = Commonfun.getQueryString('ak');
-        //params.service_id = Commonfun.getQueryString('service_id');
-        params.ak = 'bKUAfOc5AYml0vlGgRZiABG60mfE5Wp8';
-        params.service_id = '216597';
-        url = url + '?';
-        for (let i in params) {
-            url = url + i + '=' + params[i] + '&';
-        }
-        var timeStamp = (Math.random() * 100000).toFixed(0);
-        window['ck' + timeStamp] = callback || function () {};
-        var completeUrl = url + '&callback=ck' + timeStamp;
-        var script = document.createElement('script');
-        script.src = completeUrl;
-        script.id = 'jsonp';
-        document.getElementsByTagName('head')[0].appendChild(script);
-        script.onload = function (e) {
-            $('#jsonp').remove();
-        };
-        script.onerror = function (e) {
-            that.jsonp(url, params, callback, before)
-        };
-    },
+   
         btts: function (param, options) {
             var url = '//tsn.baidu.com/text2audio';
             var opt = options || {};
@@ -165,33 +127,14 @@ define(function () {
                     listen_stop = true;
                     audio = htmlAudioElement;
                     htmlAudioElement.src && Controller.AudioPlay(audio, 2000, 3000);
-                  var testalarm = notice.text.substring(3);
-                  var entity_name = testalarm.substring(0,11);
-                  console.log(entity_name);
-                  var test = testalarm.substring(11);
-                  var alarm = test.substring(test.length-4);
-                  console.log(alarm);
-                  console.log('alarm');
-					var params = {
-						'ak':ak,
-						'service_id':service_id,
-						'entity_name': entity_name,
-						'alarm': alarm,
-					};
-                  console.log(params);
-					$.ajax({
-						type: 'POST',
-						url: updateEntity,
-						data: params,
-						dataType: 'json',
-						success: function (json) {
-							console.log(json);
-						},
-						error: function () {
-							console.log('error');
-						}
-					});
-				
+                 // notice.text = notice.text.substring(3);
+                  console.log(notice.text);
+                 // params.entity_name = notice.text.substring(notice.text.length-4);
+
+				//Controller.post(Controller.updateEntity, params, function(data) {
+
+
+				//}.bind(this));
                     Toastr["info"](notice.text, "消息提示", {
                         closeButton: false,
                         debug: false,

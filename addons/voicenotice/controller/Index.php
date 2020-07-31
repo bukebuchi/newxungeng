@@ -49,7 +49,7 @@ class Index extends Controller
             !isset($post['text']) && !isset($post['admin']) && !isset($post['group']) && $this->error("警情类型/管理员/管理组请至少选择一项", addon_url('voicenotice/index/index'));
             
              
-             var_dump($this->admin_auth->getUserPid());
+             
              
             if($this->admin_auth->username == '13212384180')
 			{

@@ -23,7 +23,7 @@ class Admin extends Backend
     protected $model = null;
     protected $childrenGroupIds = [];
     protected $childrenAdminIds = [];
-
+	protected $noNeedRight = ['selectpage'];
     public function _initialize()
     {
         parent::_initialize();

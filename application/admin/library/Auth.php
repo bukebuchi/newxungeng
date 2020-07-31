@@ -220,12 +220,7 @@ class Auth extends \fast\Auth
 
         return $uid != $this->id ? Admin::get(intval($uid)) : Session::get('admin');
     }
-    public function getUserPid()
-    {
-    	
-    	return AuthGroup::get('pid');
-       
-    }
+   
     
 
     public function getRuleIds($uid = null)

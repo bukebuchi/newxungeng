@@ -168,25 +168,7 @@
                         </ul>
                     </div>
 
-                    <div class="article-action-btn">
-                        <div class="pull-left">
-                            <!-- S 收藏 -->
-                            <a class="product-favorite addbookbark mr-2" href="javascript:;">
-                                <i class="fa fa-heart"></i> {:__('Favourite')}
-                            </a>
-                            <!-- E 收藏 -->
-                            <!-- S 分享 -->
-                            <span class="bdsharebuttonbox share-box bdshare-button-style0-16">
-                            <a class="bds_more share-box-a" data-cmd="more">
-                                <i class="fa fa-share"></i> {:__('Share')}
-                            </a>
-                        </span>
-                            <!-- E 分享 -->
-                        </div>
-                        <div class="pull-right">
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
+                   
 
                     <div class="related-article">
                         <div class="row">
@@ -208,16 +190,7 @@
                 </div>
             </div>
 
-            <div class="panel panel-default" id="comments">
-                <div class="panel-heading">
-                    <h3 class="panel-title">{:__('Comment list')}
-                        <small>共有 <span>{cms:archives name="comments" /}</span> 条评论</small>
-                    </h3>
-                </div>
-                <div class="panel-body">
-                    {include file="common/comment" type="archives" aid="__ARCHIVES__.id"}
-                </div>
-            </div>
+           
 
         </main>
 
